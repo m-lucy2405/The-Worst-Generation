@@ -1,7 +1,11 @@
 # The-Worst-Generation
-Documentación y Proyecto Final para el proyecto de pagina oficial One Piece
 
-One Piece Wiki.
+
+// ------------ Documentación y Proyecto Final para el proyecto de pagina oficial One Piece --------------------//
+
+                            //  ----------------- One Piece Wiki ----------------- // 
+
+PALETA DE COLORES: 
 
 Para la paleta de colores 
 Rojo oscuro: Representa la pasión, el coraje y la intensidad de las batallas en "One Piece". También puede simbolizar la determinación de los personajes principales, como Luffy.
