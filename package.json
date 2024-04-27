@@ -1,0 +1,15 @@
+{
+  "name": "the-worst-generation",
+  "version": "1.0.0",
+  "description": "// ------------ Documentación y Proyecto Final para el proyecto de pagina oficial One Piece --------------------//",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.75.0"
+  }
+}
