@@ -1,0 +1,198 @@
+@charset "UTF-8";
+.borde__solido {
+  border: solid 4px rgb(180, 14, 185);
+  background-color: rgb(178, 228, 85);
+  padding: 20px;
+  margin: 20px;
+  color: rgb(119, 65, 206);
+}
+
+.borde__dotted {
+  border: dotted 4px;
+  border-color: rgb(180, 14, 185);
+  background-color: rgb(178, 228, 85);
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__dashed {
+  border: dashed 8px;
+  border-color: rgb(180, 14, 185);
+  background-color: rgb(178, 228, 85);
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__double {
+  border: double 8px;
+  border-color: rgb(180, 14, 185);
+  background-color: rgb(178, 228, 85);
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__groove {
+  border: groove 8px;
+  border-color: rgb(180, 14, 185);
+  background-color: rgb(178, 228, 85);
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__ridge {
+  border: ridge 4px;
+  border-color: rgb(180, 14, 185);
+  background-color: rgb(178, 228, 85);
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__inset {
+  border: inset 4px;
+  border-color: rgb(180, 14, 185);
+  background-color: rgb(178, 228, 85);
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__outset {
+  border: outset 4px;
+  border-color: rgb(180, 14, 185);
+  background-color: rgb(178, 228, 85);
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__none {
+  border: none;
+  border-color: rgb(180, 14, 185);
+  background-color: rgb(178, 228, 85);
+  padding: 20px;
+  margin: 20px;
+}
+
+/*------------------------------------------------*/
+/*                 BORDES REDONDEADOR             */
+/*------------------------------------------------*/
+.borde__redondeado__1 {
+  border-radius: 25% 10%;
+  background-color: rgb(178, 228, 85);
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__redondeado__2 {
+  border-radius: 25% 10%;
+  background-color: rgb(178, 228, 85);
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__redondeado__3 {
+  border-radius: 10% 30% 50% 70%;
+  background-color: rgb(178, 228, 85);
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__redondeado__4 {
+  border-radius: 10%/50%;
+  background-color: rgb(178, 228, 85);
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__redondeado__5 {
+  border-radius: 10px 100px/120px;
+  background-color: rgb(178, 228, 85);
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__redondeado__6 {
+  border-radius: 50% 20%/10% 40%;
+  background-color: rgb(178, 228, 85);
+  padding: 20px;
+  margin: 20px;
+}
+
+/*------------------------------------------------*/
+/*          BORDES CON ESQUINA REDONDEADAS         */
+/*------------------------------------------------*/
+.borde__redondeado__7 {
+  border-end-start-radius: 80px 80px;
+  border: 10px solid rgb(51, 108, 194);
+  background-color: linear-gradient(to right, rgb(180, 14, 185), rgb(51, 108, 194));
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__redondeado__8 {
+  border-end-start-radius: 250px 100px;
+  direction: rtl;
+  border: 10px solid rgb(51, 108, 194);
+  background-color: rgb(178, 228, 85);
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__redondeado__9 {
+  border-end-start-radius: 50%;
+  writing-mode: vertical-lr;
+  border: 10px solid rgb(51, 108, 194);
+  background-color: rgb(178, 228, 85);
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__redondeado__10 {
+  border-end-start-radius: 50%;
+  writing-mode: vertical-rl;
+  border: 10px solid rgb(51, 108, 194);
+  background-color: rgb(178, 228, 85);
+  padding: 20px;
+  margin: 20px;
+}
+
+/*------------------------------------------------*/
+/*      BORDER ALINE COLOR                        */
+/*------------------------------------------------*/
+.borde__redondeado__11 {
+  width: 100px; /* Ajusta el tamaño según tus necesidades */
+  height: 100px; /* Ajusta el tamaño según tus necesidades */
+  background-color: red; /* Cambia el color de fondo según tus necesidades */
+  border-radius: 50%; /* Crea un círculo */
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__redondeado__12 {
+  width: 100px; /* Ajusta el tamaño según tus necesidades */
+  height: 100px; /* Ajusta el tamaño según tus necesidades */
+  background-color: rgb(129, 19, 133); /* Cambia el color de fondo según tus necesidades */
+  border-radius: 50%; /* Crea un círculo */
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__redondeado__13 {
+  width: 100px; /* Ajusta el tamaño según tus necesidades */
+  height: 100px; /* Ajusta el tamaño según tus necesidades */
+  background-color: rgb(68, 199, 101); /* Cambia el color de fondo según tus necesidades */
+  border-radius: 50%; /* Crea un círculo */
+  padding: 20px;
+  margin: 20px;
+}
+
+/*------------------------------------------------*/
+/*      ESTILO DE HTML                            */
+/*------------------------------------------------*/
+h1 {
+  text-align: center;
+  font-size: 100px;
+  font-weight: bolder;
+  color: rgb(234, 241, 231);
+  margin: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: blueviolet;
+}/*# sourceMappingURL=bordes.css.map */
