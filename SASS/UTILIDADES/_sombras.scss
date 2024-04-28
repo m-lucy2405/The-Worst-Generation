@@ -53,13 +53,13 @@
   
   /*----------------------------------------------------------------*/
   // Mixin para generar la propiedad box-shadow con múltiples sombras
-  @mixin box-shadow-2($horizontal-1, $vertical-1, $difuminado1, $propagacion1, $color1, $horizontal-2, $vertical-2, $difuminado2, $propagacion2, $color2, $horizontal-3, $vertical-3, $difuminado3, $propagacion3, $color3, $horizontal-4, $vertical-4, $difuminado4, $propagacion4, $color4) {
+  /*@mixin box-shadow-2($horizontal-1, $vertical-1, $difuminado1, $propagacion1, $color1, $horizontal-2, $vertical-2, $difuminado2, $propagacion2, $color2, $horizontal-3, $vertical-3, $difuminado3, $propagacion3, $color3, $horizontal-4, $vertical-4, $difuminado4, $propagacion4, $color4) {
     box-shadow: 
       $horizontal-1 $vertical-1 $difuminado1 $propagacion1 $color1, 
       $horizontal-2 $vertical-2 $difuminado2 $propagacion2 $color2,
       $horizontal-3 $vertical-3 $difuminado3 $propagacion3 $color3,
       $horizontal-4 $vertical-4 $difuminado4 $propagacion4 $color4;
-  }
+  }*/
   
   // Clase para aplicar la sombra en todos los lados
   .todos__lados {

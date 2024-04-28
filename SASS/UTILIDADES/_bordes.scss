@@ -1,128 +1,51 @@
 @use 'colores';
-// Definición de variables
-
-
-$tamano-borde: 10px;
-$margen-componentes: 20px; // Valor de separación entre componentes
-$padding-componenetes: 20px; // Valor de padding para los elementos
-$altura-componentes: 20vh; // Valor de altura
-$ancho-componentes: 20vw; //
-
-
-// Definición del degradado como una variable
-$degradado-morado-celeste: linear-gradient(to bottom, colores.$color-luffy, colores.$color-morado);
-
-
-// Caso de borde básico 
+// BORDE SOLIDO
 .borde__solido {
-    border: solid 15px $color-borde1;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
-    
-    
+    border: solid 15px;   
 }
 
 //BORDE DOTEED
 .borde__dotted {
-    border: dotted 15px;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
-
-
-
-    
+    border: dotted 15px;  
 }
 
 //BORE DASHED
 .borde__dashed {
-    border: dashed 15px;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
-
-   
+    border: dashed 15px; 
 }
 
 //BORDE DOUBLE
 .borde__double {
     border: double 15px;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
    
 }
 
 //BORDE GROOVE
 .borde__groove {
     border: groove 15px;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
-   
 }
 
 //BORDE RIDGE
 .borde__ridge {
     border: ridge 15px;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
    
 }
 
 //BORDE INSET
 .borde__inset {
     border: inset 15px;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
    
 }
 
 //BORDE OUTSET
 .borde__outset {
     border: outset 15px;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
     
 }
 
 //BORDE NONE
 .borde__none {
     border: none;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
     
 }
 
@@ -133,47 +56,24 @@ $degradado-morado-celeste: linear-gradient(to bottom, colores.$color-luffy, colo
 //BORDE RENDEADIADO Modelo 1
 .borde__redondeado__1{
     border-radius: 25% 10%;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
     
 }
 
 //BORDE RENDEADIADO Modelo 2
 .borde__redondeado__2 {
     border-radius: 25% 10%;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
 }
 
 //BORDE RENDEADIADO Modelo 3
 .borde__redondeado__3 {
     border-radius: 10% 30% 50% 70%;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
+    
     
 }
 
 //BORDE RENDEADIADO Modelo 4
 .borde__redondeado__4 {
     border-radius: 10% / 50%;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
     
 
 }
@@ -181,25 +81,11 @@ $degradado-morado-celeste: linear-gradient(to bottom, colores.$color-luffy, colo
 //BORDE RENDEADIADO Modelo 5
 .borde__redondeado__5 {
     border-radius: 10px 100px / 120px;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
-    
 }
 
 //BORDE RENDEADIADO Modelo 6
 .borde__redondeado__6 {
     border-radius: 50% 20% / 10% 40%;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
-    
 }
 
 /*------------------------------------------------*/
@@ -209,12 +95,6 @@ $degradado-morado-celeste: linear-gradient(to bottom, colores.$color-luffy, colo
 //BORDE RENDEADIADO Modelo 7
 .borde__redondeado__7 {
     border-end-start-radius: 80px 80px;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
     
 }
 
@@ -222,25 +102,12 @@ $degradado-morado-celeste: linear-gradient(to bottom, colores.$color-luffy, colo
 .borde__redondeado__8 {
     border-end-start-radius: 250px 100px;
     direction: rtl;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
-    
 }
 
 //BORDE RENDEADIADO Modelo 9
 .borde__redondeado__9 {
     border-end-start-radius: 50%;
     writing-mode: vertical-lr;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
   
 }
 
@@ -248,12 +115,6 @@ $degradado-morado-celeste: linear-gradient(to bottom, colores.$color-luffy, colo
 .borde__redondeado__10 {
     border-end-start-radius: 50%;
     writing-mode: vertical-rl;
-       border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
   
 }
 
@@ -262,37 +123,9 @@ $degradado-morado-celeste: linear-gradient(to bottom, colores.$color-luffy, colo
 /*------------------------------------------------*/
 
 //BORDE RENDEADIADO Modelo 11
-.borde__redondeado__11 {
-    width: 100px; /*  */
-    height: 100px; /* A */
-    background-color: rgb(90, 147, 211); /*  */
-    border-radius: 50%; /* Crea un círculo */
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
+.borde__circle {
+    border-radius: 50px;
 }
-
-//BORDE RENDEADIADO Modelo 12
-.borde__redondeado__12 {
-    width: 100px; /* Ajusta el tamaño según tus necesidades */
-    height: 100px; /* Ajusta el tamaño según tus necesidades */
-    background-color: rgb(129, 19, 133); /* Cambia el color de fondo según tus necesidades */
-    border-radius: 50%; /* Crea un círculo */
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    
-}
-
-//BORDE RENDEADIADO Modelo 13
-.borde__redondeado__13 {
-    width: 100px; /* Ajusta el tamaño según tus necesidades */
-    height: 100px; /* Ajusta el tamaño según tus necesidades */
-    background-color: rgb(68, 199, 101); /* Cambia el color de fondo según tus necesidades */
-    border-radius: 50%; /* Crea un círculo */
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-
-}
-
 
 /*------------------------------------------------*/
 /*          BORDE DIFUMINADO                      */
@@ -300,38 +133,14 @@ $degradado-morado-celeste: linear-gradient(to bottom, colores.$color-luffy, colo
 
 .borde__equna{
     border-radius: 60px/20px;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
-
 }
 
 .borde__redondeado__15{
     border-radius: 13em/3em;
-    border-color: $color-borde1;
-    background-color: $fondo-components;
-    padding: $padding-componenetes;
-    margin: $margen-componentes;
-    width: $ancho-componentes;
-    height: $altura-componentes;
+    
 }
 
 /*------------------------------------------------*/
 /*      ESTILO DE HTML                            */
 /*------------------------------------------------*/
 
-h1 {
-    text-align: center;
-    font-size: 100px;
-    font-weight: bolder;
-    color: rgb(234, 241, 231);
-    margin: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: blueviolet;
-}
-body {
-    background: $degradado-morado-celeste;
-}
