@@ -1,0 +1,18 @@
+// Estilos para ocultar elementos
+.hidden {
+    display: none !important;
+  }
+  
+  // Estilos para mostrar elementos de forma gradual
+  .fade-in {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+    
+    &.visible {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.3s ease, visibility 0s linear 0s;
+    }
+  }
+  
