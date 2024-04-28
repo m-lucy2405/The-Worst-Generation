@@ -1,0 +1,211 @@
+// Definir variables
+$color-sombra: rgba(15, 13, 15, 0.45);
+$color-borde-iluminado: rgb(36, 33, 35);
+$color-fondo-iluminado: rgba(163, 255, 183);
+$color-borde-reflectante: rgb(52, 131, 29);
+$color-fondo-reflectante: rgb(246, 255, 163);
+
+// Mixin para generar la propiedad box-shadow
+@mixin box-shadow($horizontal, $vertical, $difuminado, $desparramar, $color) {
+  box-shadow: $horizontal $vertical $difuminado $desparramar $color;
+}
+
+// Estilos para aplicar sombra en la parte superior
+.sombra_superior {
+  @include box-shadow(0px, -25px, 25px, -20px, $color-sombra);
+}
+
+// Estilos para aplicar sombra en la parte derecha
+.sombra_derecha {
+  @include box-shadow(25px, 0, 25px, -20px, $color-sombra);
+}
+
+// Estilos para aplicar sombra en la parte inferior
+.sombra_inferior {
+  @include box-shadow(0px, 25px, 25px, -20px, $color-sombra);
+}
+
+// Estilos para aplicar sombra en la parte izquierda
+.sombra_izquierda{
+  @include box-shadow(-25px, 0, 25px, -20px, $color-sombra);
+}
+
+//SOMBRAS EN DOS LADOS
+// Mixin para generar la propiedad box-shadow con múltiples sombras
+@mixin box-shadow-1($horizontal-1, $vertical-1, $difuminado1, $propagacion1, $color1, $horizontal-2, $vertical_2, $difuminado2, $propagacion2, $color2) {
+  box-shadow: $horizontal-1 $vertical-1 $difuminado1 $propagacion1 $color1, $horizontal-2 $vertical_2 $difuminado2 $propagacion2 $color2;
+}
+
+// Creando sombra en la parte superior y derecha
+.sombra__superior__derecha {
+  @include box-shadow-1(0px, -25px, 20px, -20px, $color-sombra, 25px, 0, 20px, -20px, $color-sombra);  
+}
+
+
+//creando sombra en la parate superio e inferior 
+.sombra__superior__inferior {
+  @include box-shadow-1(0px, -25px, 20px, -20px, $color-sombra, 0px, 25px, 20px, -20px, $color-sombra);
+}
+
+//creando sombra en la parate superio e izquierda 
+.sombra__superior__izquierda {
+  @include box-shadow-1(0px, -25px, 20px, -20px, $color-sombra, -25px, 0, 20px, -20px, $color-sombra);
+}
+//creando sombra en la parte inferior y derecha
+.sombra__inferior__derecha {
+  @include box-shadow-1(0px, -25px, 20px, -20px, $color-sombra, 25px, 0, 20px, -20px, $color-sombra);  
+}
+
+
+/*----------------------------------------------------------------*/
+// Mixin para generar la propiedad box-shadow con múltiples sombras
+@mixin box-shadow-2($horizontal-1, $vertical-1, $difuminado1, $propagacion1, $color1, $horizontal-2, $vertical-2, $difuminado2, $propagacion2, $color2, $horizontal-3, $vertical-3, $difuminado3, $propagacion3, $color3, $horizontal-4, $vertical-4, $difuminado4, $propagacion4, $color4) {
+  box-shadow: 
+    $horizontal-1 $vertical-1 $difuminado1 $propagacion1 $color1, 
+    $horizontal-2 $vertical-2 $difuminado2 $propagacion2 $color2,
+    $horizontal-3 $vertical-3 $difuminado3 $propagacion3 $color3,
+    $horizontal-4 $vertical-4 $difuminado4 $propagacion4 $color4;
+}
+
+// Clase para aplicar la sombra en todos los lados
+.todos__lados {
+  @include box-shadow-2(
+    0px, -25px, 50px, -20px, $color-borde-iluminado, 
+    25px, 0, 50px, -20px, $color-borde-iluminado, 
+    0px, 25px, 50px, -20px, $color-borde-iluminado, 
+    -25px, 0, 50px, -20px, $color-borde-iluminado
+  );
+}
+
+/*----------------------------------------------------------------*/
+
+// Clase para aplicar la sombra Diseño__materiales__1
+.Diseño__materiales__1 {  
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+// Clase para aplicar la sombra Diseño__materiales__2
+.Diseño__materiales__2{
+  box-shadow: 0 3px 6px $color-sombra, 0 3px 6px $color-sombra;
+
+}
+
+// Clase para aplicar la sombra Diseño__materiales__3
+.Diseño__materiales__3 {
+
+    box-shadow: 0 10px 20px $color-sombra, 0 6px 6px $color-sombra;
+
+}
+
+// Clase para aplicar la sombra Diseño__materiales__4
+
+.Diseño__materiales__4{
+  box-shadow: 0 14px 28px $color-sombra, 0 10px 10px $color-sombra;
+}
+
+// Clase para aplicar la sombra Diseño__materiales__5
+.Diseño__materiales__5{
+  box-shadow: 0 19px 38px $color-sombra, 0 15px 12px $color-sombra;
+}
+
+// Clase para aplicar la sombra Diseño__materiales__6
+.Diseño__materiales__6{
+  box-shadow: 0 29px 52px $color-sombra, 0 25px 16px $color-sombra;
+}
+// Clase para aplicar la sombra Diseño__materiales__7
+.Diseño__materiales__7{
+  box-shadow: 0 45px 65px $color-sombra, 0 35px 22px $color-sombra;
+}
+// Clase para aplicar la sombra Diseño__materiales__8
+.Diseño__materiales__8{
+  box-shadow: 0 60px 80px $color-sombra, 0 45px 26px $color-sombra;
+}
+// Clase para aplicar la sombra Diseño__materiales__9
+.Diseño__materiales__9{
+  box-shadow: 0 1px 1px $color-sombra, 0 2px 2px $color-sombra;
+}
+// Clase para aplicar la sombra Diseño__materiales__10
+.Diseño__materiales__10{
+ 
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12);
+}
+// Clase para aplicar la sombra Diseño__materiales__11
+.Diseño__materiales__11{
+  box-shadow: 0 1px 1px rgba(0,0,0,0.15), 0 2px 2px rgba(0,0,0,0.15), 0 4px 4px rgba(0,0,0,0.15), 0 8px 8px rgba(0,0,0,0.15);
+}
+// Clase para aplicar la sombra Diseño__materiales__12
+.Diseño__materiales__12{
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 0 2px 2px rgba(0,0,0,0.11), 0 4px 4px rgba(0,0,0,0.11), 0 8px 8px rgba(0,0,0,0.11), 0 16px 16px rgba(0,0,0,0.11), 0 32px 32px rgba(0,0,0,0.11);
+}
+// Clase para aplicar la sombra Diseño__materiales__13
+.Diseño__materiales__13{
+  box-shadow: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
+}
+// Clase para aplicar la sombra Diseño__materiales__14
+.Diseño__materiales__14{
+  box-shadow: 0px 9px 30px rgba(255, 149, 5, 0.3);
+}
+// Clase para aplicar la sombra Diseño__materiales__15
+.Diseño__materiales__15{
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07);
+}
+// Clase para aplicar la sombra Diseño__materiales__16
+.Diseño__materiales__16{
+  box-shadow: 0 20px 10px -20px rgba(0,0,0,0.45) inset;
+}
+// Clase para aplicar la sombra Diseño__materiales__17
+.Diseño__materiales__17{
+  box-shadow: -20px 0 10px -20px rgba(0,0,0,0.45) inset;
+}
+// Clase para aplicar la sombra Diseño__materiales__18
+.Diseño__materiales__18{
+  box-shadow: 0 -20px 10px -20px rgba(0,0,0,0.45) inset;
+}
+// Clase para aplicar la sombra Diseño__materiales__19
+.Diseño__materiales__19{
+  box-shadow: 20px 0 10px -20px rgba(0,0,0,0.45) inset;
+
+}
+// Clase para aplicar la sombra Diseño__materiales__20
+.Diseño__materiales__20{
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
+}
+// Clase para aplicar la sombra Diseño__materiales__21
+.Diseño__materiales__21{
+  box-shadow: 0px -23px 25px 0px rgba(0, 0, 0, 0.17) inset, 0px -36px 30px 0px rgba(0, 0, 0, 0.15) inset, 0px -79px 40px 0px rgba(0, 0, 0, 0.1) inset, 0px 2px 1px rgba(0, 0, 0, 0.06), 0px 4px 2px rgba(0, 0, 0, 0.09), 0px 8px 4px rgba(0, 0, 0, 0.09), 0px 16px 8px rgba(0, 0, 0, 0.09);
+}
+// Clase para aplicar la sombra Diseño__materiales__23
+.Diseño__materiales__22{
+  box-shadow: -10px 10px 0px rgba(33, 33, 33, 1), -20px 20px 0px rgba(33, 33, 33, 0.7), -30px 30px 0px rgba(33, 33, 33, 0.4), -40px 40px 0px rgba(33, 33, 33, 0.1);
+}
+// Clase para aplicar la sombra Diseño__materiales__23
+.Diseño__materiales__23{
+  box-shadow: 0 0 0 2px rgba(218,102,123,1), 8px 8px 0 0 rgba(218,102,123,1);  
+}
+  /*----------------------------------------------------------------*/
+
+
+//ESTILO DE SOMBRA 
+
+div {
+  padding: 10px;
+  margin: 10px;
+}
+// Estilos para el botón
+button {
+  padding: 30px;
+  border: none;
+  width: 240px;
+  height: 250px;
+  margin: 30px;
+  background-color: rgb(234, 241, 231);
+}
+h1 {
+  text-align: center;
+  font-size: 100px;;
+  font-weight: bolder;
+  color: rgb(234, 241, 231);
+  margin: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: blueviolet;
+}

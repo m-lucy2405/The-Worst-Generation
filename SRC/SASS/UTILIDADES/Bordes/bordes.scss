@@ -1,0 +1,237 @@
+// Definición de variables
+$color-borde1: rgb(180, 14, 185);
+$color-borde2: rgb(51, 108, 194);
+$fondo-components: rgb(178, 228, 85);
+$tamano-borde: 10px;
+$color-letras: rgb(119, 65, 206);
+$margen-componentes: 20px; // Valor de separación entre componentes
+$padding-componenetes: 20px; // Valor de padding para los elementos
+
+// Definición del degradado
+$degradado: linear-gradient(to right, $color-borde1, $color-borde2);
+
+// Caso de borde básico 
+.borde__solido {
+    border: solid 4px $color-borde1;
+    background-color: $fondo-components;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+    color: $color-letras;
+}
+
+//BORDE DOTEED
+.borde__dotted {
+    border: dotted 4px;
+    border-color: $color-borde1;
+    background-color: $fondo-components;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+//BORE DASHED
+.borde__dashed {
+    border: dashed 8px;
+    border-color: $color-borde1;
+    background-color: $fondo-components;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+//BORDE DOUBLE
+.borde__double {
+    border: double 8px;
+    border-color: $color-borde1;
+    background-color: $fondo-components;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+//BORDE GROOVE
+.borde__groove {
+    border: groove 8px;
+    border-color: $color-borde1;
+    background-color: $fondo-components;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+//BORDE RIDGE
+.borde__ridge {
+    border: ridge 4px;
+    border-color: $color-borde1;
+    background-color: $fondo-components;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+//BORDE INSET
+.borde__inset {
+    border: inset 4px;
+    border-color: $color-borde1;
+    background-color: $fondo-components;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+//BORDE OUTSET
+.borde__outset {
+    border: outset 4px;
+    border-color: $color-borde1;
+    background-color: $fondo-components;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+//BORDE NONE
+.borde__none {
+    border: none;
+    border-color: $color-borde1;
+    background-color: $fondo-components;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+/*------------------------------------------------*/
+/*                 BORDES REDONDEADOR             */
+/*------------------------------------------------*/
+
+//BORDE RENDEADIADO Modelo 1
+.borde__redondeado__1{
+    border-radius: 25% 10%;
+    background-color: $fondo-components;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+//BORDE RENDEADIADO Modelo 2
+.borde__redondeado__2 {
+    border-radius: 25% 10%;
+    background-color: $fondo-components;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+//BORDE RENDEADIADO Modelo 3
+.borde__redondeado__3 {
+    border-radius: 10% 30% 50% 70%;
+    background-color: $fondo-components;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+//BORDE RENDEADIADO Modelo 4
+.borde__redondeado__4 {
+    border-radius: 10% / 50%;
+    background-color: $fondo-components;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+//BORDE RENDEADIADO Modelo 5
+.borde__redondeado__5 {
+    border-radius: 10px 100px / 120px;
+    background-color: $fondo-components;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+//BORDE RENDEADIADO Modelo 6
+.borde__redondeado__6 {
+    border-radius: 50% 20% / 10% 40%;
+    background-color: $fondo-components;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+/*------------------------------------------------*/
+/*          BORDES CON ESQUINA REDONDEADAS         */
+/*------------------------------------------------*/
+
+//BORDE RENDEADIADO Modelo 7
+.borde__redondeado__7 {
+    border-end-start-radius: 80px 80px;
+    border: 10px solid $color-borde2;
+    background-color: $degradado;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+//BORDE RENDEADIADO Modelo 8
+.borde__redondeado__8 {
+    border-end-start-radius: 250px 100px;
+    direction: rtl;
+    border: 10px solid $color-borde2;
+    background-color: $fondo-components;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+//BORDE RENDEADIADO Modelo 9
+.borde__redondeado__9 {
+    border-end-start-radius: 50%;
+    writing-mode: vertical-lr;
+    border: 10px solid $color-borde2;
+    background-color: $fondo-components;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+//BORDE RENDEADIADO Modelo 10
+.borde__redondeado__10 {
+    border-end-start-radius: 50%;
+    writing-mode: vertical-rl;
+    border: 10px solid $color-borde2;
+    background-color: $fondo-components;
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+/*------------------------------------------------*/
+/*      BORDER ALINE COLOR                        */
+/*------------------------------------------------*/
+
+//BORDE RENDEADIADO Modelo 11
+.borde__redondeado__11 {
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    height: 100px; /* Ajusta el tamaño según tus necesidades */
+    background-color: red; /* Cambia el color de fondo según tus necesidades */
+    border-radius: 50%; /* Crea un círculo */
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+}
+
+//BORDE RENDEADIADO Modelo 12
+.borde__redondeado__12 {
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    height: 100px; /* Ajusta el tamaño según tus necesidades */
+    background-color: rgb(129, 19, 133); /* Cambia el color de fondo según tus necesidades */
+    border-radius: 50%; /* Crea un círculo */
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+    
+}
+
+//BORDE RENDEADIADO Modelo 13
+.borde__redondeado__13 {
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    height: 100px; /* Ajusta el tamaño según tus necesidades */
+    background-color: rgb(68, 199, 101); /* Cambia el color de fondo según tus necesidades */
+    border-radius: 50%; /* Crea un círculo */
+    padding: $padding-componenetes;
+    margin: $margen-componentes;
+
+}
+
+/*------------------------------------------------*/
+/*      ESTILO DE HTML                            */
+/*------------------------------------------------*/
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    font-weight: bolder;
+    color: rgb(234, 241, 231);
+    margin: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: blueviolet;
+}
