@@ -1,0 +1,11 @@
+@use 'colores';
+@use 'sombras';
+@use 'bordes';
+
+.btn{
+    @extend %sombras.sombra_superior;
+    background-color: colores.$color-violeta;
+    @extend .borde__dotted ;
+
+
+}

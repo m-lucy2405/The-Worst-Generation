@@ -1,0 +1,158 @@
+@use 'colores';
+// BORDE SOLIDO
+.borde__solido {
+    border: solid 15px;  
+    
+}
+
+//BORDE DOTEED
+.borde__dotted {
+    border: dotted 15px;  
+    
+}
+
+//BORE DASHED
+.borde__dashed {
+    border: dashed 15px; 
+    
+}
+
+//BORDE DOUBLE
+.borde__double {
+    border: double 15px;
+    
+   
+}
+
+//BORDE GROOVE
+.borde__groove {
+    border: groove 15px;
+    
+}
+
+//BORDE RIDGE
+.borde__ridge {
+    border: ridge 15px;
+   
+}
+
+//BORDE INSET
+.borde__inset {
+    border: inset 15px;
+   
+}
+
+//BORDE OUTSET
+.borde__outset {
+    border: outset 15px;
+    
+}
+
+//BORDE rectagilo esqunas dedondeada 
+.borde__Esquinas_dedondeada {
+    border-radius: 20px 20px 20px 20px;
+    
+}
+
+//BORDE NONE
+.borde__none {
+    border: none;
+    border-color: colores.$color-borde-reflectante;
+    
+}
+
+/*------------------------------------------------*/
+/*                 BORDES REDONDEADOR             */
+/*------------------------------------------------*/
+
+//BORDE RENDEADIADO Modelo 1
+.borde__redondeado__1{
+    border-radius: 25% 10%;
+    
+}
+
+//BORDE RENDEADIADO Modelo 2
+.borde__redondeado__2 {
+    border-radius: 25% 10%;
+}
+
+//BORDE RENDEADIADO Modelo 3
+.borde__redondeado__3 {
+    border-radius: 10% 30% 50% 70%;
+    
+    
+}
+
+//BORDE RENDEADIADO Modelo 4
+.borde__redondeado__4 {
+    border-radius: 10% / 50%;
+    
+
+}
+
+//BORDE RENDEADIADO Modelo 5
+.borde__redondeado__5 {
+    border-radius: 10px 100px / 120px;
+}
+
+//BORDE RENDEADIADO Modelo 6
+.borde__redondeado__6 {
+    border-radius: 50% 20% / 10% 40%;
+}
+
+/*------------------------------------------------*/
+/*          BORDES CON ESQUINA REDONDEADAS         */
+/*------------------------------------------------*/
+
+//BORDE RENDEADIADO Modelo 7
+.borde__redondeado__7 {
+    border-end-start-radius: 80px 80px;
+    
+}
+
+//BORDE RENDEADIADO Modelo 8
+.borde__redondeado__8 {
+    border-end-start-radius: 250px 100px;
+    direction: rtl;
+}
+
+//BORDE RENDEADIADO Modelo 9
+.borde__redondeado__9 {
+    border-end-start-radius: 50%;
+    writing-mode: vertical-lr;
+  
+}
+
+//BORDE RENDEADIADO Modelo 10
+.borde__redondeado__10 {
+    border-end-start-radius: 50%;
+    writing-mode: vertical-rl;
+  
+}
+
+/*------------------------------------------------*/
+/*      BORDER ALINE COLOR                        */
+/*------------------------------------------------*/
+
+//BORDE RENDEADIADO Modelo 11
+.borde__circle {
+    border-radius: 50px;
+}
+
+/*------------------------------------------------*/
+/*          BORDE DIFUMINADO                      */
+/*------------------------------------------------*/
+
+.borde__equna{
+    border-radius: 60px/20px;
+}
+
+.borde__redondeado__15{
+    border-radius: 13em/3em;
+    
+}
+
+/*------------------------------------------------*/
+/*      ESTILO DE HTML                            */
+/*------------------------------------------------*/
+
