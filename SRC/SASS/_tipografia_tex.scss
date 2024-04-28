@@ -1,4 +1,4 @@
-@import 'colores';
+@use 'colores';
 // Fuentes inspiradas en One Piece
 $font-one-piece: 'Times New Roman', Times, serif; // Fuente principal
 $font-pirate: 'Blackbeard', cursive; // Fuente de pirata
@@ -13,19 +13,19 @@ body {
   font-family: $font-one-piece;
   font-size: 16px;
   line-height: 1.5;
-  color: $color-texto;
+  color: colores.$color-texto;
 }
 
 .title {
   font-family: $font-pirate;
   font-size: 2.5em;
-  color: $color-primario;
+  color: colores.$color-jinbe;
 }
 
 .subtitle {
   font-family: $font-marine;
   font-size: 1.8em;
-  color: $color-terciario;
+  color: colores.$color-terciario;
 }
 
 .paragraph {
@@ -36,7 +36,7 @@ body {
 .quote {
   font-family: $font-devil-fruit;
   font-size: 1.2em;
-  color: $color-acento;
+  color: colores.$color-acento;
 }
 
 .small-caps {
@@ -46,18 +46,18 @@ body {
 .skull-heading {
   font-family: $font-skull;
   font-size: 3em;
-  color: $color-enlace;
+  color: colores.$color-enlace;
 }
 
 .ancient-text {
   font-family: $font-ancient-text;
   font-size: 1.2em;
-  color: $color-secundario;
+  color: colores.$color-secundario;
 }
 
 .treasure-map {
   font-family: $font-treasure-map;
   font-size: 1.5em;
-  color: $color-amarillo;
+  color: colores.$color-sol;
 }
 
