@@ -3,9 +3,11 @@
 @use 'bordes';
 
 .btn{
-    @extend %sombras.sombra_superior;
+    @extend .sombra_superior;
     background-color: colores.$color-violeta;
     @extend .borde__dotted ;
+    padding: 10px;
+    width: 20px;
 
 
 }
