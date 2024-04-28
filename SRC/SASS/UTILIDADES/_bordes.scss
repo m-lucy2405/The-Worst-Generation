@@ -1,21 +1,16 @@
+@use 'colores';
 // Definición de variables
-$color-borde1: #FF1493;
-$color-borde2: #4C92B7;
-$fondo-components: #6C757D;;
+
+
 $tamano-borde: 10px;
-$color-letras: #000;
 $margen-componentes: 20px; // Valor de separación entre componentes
 $padding-componenetes: 20px; // Valor de padding para los elementos
 $altura-componentes: 20vh; // Valor de altura
 $ancho-componentes: 20vw; //
 
 
-// Definición de los colores para el degradado
-$color-morado: rgb(238, 188, 50); // Morado
-$color-celeste: rgb(128, 215, 226); // Celeste
-
 // Definición del degradado como una variable
-$degradado-morado-celeste: linear-gradient(to bottom, $color-morado, $color-celeste);
+$degradado-morado-celeste: linear-gradient(to bottom, colores.$color-luffy, colores.$color-morado);
 
 
 // Caso de borde básico 
