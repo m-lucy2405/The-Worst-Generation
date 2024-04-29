@@ -1,0 +1,67 @@
+/* Variables de colores para alertas */
+@use '../UTILIDADES/colores';
+@use '../UTILIDADES/tipografia-tex';
+
+// Estilos base para alertas
+.alert {
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 15px auto; /* Márgenes automáticos para centrar */
+  max-width: 600px; /* Ancho máximo de la alerta */
+  display: flex;
+  align-items: center;
+}
+
+// Estilos específicos para cada tipo de alerta
+.alert-success {
+  background: linear-gradient(45deg, colores.$color-verde, colores.$color-mochi);
+  color: white;
+  font-family: tipografia-tex.$font-pirate;
+}
+
+.alert-info {
+  background-color: colores.$color-robin;
+  color: white;
+}
+
+.alert-warning {
+  background-color: colores.$color-sanji;
+  color: #212529; // Color de texto oscuro para alertas amarillas
+}
+
+.alert-danger {
+  background-color: colores.$color-luffy;
+  color: white;
+}
+
+// Estilos para iconos dentro de las alertas
+.alert-icon {
+  margin-right: 0px;
+  width: 25%; /* Utiliza todo el ancho disponible */
+  height: 10%; /* Utiliza toda la altura disponible */
+  background-size: cover; /* Ajusta el tamaño del icono para que quepa dentro de la alerta */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+// Definir imágenes para cada tipo de alerta
+$icon-success: url('success.png');
+$icon-info: url('info.png');
+$icon-warning: url('warning.png');
+$icon-danger: url('error.png');
+
+// Aplicar imágenes a las alertas correspondientes
+.alert-success .alert-icon {
+  background-image: $icon-success;
+}
+
+.alert-info .alert-icon {
+  background-image: $icon-info;
+}
+
+.alert-warning .alert-icon {
+  background-image: $icon-warning;
+}
+
+.alert-danger .alert-icon {
+  background-image: $icon-danger;
+}

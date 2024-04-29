@@ -1,0 +1,366 @@
+@charset "UTF-8";
+.borde__solido {
+  border: solid 15px;
+}
+
+.borde__dotted, .btn {
+  border: dotted 15px;
+}
+
+.borde__dashed {
+  border: dashed 15px;
+}
+
+.borde__double {
+  border: double 15px;
+}
+
+.borde__groove {
+  border: groove 15px;
+}
+
+.borde__ridge {
+  border: ridge 15px;
+}
+
+.borde__inset {
+  border: inset 15px;
+}
+
+.borde__outset {
+  border: outset 15px;
+}
+
+.borde__Esquinas_dedondeada {
+  border-radius: 20px 20px 20px 20px;
+}
+
+.borde__none {
+  border: none;
+  border-color: rgb(52, 131, 29);
+}
+
+/*------------------------------------------------*/
+/*                 BORDES REDONDEADOR             */
+/*------------------------------------------------*/
+.borde__redondeado__1 {
+  border-radius: 25% 10%;
+}
+
+.borde__redondeado__2 {
+  border-radius: 25% 10%;
+}
+
+.borde__redondeado__3 {
+  border-radius: 10% 30% 50% 70%;
+}
+
+.borde__redondeado__4 {
+  border-radius: 10%/50%;
+}
+
+.borde__redondeado__5 {
+  border-radius: 10px 100px/120px;
+}
+
+.borde__redondeado__6 {
+  border-radius: 50% 20%/10% 40%;
+}
+
+/*------------------------------------------------*/
+/*          BORDES CON ESQUINA REDONDEADAS         */
+/*------------------------------------------------*/
+.borde__redondeado__7 {
+  border-end-start-radius: 80px 80px;
+}
+
+.borde__redondeado__8 {
+  border-end-start-radius: 250px 100px;
+  direction: rtl;
+}
+
+.borde__redondeado__9 {
+  border-end-start-radius: 50%;
+  writing-mode: vertical-lr;
+}
+
+.borde__redondeado__10 {
+  border-end-start-radius: 50%;
+  writing-mode: vertical-rl;
+}
+
+/*------------------------------------------------*/
+/*      BORDER ALINE COLOR                        */
+/*------------------------------------------------*/
+.borde__circle {
+  border-radius: 50px;
+}
+
+/*------------------------------------------------*/
+/*          BORDE DIFUMINADO                      */
+/*------------------------------------------------*/
+.borde__equna {
+  border-radius: 60px/20px;
+}
+
+.borde__redondeado__15 {
+  border-radius: 13em/3em;
+}
+
+/*------------------------------------------------*/
+/*      ESTILO DE HTML                            */
+/*------------------------------------------------*/
+.sombra_superior, .btn {
+  box-shadow: 0px -25px 20px -20px #8A2BE2;
+}
+
+.sombra_derecha {
+  box-shadow: 25px 0 20px -20px #8A2BE2;
+}
+
+.sombra_inferior {
+  box-shadow: 0px 25px 20px -20px #8A2BE2;
+}
+
+.sombra_izquierda {
+  box-shadow: -25px 0 20px -20px #8A2BE2;
+}
+
+.sombra__superior__derecha {
+  box-shadow: 0px -25px 20px -20px #6C757D, 25px 0 20px -20px #8A2BE2;
+}
+
+.sombra__superior__inferior {
+  box-shadow: 0px -25px 20px -20px #6C757D, 0px 25px 20px -20px #8A2BE2;
+}
+
+.sombra__superior__izquierda {
+  box-shadow: 0px -25px 20px -20px #6C757D, -25px 0 20px -20px #8A2BE2;
+}
+
+.sombra__inferior__derecha {
+  box-shadow: 0px 25px 20px -20px #8A2BE2;
+}
+
+.todos__lados {
+  box-shadow: 0px -25px 20px -20px #6C757D, 25px 0 20px -20px #6C757D, 0px 25px 20px -20px #6C757D, -25px 0 20px -20px #6C757D;
+}
+
+/*----------------------------------------------------------------*/
+.Diseño__materiales__1 {
+  box-shadow: 0 1px 3px #6C757D, #6C757D;
+}
+
+.Diseño__materiales__2 {
+  box-shadow: 0 3px 6px #6C757D, 0 3px 6px #6C757D;
+}
+
+.Diseño__materiales__3 {
+  box-shadow: 0 10px 20px #6C757D, 0 6px 6px #6C757D;
+}
+
+.Diseño__materiales__4 {
+  box-shadow: 0 14px 28px #6C757D, 0 10px 10px #6C757D;
+}
+
+.Diseño__materiales__5 {
+  box-shadow: 0 19px 38px #6C757D, 0 15px 12px #6C757D;
+}
+
+.Diseño__materiales__6 {
+  box-shadow: 0 29px 52px #6C757D, 0 25px 16px #6C757D;
+}
+
+.Diseño__materiales__7 {
+  box-shadow: 0 45px 65px #6C757D, 0 35px 22px #6C757D;
+}
+
+.Diseño__materiales__8 {
+  box-shadow: 0 60px 80px #6C757D, 0 45px 26px #6C757D;
+}
+
+.Diseño__materiales__9 {
+  box-shadow: 0 1px 1px #6C757D, 0 2px 2px #6C757D;
+}
+
+.Diseño__materiales__10 {
+  box-shadow: 0 1px 1px #6C757D, 0 2px 2px #6C757D, 0 4px 4px #6C757D, 0 8px 8px #6C757D, 0 16px 16px #6C757D;
+}
+
+.Diseño__materiales__11 {
+  box-shadow: 0 1px 1px #6C757D, 0 2px 2px #6C757D, 0 4px 4px #6C757D, 0 8px 8px #6C757D;
+}
+
+.Diseño__materiales__12 {
+  box-shadow: 0 1px 1px #6C757D, 0 2px 2px #6C757D, 0 4px 4px #6C757D, 0 8px 8px #6C757D, 0 16px 16px #6C757D, 0 32px 32px #6C757D;
+}
+
+.Diseño__materiales__13 {
+  box-shadow: 0 1px 1px #6C757D, 0 2px 2px #6C757D, 0 4px 4px #6C757D, 0 8px 8px #6C757D;
+}
+
+.Diseño__materiales__14 {
+  box-shadow: 0px 9px 30px #6C757D;
+}
+
+.Diseño__materiales__15 {
+  box-shadow: 0 1px 2px #6C757D, 0 2px 4px #6C757D, 0 4px 8px #6C757D, 0 8px 16px #6C757D, 0 16px 32px #6C757D, 0 32px 64px #6C757D;
+}
+
+.Diseño__materiales__16 {
+  box-shadow: 0 20px 10px -20px #6C757D inset;
+}
+
+.Diseño__materiales__17 {
+  box-shadow: -20px 0 10px -20px #6C757D inset;
+}
+
+.Diseño__materiales__18 {
+  box-shadow: 0 -20px 10px -20px #6C757D inset;
+}
+
+.Diseño__materiales__19 {
+  box-shadow: 20px 0 10px -20px #6C757D inset;
+}
+
+.Diseño__materiales__20 {
+  box-shadow: 0 0 10px 0 #6C757D inset;
+}
+
+/*.Diseño__materiales__21{
+  box-shadow: 0px -23px 25px 0px rgba(0, 0, 0, 0.17) inset,
+   0px -36px 30px 0px rgba(0, 0, 0, 0.15) inset, 
+   0px -79px 40px 0px rgba(0, 0, 0, 0.1) inset,
+    0px 2px 1px rgba(0, 0, 0, 0.06),
+    0px 4px 2px rgba(0, 0, 0, 0.09), 
+    0px 8px 4px rgba(0, 0, 0, 0.09),
+     0px 16px 8px rgba(0, 0, 0, 0.09);
+}
+// Clase para aplicar la sombra Diseño__materiales__23
+.Diseño__materiales__22{
+  box-shadow: 
+  -10px 10px 0px rgba(33, 33, 33, 1), 
+  -20px 20px 0px rgba(33, 33, 33, 0.7), 
+  -30px 30px 0px rgba(33, 33, 33, 0.4), 
+  -40px 40px 0px rgba(33, 33, 33, 0.1);
+}
+// Clase para aplicar la sombra Diseño__materiales__23
+.Diseño__materiales__23{
+  box-shadow: 0 0 0 2px rgba(218,102,123,1),
+   8px 8px 0 0 rgba(218,102,123,1);  
+}*/
+/*----------------------------------------------------------------*/
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1D3557;
+}
+
+.title {
+  font-family: "Blackbeard", cursive;
+  font-size: 2.5em;
+  color: #3498DB;
+}
+
+.subtitle {
+  font-family: "Marine", sans-serif;
+  font-size: 1.8em;
+  color: #A8DADC;
+}
+
+.paragraph {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+}
+
+.quote {
+  font-family: "Devil Fruit", fantasy;
+  font-size: 1.2em;
+  color: #457B9D;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+.skull-heading {
+  font-family: "Skull and Cross", sans-serif;
+  font-size: 3em;
+  color: #A8DADC;
+}
+
+.ancient-text {
+  font-family: "Ancient Text", serif;
+  font-size: 1.2em;
+  color: #F1FAEE;
+}
+
+.treasure-map {
+  font-family: "Treasure Map", cursive;
+  font-size: 1.5em;
+  color: #4D4E4E;
+}
+
+/* Variables de colores para alertas */
+.alert {
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 15px auto; /* Márgenes automáticos para centrar */
+  max-width: 600px; /* Ancho máximo de la alerta */
+  display: flex;
+  align-items: center;
+}
+
+.alert-success {
+  background: linear-gradient(45deg, #28A745, #F0E68C);
+  color: white;
+  font-family: "Blackbeard", cursive;
+}
+
+.alert-info {
+  background-color: #451561;
+  color: white;
+}
+
+.alert-warning {
+  background-color: #d2e730;
+  color: #212529;
+}
+
+.alert-danger {
+  background-color: #c8472c;
+  color: white;
+}
+
+.alert-icon {
+  margin-right: 0px;
+  width: 25%; /* Utiliza todo el ancho disponible */
+  height: 10%; /* Utiliza toda la altura disponible */
+  background-size: cover; /* Ajusta el tamaño del icono para que quepa dentro de la alerta */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.alert-success .alert-icon {
+  background-image: url("success.png");
+}
+
+.alert-info .alert-icon {
+  background-image: url("info.png");
+}
+
+.alert-warning .alert-icon {
+  background-image: url("warning.png");
+}
+
+.alert-danger .alert-icon {
+  background-image: url("error.png");
+}
+
+.btn {
+  background-color: #8A2BE2;
+  padding: 10px;
+  width: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

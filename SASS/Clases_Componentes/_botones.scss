@@ -1,6 +1,6 @@
-@use 'colores';
-@use 'sombras';
-@use 'bordes';
+@use '../UTILIDADES/colores';
+@use '../UTILIDADES/sombras';
+@use '../UTILIDADES/bordes';
 
 .btn{
     @extend .sombra_superior;

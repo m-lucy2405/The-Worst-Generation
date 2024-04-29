@@ -1,12 +1,25 @@
+// Definición de breakpoints
+$breakpoint-xs: 0; // Extra small devices (portrait phones, less than 576px)
+$breakpoint-sm: 576px; // Small devices (landscape phones, 576px and up)
+$breakpoint-md: 768px; // Medium devices (tablets, 768px and up)
+$breakpoint-lg: 992px; // Large devices (desktops, 992px and up)
+$breakpoint-xl: 1200px; // Extra large devices (large desktops, 1200px and up)
 
-// RESPONSIVE DESING
-
-
-
-// BREAKPOINTS
-$XX-l: 1400px;
-$X-l: 1200px;
-$L-d: 992px;
-$M-d: 768px;
-$S-d: 576px;
-
+// Mixin para media queries
+@mixin breakpoint($point) {
+  @if $point == xs {
+    @media (max-width: $breakpoint-sm) { @content; }
+  }
+  @else if $point == sm {
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md ) { @content; }
+  }
+  @else if $point == md {
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg ) { @content; }
+  }
+  @else if $point == lg {
+    @media (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl ) { @content; }
+  }
+  @else if $point == xl {
+    @media (min-width: $breakpoint-xl) { @content; }
+  }
+}
