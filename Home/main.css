@@ -99,7 +99,7 @@
 /*------------------------------------------------*/
 /*          BORDE DIFUMINADO                      */
 /*------------------------------------------------*/
-.borde__equna {
+.borde__equna, .alert-success {
   border-radius: 60px/20px;
 }
 
@@ -260,7 +260,7 @@ body {
 .title {
   font-family: "Blackbeard", cursive;
   font-size: 2.5em;
-  color: #3498DB;
+  color: #9e0631;
 }
 
 .subtitle {
@@ -290,7 +290,7 @@ body {
   color: #A8DADC;
 }
 
-.ancient-text {
+.ancient-text, .alert-success {
   font-family: "Ancient Text", serif;
   font-size: 1.2em;
   color: #F1FAEE;
@@ -299,13 +299,12 @@ body {
 .treasure-map {
   font-family: "Treasure Map", cursive;
   font-size: 1.5em;
-  color: #4D4E4E;
+  color: #FFFF00;
 }
 
 /* Variables de colores para alertas */
 .alert {
   padding: 10px 15px;
-  border-radius: 5px;
   margin: 15px auto; /* Márgenes automáticos para centrar */
   max-width: 600px; /* Ancho máximo de la alerta */
   display: flex;
@@ -313,23 +312,22 @@ body {
 }
 
 .alert-success {
-  background: linear-gradient(45deg, #28A745, #F0E68C);
+  background: linear-gradient(45deg, #28A745, #e7e2b4);
   color: white;
-  font-family: "Blackbeard", cursive;
 }
 
 .alert-info {
-  background-color: #451561;
+  background: linear-gradient(45deg, #457B9D, #451561);
   color: white;
 }
 
 .alert-warning {
-  background-color: #d2e730;
+  background-color: #FFFF00;
   color: #212529;
 }
 
 .alert-danger {
-  background-color: #c8472c;
+  background-color: #d9160f;
   color: white;
 }
 
@@ -342,7 +340,7 @@ body {
 }
 
 .alert-success .alert-icon {
-  background-image: url("success.png");
+  background-image: url("../UTILIDADES/IMGs/exito.ico");
 }
 
 .alert-info .alert-icon {
