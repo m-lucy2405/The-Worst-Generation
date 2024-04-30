@@ -3,7 +3,7 @@
   border: solid 15px;
 }
 
-.borde__dotted, .btn {
+.borde__dotted, .btn, .alert-success {
   border: dotted 15px;
 }
 
@@ -99,7 +99,7 @@
 /*------------------------------------------------*/
 /*          BORDE DIFUMINADO                      */
 /*------------------------------------------------*/
-.borde__equna, .alert-success {
+.borde__equna {
   border-radius: 60px/20px;
 }
 
@@ -290,7 +290,7 @@ body {
   color: #A8DADC;
 }
 
-.ancient-text, .alert-success {
+.ancient-text {
   font-family: "Ancient Text", serif;
   font-size: 1.2em;
   color: #F1FAEE;
@@ -304,8 +304,8 @@ body {
 
 /* Variables de colores para alertas */
 .alert {
-  padding: 10px 15px;
-  margin: 15px auto; /* Márgenes automáticos para centrar */
+  padding: 10px 30px;
+  margin: 25px auto; /* Márgenes automáticos para centrar */
   max-width: 600px; /* Ancho máximo de la alerta */
   display: flex;
   align-items: center;
@@ -313,7 +313,7 @@ body {
 
 .alert-success {
   background: linear-gradient(45deg, #28A745, #e7e2b4);
-  color: white;
+  font-family: "Devil Fruit", fantasy;
 }
 
 .alert-info {
@@ -332,15 +332,15 @@ body {
 }
 
 .alert-icon {
-  margin-right: 0px;
-  width: 25%; /* Utiliza todo el ancho disponible */
-  height: 10%; /* Utiliza toda la altura disponible */
-  background-size: cover; /* Ajusta el tamaño del icono para que quepa dentro de la alerta */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  margin-left: 10px;
+  width: 100px; /* Tamaño del icono */
+  height: 100px; /* Tamaño del icono */
+  max-width: 20px; /* Ancho máximo del icono */
+  max-height: 20px; /* Altura máxima del icono */
 }
 
 .alert-success .alert-icon {
-  background-image: url("../UTILIDADES/IMGs/exito.ico");
+  background-image: url("../IMGs/exito.ico");
 }
 
 .alert-info .alert-icon {
@@ -355,6 +355,20 @@ body {
   background-image: url("error.png");
 }
 
+@media (max-width: 768px) {
+  .alert {
+    flex-direction: column; /* Cambiar la dirección de los elementos en pantallas pequeñas */
+    text-align: center; /* Centrar el texto en pantallas pequeñas */
+  }
+  .alert-icon {
+    margin-right: 0; /* Eliminar el margen derecho en pantallas pequeñas */
+    margin-bottom: 10px; /* Añadir espacio entre el icono y el texto en pantallas pequeñas */
+    width: 50px; /* Ajustar el tamaño del icono en pantallas pequeñas */
+    height: 50px; /* Ajustar el tamaño del icono en pantallas pequeñas */
+    max-width: 50px; /* Ancho máximo del icono en pantallas pequeñas */
+    max-height: 50px; /* Altura máxima del icono en pantallas pequeñas */
+  }
+}
 .btn {
   background-color: #8A2BE2;
   padding: 10px;

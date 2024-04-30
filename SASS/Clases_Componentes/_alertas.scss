@@ -2,14 +2,12 @@
 @use '../UTILIDADES/colores';
 @use '../UTILIDADES/tipografia-tex';
 @use '../UTILIDADES/sombras';
-@use '../UTILIDADES/bordes'
-;
+@use '../UTILIDADES/bordes';
 
 // Estilos base para alertas
 .alert {
-  padding: 10px 15px;
- // border-radius: 5px;
-  margin: 15px auto; /* Márgenes automáticos para centrar */
+  padding: 10px 30px;
+  margin: 25px auto; /* Márgenes automáticos para centrar */
   max-width: 600px; /* Ancho máximo de la alerta */
   display: flex;
   align-items: center;
@@ -18,10 +16,9 @@
 // Estilos específicos para cada tipo de alerta
 .alert-success {
   background: linear-gradient(45deg, colores.$color-verde, colores.$color-mochi);
-  color: white;
-  //font-family: tipografia-tex.$font-pirate;
-  @extend .ancient-text;
-  @extend .borde__equna;
+ font-family: tipografia-tex.$font-devil-fruit;
+  @extend .borde__dotted;
+
 }
 
 .alert-info {
@@ -41,15 +38,15 @@
 
 // Estilos para iconos dentro de las alertas
 .alert-icon {
-  margin-right: 0px;
-  width: 25%; /* Utiliza todo el ancho disponible */
-  height: 10%; /* Utiliza toda la altura disponible */
-  background-size: cover; /* Ajusta el tamaño del icono para que quepa dentro de la alerta */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  margin-left: 10px;
+  width: 100px; /* Tamaño del icono */
+  height: 100px; /* Tamaño del icono */
+  max-width: 20px; /* Ancho máximo del icono */
+  max-height: 20px; /* Altura máxima del icono */
 }
 
 // Definir imágenes para cada tipo de alerta
-$icon-success: url('../UTILIDADES/IMGs/exito.ico');
+$icon-success: url('../IMGs/exito.ico');
 $icon-info: url('info.png');
 $icon-warning: url('warning.png');
 $icon-danger: url('error.png');
@@ -69,4 +66,21 @@ $icon-danger: url('error.png');
 
 .alert-danger .alert-icon {
   background-image: $icon-danger;
+}
+
+// Media queries para ajustes responsivos
+@media (max-width: 768px) {
+  .alert {
+    flex-direction: column; /* Cambiar la dirección de los elementos en pantallas pequeñas */
+    text-align: center; /* Centrar el texto en pantallas pequeñas */
+  }
+
+  .alert-icon {
+    margin-right: 0; /* Eliminar el margen derecho en pantallas pequeñas */
+    margin-bottom: 10px; /* Añadir espacio entre el icono y el texto en pantallas pequeñas */
+    width: 50px; /* Ajustar el tamaño del icono en pantallas pequeñas */
+    height: 50px; /* Ajustar el tamaño del icono en pantallas pequeñas */
+    max-width: 50px; /* Ancho máximo del icono en pantallas pequeñas */
+    max-height: 50px; /* Altura máxima del icono en pantallas pequeñas */
+  }
 }
