@@ -15,14 +15,14 @@
 
 // Estilos específicos para cada tipo de alerta
 .alert-success {
-  background: linear-gradient(45deg, colores.$color-verde, colores.$color-mochi);
+  background:  colores.$color-zoro;
  font-family: tipografia-tex.$font-devil-fruit;
-  @extend .borde__dotted;
+ 
 
 }
 
 .alert-info {
-  background: linear-gradient(45deg, colores.$color-acento, colores.$color-robin);
+  background:  colores.$color-sanji;
   color: white;
 }
 
