@@ -1,5 +1,8 @@
+<p align="center">
+  
+  ![](SASS/IMGs/thestrawhead_pirates.ico)
+</p>
 
-![](SASS/IMGs/thestrawhead_pirates.ico)
 
 # ONE PIECE THE WORST GENERATION
 
