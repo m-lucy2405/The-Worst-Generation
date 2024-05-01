@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .borde__solido {
   border: solid 10px;
   background-color: #ecaacd;
@@ -6,7 +5,7 @@
   margin: 20px;
 }
 
-.borde__dotted, .btn {
+.borde__dotted {
   border: dotted 10px;
   background-color: #ecaacd;
   padding: 20px;
@@ -55,7 +54,7 @@
   margin: 20px;
 }
 
-.borde__Esquinas_dedondeada, .boton__animacion__1, .boton__animacion__2, .boton__animacion__3, .boton__animacion__4 {
+.borde__Esquinas_dedondeada {
   border-radius: 5px 5px 5px 5px;
   background-color: #ecaacd;
   padding: 20px;
@@ -137,7 +136,7 @@
 /*------------------------------------------------*/
 /*      ESTILO DE HTML                            */
 /*------------------------------------------------*/
-.sombra_superior, .btn {
+.sombra_superior {
   box-shadow: 0px -25px 20px -20px #00eeff;
   margin: 20px;
   background-color: #b3b2b4;
@@ -225,127 +224,85 @@ body {
   color: #FFFF00;
 }
 
-.btn {
-  background-color: rosybrown;
-  padding: 10px;
-  width: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.boton__animacion__1 {
-  box-shadow: 0 0 5px rgb(163, 255, 183), 0 0 25px rgb(163, 255, 183);
-  background-color: rgb(163, 255, 183);
-  margin: 16px;
-  padding: 20px;
-  justify-content: center;
-}
-
-.boton__animacion__1:hover {
-  box-shadow: 0 0 5px rgb(163, 255, 183), 0 0 25px rgb(163, 255, 183), 0 0 25px rgb(163, 255, 183), 0 0 50px rgb(163, 255, 183), 0 0 100px rgb(163, 255, 183), 0 0 150px rgb(163, 255, 183), 0 0 200px rgb(163, 255, 183);
-}
-
-.boton__animacion__2 {
-  box-shadow: 0 0 5px #E83E8C, 0 0 25px #E83E8C;
-  background-color: #E83E8C;
-  margin: 16px;
-  padding: 20px;
-  justify-content: center;
-}
-
-.boton__animacion__2:hover {
-  box-shadow: 0 0 5px #E83E8C, 0 0 25px #E83E8C, 0 0 25px #E83E8C, 0 0 50px #E83E8C, 0 0 100px #E83E8C, 0 0 150px #E83E8C, 0 0 200px #E83E8C;
-}
-
-.boton__animacion__3 {
-  box-shadow: 0 0 5px #2a5fcf, 0 0 25px #2a5fcf;
-  background-color: #2a5fcf;
-  margin: 16px;
-  padding: 20px;
-  justify-content: center;
-}
-
-.boton__animacion__3:hover {
-  box-shadow: 0 0 5px #2a5fcf, 0 0 25px #2a5fcf, 0 0 25px #2a5fcf, 0 0 50px #2a5fcf, 0 0 100px #2a5fcf, 0 0 150px #2a5fcf, 0 0 200px #2a5fcf;
-}
-
-.boton__animacion__4 {
-  box-shadow: 0 0 5px #f88809, 0 0 25px #f88809;
-  background-color: #f88809;
-  margin: 16px;
-  padding: 20px;
-  justify-content: center;
-}
-
-.boton__animacion__4:hover {
-  box-shadow: 0 0 5px #f88809, 0 0 25px #f88809, 0 0 25px #f88809, 0 0 50px #f88809, 0 0 100px #f88809, 0 0 150px #f88809, 0 0 200px #f88809;
-}
-
-/* Variables de colores para alertas */
-.alert {
-  padding: 10px 30px;
-  margin: 25px auto; /* Márgenes automáticos para centrar */
-  max-width: 600px; /* Ancho máximo de la alerta */
+main.cards {
   display: flex;
+  padding: 40px;
+}
+
+main.cards section.card {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  max-height: 330px;
+  max-width: 250px;
+  margin-left: 32px;
 }
 
-.alert-success {
-  background: #0e791a;
+main.cards section.card.Luffy {
+  background: linear-gradient(to bottom, #d9160f 50%, #ffffff 50%);
+  border: 1px solid #c7374f;
   font-family: "Devil Fruit", fantasy;
+  color: #d9160f;
 }
 
-.alert-info {
-  background: #1628c9;
-  color: white;
+main.cards section.card.Zoro {
+  background: linear-gradient(to bottom, #0e791a 50%, #ffffff 50%);
+  border: 1px solid #28A745;
+  font-family: "Devil Fruit", fantasy;
+  color: #0e791a;
 }
 
-.alert-warning {
-  background-color: #FFFF00;
-  color: #212529;
+main.cards section.card.Usopp {
+  background: linear-gradient(to bottom, #FFFF00 50%, #ffffff 50%);
+  border: 1px solid #FFC107;
+  font-family: "Devil Fruit", fantasy;
+  color: #FFC107;
 }
 
-.alert-danger {
-  background-color: #d9160f;
-  color: white;
+main.cards section.card:first-child {
+  margin-left: 0;
 }
 
-.alert-icon {
-  margin-left: 10px;
-  width: 100px; /* Tamaño del icono */
-  height: 100px; /* Tamaño del icono */
-  max-width: 20px; /* Ancho máximo del icono */
-  max-height: 20px; /* Altura máxima del icono */
+main.cards section.card .foto-perfil {
+  margin-top: 40px;
+  width: 50%;
+  object-fit: scale-down;
 }
 
-.alert-success .alert-icon {
-  background-image: url("../IMGs/exito.ico");
+main.cards section.card p {
+  font-size: 100%;
+  margin: 16px 0;
 }
 
-.alert-info .alert-icon {
-  background-image: url("info.png");
+main.cards section.card img {
+  margin-bottom: 10px;
+  width: 120px;
+  border-radius: 100%;
 }
 
-.alert-warning .alert-icon {
-  background-image: url("warning.png");
+main.cards section.card span {
+  font-weight: 300;
+  max-width: 240px;
+  font-size: 80%;
+  margin-bottom: 16px;
+  font-family: "Skull and Cross", sans-serif;
+  color: #000;
 }
 
-.alert-danger .alert-icon {
-  background-image: url("error.png");
-}
-
-@media (max-width: 768px) {
-  .alert {
-    flex-direction: column; /* Cambiar la dirección de los elementos en pantallas pequeñas */
-    text-align: center; /* Centrar el texto en pantallas pequeñas */
+@media screen and (max-width: 720px) {
+  main.cards {
+    flex-direction: column;
   }
-  .alert-icon {
-    margin-right: 0; /* Eliminar el margen derecho en pantallas pequeñas */
-    margin-bottom: 10px; /* Añadir espacio entre el icono y el texto en pantallas pequeñas */
-    width: 50px; /* Ajustar el tamaño del icono en pantallas pequeñas */
-    height: 50px; /* Ajustar el tamaño del icono en pantallas pequeñas */
-    max-width: 50px; /* Ancho máximo del icono en pantallas pequeñas */
-    max-height: 50px; /* Altura máxima del icono en pantallas pequeñas */
+  main.cards section.card {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  main.cards section.card:last-child {
+    margin-bottom: 0;
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=cards.css.map */
