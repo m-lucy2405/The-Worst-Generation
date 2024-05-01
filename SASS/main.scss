@@ -1,11 +1,18 @@
-@use 'UTILIDADES/Colores';
-@use 'UTILIDADES/bordes';
-@use 'UTILIDADES/sombras';
-@use 'UTILIDADES/tipografia-tex';
+@use 'UTILIDADES/colores';
 
-@use 'Clases_Componentes/botones';
+@use 'UTILIDADES/bordes';
+
+@use 'UTILIDADES/sombras';
+
+@use 'UTILIDADES/media-query';
+
+@use 'UTILIDADES/tipografia-tex'; 
+
 @use 'Clases_Componentes/alertas';
 
+@use 'Clases_Componentes/botones';
+
+@use 'Clases_Componentes/carrusel';
 
 
 
