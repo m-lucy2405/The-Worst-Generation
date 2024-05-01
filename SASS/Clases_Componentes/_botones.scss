@@ -1,10 +1,7 @@
-@use 'UTILIDADES/tipografia-tex';
-@use 'UTILIDADES/sombras';
-@use 'UTILIDADES/bordes';
 
 .btn{
     @extend .sombra_superior;
-    background-color: colores.$color-violeta;
+    background-color: rosybrown;
     @extend .borde__dotted ;
     padding: 10px;
     width: 20px;
@@ -12,16 +9,21 @@
 
 //CREANDO BTN CON AMIMACION 1
 .boton__animacion__1{
-    box-shadow: 0 0 5px  cyan,
-    0 0 25px colores.$color-terciario;
+    box-shadow: 
+    0 0 5px  cyan,
+    0 0 25px cyan;
 }
 .boton__animacion__1:hover{
-    box-shadow: 0 0 5px colores.$color-terciario,
-    0 0 25px colores.$color-terciario, 
-    0 0 25px colores.$color-terciario,
-    0 0 50px colores.$color-terciario,
-    0 0 100px colores.$color-terciario,
-    0 0 150px colores.$color-terciario,
-    0 0 200px colores.$color-terciario;
+
+    box-shadow:
+     0 0 5px cyan,
+    0 0 25px cyan, 
+    0 0 25px cyan,
+    0 0 50px cyan,
+    0 0 100px cyan,
+    0 0 150px cyan,
+    0 0 200px cyan;
+
+    
 }
 
