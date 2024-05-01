@@ -1,7 +1,7 @@
 
 ![](SASS/IMGs/thestrawhead_pirates.ico)
 
-# DOCUMENTACION - ONE PIECE THE WORST GENERATION
+#ONE PIECE THE WORST GENERATION
 
 
 // ------------ Documentación y Proyecto Final para el proyecto de pagina oficial One Piece --------------------//
