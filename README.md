@@ -6,14 +6,20 @@
 
 
 ## Tabla de contenido 
-- [Descripcion del Proyecto](#descripcion-del-proyecto)
-### Descripcion del Proyecto
-### Procesos
-### Desarrolladores
+- [Descripcion General](#descripcion-general)
+  * [Objetivo](#objetivo)
+  * [Indicaciones Generales](#indicaciones-generales)
+  
+## Descripcion General
+One Piece The Worst Generation es una página web dedicada a todos los fanáticos de One Piece, la popular serie de manga y anime creada por Eiichiro Oda. La página ofrece una variedad de contenido relacionado con el mundo de One Piece, incluyendo información sobre los personajes, la historia, los arcos de la trama, noticias y actualizaciones sobre el manga y el anime.
 
-// ------------ Documentación y Proyecto Final para el proyecto de pagina oficial One Piece --------------------//
+### Objetivo
+Crear una plataforma en línea integral y de referencia para los fanáticos de One Piece, proporcionando un espacio centralizado donde los seguidores de la serie puedan acceder a una amplia gama de contenido relacionado, incluyendo información detallada sobre la trama, personajes, lugares, arte conceptual, productos de merchandising, noticias y actualizaciones, así como un foro de discusión activo para intercambiar teorías, opiniones y experiencias con otros fans.
 
-                            //  ----------------- One Piece Wiki ----------------- // 
+### Indicaciones Generales
+
+## Procesos
+## Desarrolladores
                           
 
 PALETA DE COLORES: 
