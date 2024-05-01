@@ -1,10 +1,15 @@
+<p align="center">
+  <img src="SASS/IMGs/thestrawhead_pirates.ico" />
+</p>
 
-  
-  ![](SASS/IMGs/thestrawhead_pirates.ico)
+<h1 align="center"> DOCUMENTACION - ONE PIECE THE WORST GENERATION </h1>
 
 
-# ONE PIECE THE WORST GENERATION
-
+## Tabla de contenido 
+- [Descripcion del Proyecto](#descripcion-del-proyecto)
+### Descripcion del Proyecto
+### Procesos
+### Desarrolladores
 
 // ------------ Documentación y Proyecto Final para el proyecto de pagina oficial One Piece --------------------//
 
