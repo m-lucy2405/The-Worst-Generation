@@ -1,5 +1,6 @@
 @use '../UTILIDADES/colores';
 // Animación para botón de scroll
+
 @keyframes scrollAnimation {
   0% {
     transform: translateY(0);
@@ -27,6 +28,7 @@
 }
 
 // Animación para elementos al hacer scroll
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -41,4 +43,33 @@
 .animated {
   opacity: 0;
   animation: fadeInUp 1s ease forwards;
+}
+
+// Animación/Transicion de Elementos del carrusel
+
+
+@mixin transition($transition...) {
+  @if length($transition) == 0 {
+    $transition: $transition-base;
+  }
+
+  @if length($transition) > 1 {
+    @each $value in $transition {
+      @if $value == null or $value == none {
+        @warn "The keyword 'none' or 'null' must be used as a single argument.";
+      }
+    }
+  }
+
+  @if $enable-transitions {
+    @if nth($transition, 1) != null {
+      transition: $transition;
+    }
+
+    @if $enable-prefers-reduced-motion-media-query and nth($transition, 1) != null and nth($transition, 1) != none {
+      @media (prefers-reduced-motion: reduce) {
+        transition: none;
+      }
+    }
+  }
 }
