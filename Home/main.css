@@ -369,6 +369,8 @@ body {
     max-height: 50px; /* Altura máxima del icono en pantallas pequeñas */
   }
 }
+
+
 .btn {
   background-color: #8A2BE2;
   padding: 10px;

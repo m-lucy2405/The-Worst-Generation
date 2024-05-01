@@ -1,7 +1,12 @@
-@use 'colores';
+@use '..colores';
+
+
+$pading-border: 10px;
 // BORDE SOLIDO
 .borde__solido {
     border: solid 15px;  
+    background-color: colores.$color-morado;
+    padding: $pading-border;
     
 }
 
@@ -132,7 +137,7 @@
 }
 
 /*------------------------------------------------*/
-/*      BORDER ALINE COLOR                        */
+/*      BORDER CIRCULO                       */
 /*------------------------------------------------*/
 
 //BORDE RENDEADIADO Modelo 11
@@ -141,7 +146,7 @@
 }
 
 /*------------------------------------------------*/
-/*          BORDE DIFUMINADO                      */
+/*          BORDE REDONDEADOS                     */
 /*------------------------------------------------*/
 
 .borde__equna{
