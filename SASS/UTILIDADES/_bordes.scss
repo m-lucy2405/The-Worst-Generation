@@ -1,25 +1,41 @@
-@use 'colores';
+@use '../UTILIDADES/colores';
+
+
+
 // BORDE SOLIDO
 .borde__solido {
-    border: solid 15px;  
+    border: solid 10px;  
+    background-color:  colores.$color-hana;
+    padding: 20px;
+    margin: 20px;
+    
     
 }
 
 //BORDE DOTEED
 .borde__dotted {
-    border: dotted 15px;  
+    border: dotted 10px;
+    background-color:  colores.$color-hana;
+    padding: 20px;
+    margin: 20px;  
     
 }
 
 //BORE DASHED
 .borde__dashed {
-    border: dashed 15px; 
+    border: dashed 10px; 
+    background-color:  colores.$color-hana;
+    padding: 20px;
+    margin: 20px;
     
 }
 
 //BORDE DOUBLE
 .borde__double {
     border: double 15px;
+    background-color:  colores.$color-hana;
+    padding: 20px;
+    margin: 20px;
     
    
 }
@@ -27,37 +43,52 @@
 //BORDE GROOVE
 .borde__groove {
     border: groove 15px;
+    background-color:  colores.$color-hana;
+    padding: 20px;
+    margin: 20px;
     
 }
 
 //BORDE RIDGE
 .borde__ridge {
     border: ridge 15px;
+    background-color:  colores.$color-hana;
+    padding: 20px;
+    margin: 20px;
    
 }
 
 //BORDE INSET
 .borde__inset {
     border: inset 15px;
+    background-color:  colores.$color-hana;
+    padding: 20px;
+    margin: 20px;
    
 }
 
 //BORDE OUTSET
 .borde__outset {
     border: outset 15px;
+    background-color:  colores.$color-hana;
+    padding: 20px;
+    margin: 20px;
     
 }
 
 //BORDE rectagilo esqunas dedondeada 
 .borde__Esquinas_dedondeada {
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 5px 5px 5px 5px;
+    background-color:  colores.$color-hana;
+    padding: 20px;
+    margin: 20px;
     
 }
 
 //BORDE NONE
 .borde__none {
     border: none;
-    border-color: colores.$color-borde-reflectante;
+    border-color:  colores.$color-hana;
     
     
 }
@@ -132,7 +163,7 @@
 }
 
 /*------------------------------------------------*/
-/*      BORDER ALINE COLOR                        */
+/*      BORDER CIRCULO                       */
 /*------------------------------------------------*/
 
 //BORDE RENDEADIADO Modelo 11
@@ -141,7 +172,7 @@
 }
 
 /*------------------------------------------------*/
-/*          BORDE DIFUMINADO                      */
+/*          BORDE REDONDEADOS                     */
 /*------------------------------------------------*/
 
 .borde__equna{

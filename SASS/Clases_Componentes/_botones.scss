@@ -2,10 +2,123 @@
 @use '../UTILIDADES/sombras';
 @use '../UTILIDADES/bordes';
 
+//DECRARACION DE VARIABLES 
+$display_btn: grid;
+$gap_btn: 16px;
+$padding_btn: 30px;
+$margin_btn: 16px;
+
 .btn{
     @extend .sombra_superior;
-    background-color: colores.$color-violeta;
+    background-color: rosybrown;
     @extend .borde__dotted ;
     padding: 10px;
     width: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
 }
+
+//CREANDO BTN CON AMIMACION 1
+.boton__animacion__1{
+    box-shadow: 
+    0 0 5px colores.$color-fondo-iluminado,
+    0 0 25px colores.$color-fondo-iluminado;
+    background-color: colores.$color-fondo-iluminado;
+    @extend .borde__Esquinas_dedondeada;
+    margin: 16px;
+    padding: 20px;
+    justify-content: center;
+
+
+}
+.boton__animacion__1:hover {
+    box-shadow:
+        0 0 5px colores.$color-fondo-iluminado,
+        0 0 25px colores.$color-fondo-iluminado, 
+        0 0 25px colores.$color-fondo-iluminado,
+        0 0 50px colores.$color-fondo-iluminado,
+        0 0 100px colores.$color-fondo-iluminado,
+        0 0 150px colores.$color-fondo-iluminado,
+        0 0 200px colores.$color-fondo-iluminado;
+    
+}
+
+
+//CREANDO BTN CON AMIMACION 2
+.boton__animacion__2{
+    box-shadow: 
+    0 0 5px colores.$color-rosa,
+    0 0 25px colores.$color-rosa;
+    background-color: colores.$color-rosa;
+    @extend .borde__Esquinas_dedondeada;
+    margin: 16px;
+    padding: 20px;
+    justify-content: center;
+
+   
+}
+.boton__animacion__2:hover {
+    box-shadow:
+        0 0 5px colores.$color-rosa,
+        0 0 25px colores.$color-rosa, 
+        0 0 25px colores.$color-rosa,
+        0 0 50px colores.$color-rosa,
+        0 0 100px colores.$color-rosa,
+        0 0 150px colores.$color-rosa,
+        0 0 200px colores.$color-rosa;
+}
+
+//CREANDO BTN CON AMIMACION 3
+.boton__animacion__3{
+    box-shadow: 
+    0 0 5px colores.$color-mar,
+    0 0 25px colores.$color-mar;
+    background-color: colores.$color-mar;
+    @extend .borde__Esquinas_dedondeada;
+    margin: 16px;
+    padding: 20px;
+    justify-content: center;
+
+   
+
+}
+.boton__animacion__3:hover {
+    box-shadow:
+        0 0 5px colores.$color-mar,
+        0 0 25px colores.$color-mar, 
+        0 0 25px colores.$color-mar,
+        0 0 50px colores.$color-mar,
+        0 0 100px colores.$color-mar,
+        0 0 150px colores.$color-mar,
+        0 0 200px colores.$color-mar;
+}
+
+
+//CREANDO BTN CON AMIMACION 4
+.boton__animacion__4{
+    box-shadow: 
+    0 0 5px colores.$color-nami,
+    0 0 25px colores.$color-nami;
+    background-color: colores.$color-nami;
+    @extend .borde__Esquinas_dedondeada;
+    margin: 16px;
+    padding: 20px;
+    justify-content: center;
+
+
+
+}
+.boton__animacion__4:hover {
+    box-shadow:
+        0 0 5px colores.$color-nami,
+        0 0 25px colores.$color-nami, 
+        0 0 25px colores.$color-nami,
+        0 0 50px colores.$color-nami,
+        0 0 100px colores.$color-nami,
+        0 0 150px colores.$color-nami,
+        0 0 200px colores.$color-nami;
+}
+
+
+
+
