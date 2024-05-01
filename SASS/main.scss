@@ -4,11 +4,15 @@
 
 @use 'UTILIDADES/sombras';
 
-@use '../SASS/UTILIDADES/tipografia-tex'; 
+@use 'UTILIDADES/media-query';
 
-@use '../SASS/Clases_Componentes/alertas';
+@use 'UTILIDADES/tipografia-tex'; 
 
-@use '../SASS/Clases_Componentes/botones';
+@use 'Clases_Componentes/alertas';
+
+@use 'Clases_Componentes/botones';
+
+@use 'Clases_Componentes/carrusel';
 
 
 
