@@ -1,6 +1,12 @@
 @use '../UTILIDADES/colores';
 @use '../UTILIDADES/sombras';
 @use '../UTILIDADES/bordes';
+@use '../UTILIDADES/tipografia-tex';
+
+@import '../UTILIDADES/sombras';
+
+
+$pading-btn: 16px;
 
 //DECRARACION DE VARIABLES 
 $display_btn: grid;
@@ -119,6 +125,280 @@ $margin_btn: 16px;
         0 0 200px colores.$color-nami;
 }
 
+//CREANDO BTN BASICOSS
+.boton__basico__1{
+    @extend .borde__Esquinas_dedondeada;
+    margin: 16px;
+    padding: 20px;
+    background-color: colores.$color-gris;
+
+
+}
+
+.boton__basico__2{
+    @extend .borde__Esquinas_dedondeada;
+    margin: 16px;
+    padding: 20px;
+    background-color: colores.$color-amarillo;
+    
+}
 
 
 
+
+.boton__basico__3{
+    @extend .borde__Esquinas_dedondeada;
+    margin: 16px;
+    padding: 20px;
+    background-color: colores.$color-verde;
+
+
+}
+
+.boton__basico__4{
+    @extend .borde__Esquinas_dedondeada;
+    margin: 16px;
+    padding: 20px;
+    background-color: colores.$color-luffy;
+
+}
+
+//Botones con fondo balnco 
+.boton__blanco__1{
+    @extend .borde__Esquinas_dedondeada;
+    margin: 16px;
+    padding: 10px;
+    background-color: colores.$color-secundario;
+    color: colores.$color-verde;
+    text-transform: uppercase;
+    border-color: colores.$color-verde;
+    cursor: pointer;
+    @extend .quote;
+}
+
+//FONDO BALCOLO 2
+.boton__blanco__2{
+    @extend .borde__Esquinas_dedondeada;
+    margin: 16px;
+    padding: 10px;
+    background-color: colores.$color-secundario;
+    color: colores.$color-luffy;
+    text-transform: uppercase;
+    border-color: colores.$color-luffy;
+    cursor: pointer;
+    @extend .quote;
+}
+
+//FONDO BALCOLO 3
+.boton__blanco__3{
+    @extend .borde__Esquinas_dedondeada;
+    margin: 16px;
+    padding: 10px;
+    background-color: colores.$color-secundario;
+    color: colores.$color-nami;
+    text-transform: uppercase;
+    border-color: colores.$color-nami;
+    cursor: pointer;
+    @extend .quote;
+}
+//FONDO BALCOLO 4
+.boton__blanco__4{
+    @extend .borde__Esquinas_dedondeada;
+    margin: 16px;
+    padding: 10px;
+    background-color: colores.$color-secundario;
+    color: colores.$color-usopp;
+    text-transform: uppercase;
+    border-color: colores.$color-usopp;
+    cursor: pointer;
+    @extend .quote;
+}
+
+
+
+
+//BOTONES CON movimeientos
+.boton__Movimento__Rosa{
+    @extend .borde__redondeado__50px;
+    padding: 17px 40px; // Corregido: agregué "px" después de 40
+    background-color: colores.$color-rosa; // Utilizando la variable de color
+    box-shadow: colores.$color-negro 0 0 8px; // Utilizando la variable de color
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 0.05s ease;
+    cursor: pointer;
+    line-height: 1.5;
+    font-family: tipografia-tex.$font-ancient-text;
+
+    padding: 20px;
+
+    &:hover {
+        line-height: 3px;
+        background-color: colores.$color-rosa;
+        color: colores.$color-secundario; // Variable de color secundario
+        box-shadow: colores.$color-franky 0 7px 29px 0;
+    }
+
+    &:active {
+        line-height: 3px;
+        background-color: colores.$color-rosa;
+        color: colores.$color-secundario; //color secundario
+        box-shadow: colores.$color-franky 0 0 0 0;
+        transform: translate(18px);
+        transition: 100ms;
+    }
+}
+    //----------------------------------------------------//
+    /*BONTON ROJO */
+    //----------------------------------------------------//
+
+    .boton__Movimento__rojo{
+        @extend .borde__redondeado__50px;
+        padding: 17px 40px; 
+        background-color: colores.$color-luffy;
+        box-shadow: colores.$color-negro 0 0 8px; // Utilizando la variable de color
+        text-transform: uppercase;
+        font-size: 14px;
+        transition: all 0.05s ease;
+        cursor: pointer;
+        line-height: 1.5;
+        font-family: tipografia-tex.$font-ancient-text;
+
+        padding: 20px;
+
+    
+        &:hover{
+            line-height: 3px;
+            background-color: colores.$color-luffy; 
+            color: colores.$color-secundario; 
+            box-shadow: colores.$color-negro 0 7px 29px 0;
+        }
+    
+        &:active{
+            line-height: 3px;
+            background-color: colores.$color-luffy; 
+            color: colores.$color-secundario; 
+            box-shadow: colores.$color-negro 0 0 0 0;
+            transform: translate(18px);
+            transition: 100ms;
+        }
+    }
+
+
+
+
+    //----------------------------------------------------//
+    /*BONTON verdeee*/
+    //----------------------------------------------------//
+    .boton__Movimento__verde{
+        @extend .borde__redondeado__50px;
+        padding: 17px 40px; 
+        background-color: colores.$color-zoro;
+        box-shadow: colores.$color-negro 0 0 8px; // Utilizando la variable de color
+        text-transform: uppercase;
+        font-size: 14px;
+        transition: all 0.05s ease;
+        cursor: pointer;
+        line-height: 1.5;
+        font-family: tipografia-tex.$font-ancient-text;
+
+        padding: 20px;
+
+    
+        &:hover{
+            line-height: 3px;
+            background-color: colores.$color-zoro; 
+            color: colores.$color-secundario; 
+            box-shadow: colores.$color-negro 0 7px 29px 0;
+        }
+    
+        &:active{
+            line-height: 3px;
+            background-color: colores.$color-zoro; 
+            color: colores.$color-secundario; 
+            box-shadow: colores.$color-negro 0 0 0 0;
+            transform: translate(18px);
+            transition: 100ms;
+        }
+    }
+
+
+     //----------------------------------------------------//
+    /*BONTON NARAJA*/
+    //----------------------------------------------------//
+    .boton__Movimento__naranja{
+        @extend .borde__redondeado__50px;
+        padding: 17px 40px; 
+        background-color: colores.$color-nami;
+        box-shadow: colores.$color-negro 0 0 8px; // Utilizando la variable de color
+        text-transform: uppercase;
+        font-size: 14px;
+        transition: all 0.05s ease;
+        cursor: pointer;
+        line-height: 1.5;
+        font-family: tipografia-tex.$font-ancient-text;
+
+        padding: 20px;
+    
+        &:hover{
+            line-height: 3px;
+            background-color: colores.$color-nami; 
+            color: colores.$color-secundario; 
+            box-shadow: colores.$color-negro 0 7px 29px 0;
+        }
+    
+        &:active{
+            line-height: 3px;
+            background-color: colores.$color-nami; 
+            color: colores.$color-secundario; 
+            box-shadow: colores.$color-negro 0 0 0 0;
+            transform: translate(18px);
+            transition: 100ms;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+@media (max-width: 768px) {
+    .boton__animacion__1
+    .boton__animacion__2,
+    .boton__animacion__3,
+    .boton__animacion__4,
+    .boton__basico__1,
+    .boton__basico__2,
+    .boton__basico__3,
+    .boton__basico__4,
+    .boton__blanco__1,
+    .boton__blanco__2,
+    .boton__blanco__3,
+    .boton__blanco__4,
+    .boton__Movimento__Rosa,
+    .boton__Movimento__rojo,
+    .boton__Movimento__verde,
+    .boton__Movimento__naranja{
+      flex-direction: column; // Cambiar la dirección de los elementos en pantallas pequeñas */
+      text-align: center; // Centrar el texto en pantallas pequeñas 
+    }
+}
