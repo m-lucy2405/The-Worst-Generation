@@ -140,41 +140,66 @@
 }*/
 /*----------------------------------------------------------------*/
 .borde__solido {
-  border: solid 15px;
+  border: solid 10px;
   background-color: #6F42C1;
-  padding: 10px;
+  padding: 20px;
+  margin: 20px;
 }
 
 .borde__dotted, .btn {
-  border: dotted 15px;
+  border: dotted 10px;
+  background-color: #6F42C1;
+  padding: 20px;
+  margin: 20px;
 }
 
 .borde__dashed {
-  border: dashed 15px;
+  border: dashed 10px;
+  background-color: #6F42C1;
+  padding: 20px;
+  margin: 20px;
 }
 
 .borde__double {
   border: double 15px;
+  background-color: #6F42C1;
+  padding: 20px;
+  margin: 20px;
 }
 
 .borde__groove {
   border: groove 15px;
+  background-color: #6F42C1;
+  padding: 20px;
+  margin: 20px;
 }
 
 .borde__ridge {
   border: ridge 15px;
+  background-color: #6F42C1;
+  padding: 20px;
+  margin: 20px;
 }
 
 .borde__inset {
   border: inset 15px;
+  background-color: #6F42C1;
+  padding: 20px;
+  margin: 20px;
 }
 
 .borde__outset {
   border: outset 15px;
+  background-color: #6F42C1;
+  padding: 20px;
+  margin: 20px;
 }
 
 .borde__Esquinas_dedondeada, .boton__animacion__1, .boton__animacion__2, .boton__animacion__3, .boton__animacion__4 {
   border-radius: 5px 5px 5px 5px;
+  background-color: #6F42C1;
+  padding: 20px;
+  margin: 20px;
 }
 
 .borde__none {
