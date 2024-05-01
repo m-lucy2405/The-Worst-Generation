@@ -1,3 +1,6 @@
+
+SASS/IMGs/thestrawhead_pirates.ico
+
 # DOCUMENTACION - ONE PIECE THE WORST GENERATION
 
 
