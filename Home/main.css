@@ -1,9 +1,11 @@
 @charset "UTF-8";
 .borde__solido {
   border: solid 15px;
+  background-color: #6F42C1;
+  padding: 10px;
 }
 
-.borde__dotted, .btn, .alert-success {
+.borde__dotted, .btn {
   border: dotted 15px;
 }
 
@@ -31,8 +33,8 @@
   border: outset 15px;
 }
 
-.borde__Esquinas_dedondeada {
-  border-radius: 20px 20px 20px 20px;
+.borde__Esquinas_dedondeada, .boton__animacion__1 {
+  border-radius: 5px 5px 5px 5px;
 }
 
 .borde__none {
@@ -90,14 +92,14 @@
 }
 
 /*------------------------------------------------*/
-/*      BORDER ALINE COLOR                        */
+/*      BORDER CIRCULO                       */
 /*------------------------------------------------*/
 .borde__circle {
   border-radius: 50px;
 }
 
 /*------------------------------------------------*/
-/*          BORDE DIFUMINADO                      */
+/*          BORDE REDONDEADOS                     */
 /*------------------------------------------------*/
 .borde__equna {
   border-radius: 60px/20px;
@@ -127,15 +129,15 @@
 }
 
 .sombra__superior__derecha {
-  box-shadow: 0px -25px 20px -20px #6C757D, 25px 0 20px -20px #8A2BE2;
+  box-shadow: 0px -25px 20px -20px #4a4f53, 25px 0 20px -20px #8A2BE2;
 }
 
 .sombra__superior__inferior {
-  box-shadow: 0px -25px 20px -20px #6C757D, 0px 25px 20px -20px #8A2BE2;
+  box-shadow: 0px -25px 20px -20px #4a4f53, 0px 25px 20px -20px #8A2BE2;
 }
 
 .sombra__superior__izquierda {
-  box-shadow: 0px -25px 20px -20px #6C757D, -25px 0 20px -20px #8A2BE2;
+  box-shadow: 0px -25px 20px -20px #4a4f53, -25px 0 20px -20px #8A2BE2;
 }
 
 .sombra__inferior__derecha {
@@ -143,88 +145,88 @@
 }
 
 .todos__lados {
-  box-shadow: 0px -25px 20px -20px #6C757D, 25px 0 20px -20px #6C757D, 0px 25px 20px -20px #6C757D, -25px 0 20px -20px #6C757D;
+  box-shadow: 0px -25px 20px -20px #4a4f53, 25px 0 20px -20px #4a4f53, 0px 25px 20px -20px #4a4f53, -25px 0 20px -20px #4a4f53;
 }
 
 /*----------------------------------------------------------------*/
 .Diseño__materiales__1 {
-  box-shadow: 0 1px 3px #6C757D, #6C757D;
+  box-shadow: 0 1px 3px #4a4f53, #4a4f53;
 }
 
 .Diseño__materiales__2 {
-  box-shadow: 0 3px 6px #6C757D, 0 3px 6px #6C757D;
+  box-shadow: 0 3px 6px #4a4f53, 0 3px 6px #4a4f53;
 }
 
 .Diseño__materiales__3 {
-  box-shadow: 0 10px 20px #6C757D, 0 6px 6px #6C757D;
+  box-shadow: 0 10px 20px #4a4f53, 0 6px 6px #4a4f53;
 }
 
 .Diseño__materiales__4 {
-  box-shadow: 0 14px 28px #6C757D, 0 10px 10px #6C757D;
+  box-shadow: 0 14px 28px #4a4f53, 0 10px 10px #4a4f53;
 }
 
 .Diseño__materiales__5 {
-  box-shadow: 0 19px 38px #6C757D, 0 15px 12px #6C757D;
+  box-shadow: 0 19px 38px #4a4f53, 0 15px 12px #4a4f53;
 }
 
 .Diseño__materiales__6 {
-  box-shadow: 0 29px 52px #6C757D, 0 25px 16px #6C757D;
+  box-shadow: 0 29px 52px #4a4f53, 0 25px 16px #4a4f53;
 }
 
 .Diseño__materiales__7 {
-  box-shadow: 0 45px 65px #6C757D, 0 35px 22px #6C757D;
+  box-shadow: 0 45px 65px #4a4f53, 0 35px 22px #4a4f53;
 }
 
 .Diseño__materiales__8 {
-  box-shadow: 0 60px 80px #6C757D, 0 45px 26px #6C757D;
+  box-shadow: 0 60px 80px #4a4f53, 0 45px 26px #4a4f53;
 }
 
 .Diseño__materiales__9 {
-  box-shadow: 0 1px 1px #6C757D, 0 2px 2px #6C757D;
+  box-shadow: 0 1px 1px #4a4f53, 0 2px 2px #4a4f53;
 }
 
 .Diseño__materiales__10 {
-  box-shadow: 0 1px 1px #6C757D, 0 2px 2px #6C757D, 0 4px 4px #6C757D, 0 8px 8px #6C757D, 0 16px 16px #6C757D;
+  box-shadow: 0 1px 1px #4a4f53, 0 2px 2px #4a4f53, 0 4px 4px #4a4f53, 0 8px 8px #4a4f53, 0 16px 16px #4a4f53;
 }
 
 .Diseño__materiales__11 {
-  box-shadow: 0 1px 1px #6C757D, 0 2px 2px #6C757D, 0 4px 4px #6C757D, 0 8px 8px #6C757D;
+  box-shadow: 0 1px 1px #4a4f53, 0 2px 2px #4a4f53, 0 4px 4px #4a4f53, 0 8px 8px #4a4f53;
 }
 
 .Diseño__materiales__12 {
-  box-shadow: 0 1px 1px #6C757D, 0 2px 2px #6C757D, 0 4px 4px #6C757D, 0 8px 8px #6C757D, 0 16px 16px #6C757D, 0 32px 32px #6C757D;
+  box-shadow: 0 1px 1px #4a4f53, 0 2px 2px #4a4f53, 0 4px 4px #4a4f53, 0 8px 8px #4a4f53, 0 16px 16px #4a4f53, 0 32px 32px #4a4f53;
 }
 
 .Diseño__materiales__13 {
-  box-shadow: 0 1px 1px #6C757D, 0 2px 2px #6C757D, 0 4px 4px #6C757D, 0 8px 8px #6C757D;
+  box-shadow: 0 1px 1px #4a4f53, 0 2px 2px #4a4f53, 0 4px 4px #4a4f53, 0 8px 8px #4a4f53;
 }
 
 .Diseño__materiales__14 {
-  box-shadow: 0px 9px 30px #6C757D;
+  box-shadow: 0px 9px 30px #4a4f53;
 }
 
 .Diseño__materiales__15 {
-  box-shadow: 0 1px 2px #6C757D, 0 2px 4px #6C757D, 0 4px 8px #6C757D, 0 8px 16px #6C757D, 0 16px 32px #6C757D, 0 32px 64px #6C757D;
+  box-shadow: 0 1px 2px #4a4f53, 0 2px 4px #4a4f53, 0 4px 8px #4a4f53, 0 8px 16px #4a4f53, 0 16px 32px #4a4f53, 0 32px 64px #4a4f53;
 }
 
 .Diseño__materiales__16 {
-  box-shadow: 0 20px 10px -20px #6C757D inset;
+  box-shadow: 0 20px 10px -20px #4a4f53 inset;
 }
 
 .Diseño__materiales__17 {
-  box-shadow: -20px 0 10px -20px #6C757D inset;
+  box-shadow: -20px 0 10px -20px #4a4f53 inset;
 }
 
 .Diseño__materiales__18 {
-  box-shadow: 0 -20px 10px -20px #6C757D inset;
+  box-shadow: 0 -20px 10px -20px #4a4f53 inset;
 }
 
 .Diseño__materiales__19 {
-  box-shadow: 20px 0 10px -20px #6C757D inset;
+  box-shadow: 20px 0 10px -20px #4a4f53 inset;
 }
 
 .Diseño__materiales__20 {
-  box-shadow: 0 0 10px 0 #6C757D inset;
+  box-shadow: 0 0 10px 0 #4a4f53 inset;
 }
 
 /*.Diseño__materiales__21{
@@ -312,12 +314,12 @@ body {
 }
 
 .alert-success {
-  background: linear-gradient(45deg, #28A745, #e7e2b4);
+  background: #0e791a;
   font-family: "Devil Fruit", fantasy;
 }
 
 .alert-info {
-  background: linear-gradient(45deg, #457B9D, #451561);
+  background: #1628c9;
   color: white;
 }
 
@@ -369,12 +371,20 @@ body {
     max-height: 50px; /* Altura máxima del icono en pantallas pequeñas */
   }
 }
-
-
 .btn {
-  background-color: #8A2BE2;
+  background-color: rosybrown;
   padding: 10px;
   width: 20px;
+}
+
+.boton__animacion__1 {
+  box-shadow: 0 0 5px #E83E8C, 0 0 25px #E83E8C;
+  background-color: #E83E8C;
+  padding: 30px;
+}
+
+.boton__animacion__1:hover {
+  box-shadow: 0 0 5px #E83E8C, 0 0 25px #E83E8C, 0 0 25px #E83E8C, 0 0 50px #E83E8C, 0 0 100px #E83E8C, 0 0 150px #E83E8C, 0 0 200px #E83E8C;
 }
 
 /*# sourceMappingURL=main.css.map */

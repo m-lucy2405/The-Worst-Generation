@@ -1,11 +1,10 @@
-@use '..UTILIDADES/colores';
-@use '..UTILIDADES/bordes';
-@use '..UTILIDADES/sombras';
-@use '../SASS/UTILIDADES/tipografia-tex'; 
+@use 'UTILIDADES/Colores';
+@use 'UTILIDADES/bordes';
+@use 'UTILIDADES/sombras';
+@use 'UTILIDADES/tipografia-tex';
 
-@use '../SASS/Clases_Componentes/alertas';
-
-
+@use 'Clases_Componentes/alertas';
+@use 'Clases_Componentes/botones';
 
 
 
