@@ -1,4 +1,117 @@
 @charset "UTF-8";
+.borde__solido {
+  border: solid 15px;
+  background-color: #6F42C1;
+  padding: 10px;
+}
+
+.borde__dotted, .btn {
+  border: dotted 15px;
+}
+
+.borde__dashed {
+  border: dashed 15px;
+}
+
+.borde__double {
+  border: double 15px;
+}
+
+.borde__groove {
+  border: groove 15px;
+}
+
+.borde__ridge {
+  border: ridge 15px;
+}
+
+.borde__inset {
+  border: inset 15px;
+}
+
+.borde__outset {
+  border: outset 15px;
+}
+
+.borde__Esquinas_dedondeada, .boton__animacion__1, .boton__animacion__2, .boton__animacion__3, .boton__animacion__4 {
+  border-radius: 5px 5px 5px 5px;
+}
+
+.borde__none {
+  border: none;
+  border-color: rgb(52, 131, 29);
+}
+
+/*------------------------------------------------*/
+/*                 BORDES REDONDEADOR             */
+/*------------------------------------------------*/
+.borde__redondeado__1 {
+  border-radius: 25% 10%;
+}
+
+.borde__redondeado__2 {
+  border-radius: 25% 10%;
+}
+
+.borde__redondeado__3 {
+  border-radius: 10% 30% 50% 70%;
+}
+
+.borde__redondeado__4 {
+  border-radius: 10%/50%;
+}
+
+.borde__redondeado__5 {
+  border-radius: 10px 100px/120px;
+}
+
+.borde__redondeado__6 {
+  border-radius: 50% 20%/10% 40%;
+}
+
+/*------------------------------------------------*/
+/*          BORDES CON ESQUINA REDONDEADAS         */
+/*------------------------------------------------*/
+.borde__redondeado__7 {
+  border-end-start-radius: 80px 80px;
+}
+
+.borde__redondeado__8 {
+  border-end-start-radius: 250px 100px;
+  direction: rtl;
+}
+
+.borde__redondeado__9 {
+  border-end-start-radius: 50%;
+  writing-mode: vertical-lr;
+}
+
+.borde__redondeado__10 {
+  border-end-start-radius: 50%;
+  writing-mode: vertical-rl;
+}
+
+/*------------------------------------------------*/
+/*      BORDER CIRCULO                       */
+/*------------------------------------------------*/
+.borde__circle {
+  border-radius: 50px;
+}
+
+/*------------------------------------------------*/
+/*          BORDE REDONDEADOS                     */
+/*------------------------------------------------*/
+.borde__equna {
+  border-radius: 60px/20px;
+}
+
+.borde__redondeado__15 {
+  border-radius: 13em/3em;
+}
+
+/*------------------------------------------------*/
+/*      ESTILO DE HTML                            */
+/*------------------------------------------------*/
 .sombra_superior, .btn {
   box-shadow: 0px -25px 20px -20px #8A2BE2;
 }
@@ -139,119 +252,125 @@
    8px 8px 0 0 rgba(218,102,123,1);  
 }*/
 /*----------------------------------------------------------------*/
-.borde__solido {
-  border: solid 15px;
-  background-color: #6F42C1;
-  padding: 10px;
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1D3557;
 }
 
-.borde__dotted, .btn {
-  border: dotted 15px;
+.title {
+  font-family: "Blackbeard", cursive;
+  font-size: 2.5em;
+  color: #9e0631;
 }
 
-.borde__dashed {
-  border: dashed 15px;
+.subtitle {
+  font-family: "Marine", sans-serif;
+  font-size: 1.8em;
+  color: #A8DADC;
 }
 
-.borde__double {
-  border: double 15px;
+.paragraph {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
 }
 
-.borde__groove {
-  border: groove 15px;
+.quote {
+  font-family: "Devil Fruit", fantasy;
+  font-size: 1.2em;
+  color: #457B9D;
 }
 
-.borde__ridge {
-  border: ridge 15px;
+.small-caps {
+  font-variant: small-caps;
 }
 
-.borde__inset {
-  border: inset 15px;
+.skull-heading {
+  font-family: "Skull and Cross", sans-serif;
+  font-size: 3em;
+  color: #A8DADC;
 }
 
-.borde__outset {
-  border: outset 15px;
+.ancient-text {
+  font-family: "Ancient Text", serif;
+  font-size: 1.2em;
+  color: #F1FAEE;
 }
 
-.borde__Esquinas_dedondeada, .boton__animacion__1, .boton__animacion__2, .boton__animacion__3, .boton__animacion__4 {
-  border-radius: 5px 5px 5px 5px;
+.treasure-map {
+  font-family: "Treasure Map", cursive;
+  font-size: 1.5em;
+  color: #FFFF00;
 }
 
-.borde__none {
-  border: none;
-  border-color: rgb(52, 131, 29);
+/* Variables de colores para alertas */
+.alert {
+  padding: 10px 30px;
+  margin: 25px auto; /* Márgenes automáticos para centrar */
+  max-width: 600px; /* Ancho máximo de la alerta */
+  display: flex;
+  align-items: center;
 }
 
-/*------------------------------------------------*/
-/*                 BORDES REDONDEADOR             */
-/*------------------------------------------------*/
-.borde__redondeado__1 {
-  border-radius: 25% 10%;
+.alert-success {
+  background: #0e791a;
+  font-family: "Devil Fruit", fantasy;
 }
 
-.borde__redondeado__2 {
-  border-radius: 25% 10%;
+.alert-info {
+  background: #1628c9;
+  color: white;
 }
 
-.borde__redondeado__3 {
-  border-radius: 10% 30% 50% 70%;
+.alert-warning {
+  background-color: #FFFF00;
+  color: #212529;
 }
 
-.borde__redondeado__4 {
-  border-radius: 10%/50%;
+.alert-danger {
+  background-color: #d9160f;
+  color: white;
 }
 
-.borde__redondeado__5 {
-  border-radius: 10px 100px/120px;
+.alert-icon {
+  margin-left: 10px;
+  width: 100px; /* Tamaño del icono */
+  height: 100px; /* Tamaño del icono */
+  max-width: 20px; /* Ancho máximo del icono */
+  max-height: 20px; /* Altura máxima del icono */
 }
 
-.borde__redondeado__6 {
-  border-radius: 50% 20%/10% 40%;
+.alert-success .alert-icon {
+  background-image: url("../IMGs/exito.ico");
 }
 
-/*------------------------------------------------*/
-/*          BORDES CON ESQUINA REDONDEADAS         */
-/*------------------------------------------------*/
-.borde__redondeado__7 {
-  border-end-start-radius: 80px 80px;
+.alert-info .alert-icon {
+  background-image: url("info.png");
 }
 
-.borde__redondeado__8 {
-  border-end-start-radius: 250px 100px;
-  direction: rtl;
+.alert-warning .alert-icon {
+  background-image: url("warning.png");
 }
 
-.borde__redondeado__9 {
-  border-end-start-radius: 50%;
-  writing-mode: vertical-lr;
+.alert-danger .alert-icon {
+  background-image: url("error.png");
 }
 
-.borde__redondeado__10 {
-  border-end-start-radius: 50%;
-  writing-mode: vertical-rl;
+@media (max-width: 768px) {
+  .alert {
+    flex-direction: column; /* Cambiar la dirección de los elementos en pantallas pequeñas */
+    text-align: center; /* Centrar el texto en pantallas pequeñas */
+  }
+  .alert-icon {
+    margin-right: 0; /* Eliminar el margen derecho en pantallas pequeñas */
+    margin-bottom: 10px; /* Añadir espacio entre el icono y el texto en pantallas pequeñas */
+    width: 50px; /* Ajustar el tamaño del icono en pantallas pequeñas */
+    height: 50px; /* Ajustar el tamaño del icono en pantallas pequeñas */
+    max-width: 50px; /* Ancho máximo del icono en pantallas pequeñas */
+    max-height: 50px; /* Altura máxima del icono en pantallas pequeñas */
+  }
 }
-
-/*------------------------------------------------*/
-/*      BORDER CIRCULO                       */
-/*------------------------------------------------*/
-.borde__circle {
-  border-radius: 50px;
-}
-
-/*------------------------------------------------*/
-/*          BORDE REDONDEADOS                     */
-/*------------------------------------------------*/
-.borde__equna {
-  border-radius: 60px/20px;
-}
-
-.borde__redondeado__15 {
-  border-radius: 13em/3em;
-}
-
-/*------------------------------------------------*/
-/*      ESTILO DE HTML                            */
-/*------------------------------------------------*/
 .btn {
   background-color: rosybrown;
   padding: 10px;
@@ -305,6 +424,4 @@
 
 .boton__animacion__4:hover {
   box-shadow: 0 0 5px #f88809, 0 0 25px #f88809, 0 0 25px #f88809, 0 0 50px #f88809, 0 0 100px #f88809, 0 0 150px #f88809, 0 0 200px #f88809;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
