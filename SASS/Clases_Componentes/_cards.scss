@@ -1,0 +1,63 @@
+@use '../UTILIDADES/colores';
+@use '../UTILIDADES/tipografia-tex';
+
+main.cards {
+    display: flex;
+    padding: 40px;
+}
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    max-height: 330px;
+    max-width: 250px;
+    margin-left: 32px;
+}
+main.cards section.card.Luffy{
+    background: linear-gradient(to bottom, colores.$color-luffy 50%, colores.$color-brook 50% ) ; 
+    border: 1px solid colores.$color-hebihebino;
+    font-family: tipografia-tex.$font-devil-fruit;
+    color: colores.$color-luffy;
+}
+main.cards section.card.Zoro{
+    background: linear-gradient(to bottom, colores.$color-zoro 50%, colores.$color-brook 50% ) ; 
+    border: 1px solid colores.$color-verde;
+    font-family: tipografia-tex.$font-devil-fruit;
+    color: colores.$color-zoro;
+}
+main.cards section.card.Usopp{
+    background: linear-gradient(to bottom, colores.$color-usopp 50%, colores.$color-brook 50% ) ; 
+    border: 1px solid colores.$color-amarillo;
+    font-family: tipografia-tex.$font-devil-fruit;
+    color: colores.$color-amarillo;
+}
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .foto-perfil {
+    margin-top: 40px;
+    width: 50%;
+    object-fit: scale-down;
+}
+main.cards section.card p {
+    font-size: 100%;
+    margin: 16px 0;
+}
+main.cards section.card img {
+    margin-bottom: 10px;
+    width: 120px;
+    border-radius: 100%;
+}
+main.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+    font-family: tipografia-tex.$font-skull;
+    color: colores.$color-negro;
+}
+
