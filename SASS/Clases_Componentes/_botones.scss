@@ -29,3 +29,24 @@
         0 0 150px colores.$color-rosa,
         0 0 200px colores.$color-rosa;
 }
+
+//CREANDO BTN CON AMIMACION 1
+.boton__animacion__2{
+    box-shadow: 
+    0 0 5px colores.$color-rosa,
+    0 0 25px colores.$color-rosa;
+    background-color: colores.$color-rosa;
+    @extend .borde__Esquinas_dedondeada;
+    padding: 30px;
+    
+}
+.boton__animacion__2:hover {
+    box-shadow:
+        0 0 5px colores.$color-rosa,
+        0 0 25px colores.$color-rosa, 
+        0 0 25px colores.$color-rosa,
+        0 0 50px colores.$color-rosa,
+        0 0 100px colores.$color-rosa,
+        0 0 150px colores.$color-rosa,
+        0 0 200px colores.$color-rosa;
+}
