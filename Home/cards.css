@@ -236,30 +236,57 @@ main.cards section.card {
   text-align: center;
   padding: 1rem 1rem;
   border-radius: 8px;
-  max-height: 330px;
+  max-height: 350px;
   max-width: 250px;
   margin-left: 32px;
 }
 
 main.cards section.card.Luffy {
   background: linear-gradient(to bottom, #d9160f 50%, #ffffff 50%);
-  border: 1px solid #c7374f;
-  font-family: "Devil Fruit", fantasy;
+  border: 1px outset #c7374f;
   color: #d9160f;
 }
 
 main.cards section.card.Zoro {
   background: linear-gradient(to bottom, #0e791a 50%, #ffffff 50%);
-  border: 1px solid #28A745;
-  font-family: "Devil Fruit", fantasy;
+  border: 1px outset #28A745;
   color: #0e791a;
 }
 
 main.cards section.card.Usopp {
   background: linear-gradient(to bottom, #FFFF00 50%, #ffffff 50%);
-  border: 1px solid #FFC107;
-  font-family: "Devil Fruit", fantasy;
+  border: 1px outset #FFC107;
   color: #FFC107;
+}
+
+main.cards section.card.Sanji {
+  background: linear-gradient(to bottom, #1628c9 50%, #ffffff 50%);
+  border: 1px outset #1D3557;
+  color: #1D3557;
+}
+
+main.cards section.card.Nami {
+  background: linear-gradient(to bottom, #f88809 50%, #ffffff 50%);
+  border: 1px outset #FD7E14;
+  color: #FD7E14;
+}
+
+main.cards section.card.Chopper {
+  background: linear-gradient(to bottom, #eb28eb 50%, #ffffff 50%);
+  border: 1px outset #E83E8C;
+  color: #eb28eb;
+}
+
+main.cards section.card.Robin {
+  background: linear-gradient(to bottom, #451561 50%, #ffffff 50%);
+  border: 1px outset #8A2BE2;
+  color: #451561;
+}
+
+main.cards section.card.Franky {
+  background: linear-gradient(to bottom, #46dffa 50%, #ffffff 50%);
+  border: 1px outset #2a5fcf;
+  color: #2a5fcf;
 }
 
 main.cards section.card:first-child {
@@ -275,6 +302,7 @@ main.cards section.card .foto-perfil {
 main.cards section.card p {
   font-size: 100%;
   margin: 16px 0;
+  font-family: "Devil Fruit", fantasy;
 }
 
 main.cards section.card img {

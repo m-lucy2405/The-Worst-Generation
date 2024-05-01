@@ -12,27 +12,49 @@ main.cards section.card {
     text-align: center;
     padding: 1rem 1rem;
     border-radius: 8px;
-    max-height: 330px;
+    max-height: 350px;
     max-width: 250px;
     margin-left: 32px;
 }
 main.cards section.card.Luffy{
     background: linear-gradient(to bottom, colores.$color-luffy 50%, colores.$color-brook 50% ) ; 
-    border: 1px solid colores.$color-hebihebino;
-    font-family: tipografia-tex.$font-devil-fruit;
+    border: 1px outset colores.$color-hebihebino;
     color: colores.$color-luffy;
 }
 main.cards section.card.Zoro{
     background: linear-gradient(to bottom, colores.$color-zoro 50%, colores.$color-brook 50% ) ; 
-    border: 1px solid colores.$color-verde;
-    font-family: tipografia-tex.$font-devil-fruit;
+    border: 1px outset colores.$color-verde;
     color: colores.$color-zoro;
 }
 main.cards section.card.Usopp{
     background: linear-gradient(to bottom, colores.$color-usopp 50%, colores.$color-brook 50% ) ; 
-    border: 1px solid colores.$color-amarillo;
-    font-family: tipografia-tex.$font-devil-fruit;
+    border: 1px outset colores.$color-amarillo;
     color: colores.$color-amarillo;
+}
+main.cards section.card.Sanji{
+    background: linear-gradient(to bottom, colores.$color-sanji 50%, colores.$color-brook 50% ) ; 
+    border: 1px outset colores.$color-texto;
+    color: colores.$color-texto;
+}
+main.cards section.card.Nami{
+    background: linear-gradient(to bottom, colores.$color-nami 50%, colores.$color-brook 50% ) ; 
+    border: 1px outset colores.$color-naranja;
+    color: colores.$color-naranja;
+}
+main.cards section.card.Chopper{
+    background: linear-gradient(to bottom, colores.$color-chopper 50%, colores.$color-brook 50% ) ; 
+    border: 1px outset colores.$color-rosa;
+    color: colores.$color-chopper;
+}
+main.cards section.card.Robin{
+    background: linear-gradient(to bottom, colores.$color-robin 50%, colores.$color-brook 50% ) ; 
+    border: 1px outset colores.$color-violeta;
+    color: colores.$color-robin;
+}
+main.cards section.card.Franky{
+    background: linear-gradient(to bottom, colores.$color-franky 50%, colores.$color-brook 50% ) ; 
+    border: 1px outset colores.$color-mar;
+    color: colores.$color-mar;
 }
 main.cards section.card:first-child {
     margin-left: 0;
@@ -46,6 +68,7 @@ main.cards section.card .foto-perfil {
 main.cards section.card p {
     font-size: 100%;
     margin: 16px 0;
+    font-family: tipografia-tex.$font-devil-fruit;
 }
 main.cards section.card img {
     margin-bottom: 10px;
@@ -73,4 +96,5 @@ main.cards section.card span {
         margin-bottom: 0;
     }
 }
+
 
