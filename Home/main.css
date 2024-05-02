@@ -6,7 +6,7 @@
   margin: 20px;
 }
 
-.borde__dotted, .btn {
+.borde__dotted, .btn, .scroll-btn {
   border: dotted 10px;
   background-color: #ecaacd;
   padding: 20px;
@@ -139,10 +139,38 @@
   border-radius: 13em/3em;
 }
 
-/*------------------------------------------------*/
-/*      ESTILO DE HTML                            */
-/*------------------------------------------------*/
-.sombra_superior, .btn {
+/* Estilos para el borde brillante */
+.borde-brillante, .alert-success, .alert-info {
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent;
+  position: relative;
+}
+
+/* Pseudo-elemento para crear el efecto brillante */
+.borde-brillante::after, .alert-success::after, .alert-info::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(to right, #ffffff, #ff00ff, #00ffff, #ffffff);
+  z-index: -1;
+  border-radius: inherit;
+  animation: brillo 2s infinite linear alternate;
+}
+
+/* Animación para el efecto de brillo */
+@keyframes brillo {
+  0% {
+    background-position: -500% 0%;
+  }
+  100% {
+    background-position: 500% 0%;
+  }
+}
+.sombra_superior, .btn, .scroll-btn {
   box-shadow: 0px -25px 20px -20px #00eeff;
   margin: 20px;
   background-color: #b3b2b4;
@@ -208,7 +236,7 @@ body {
   color: #457B9D;
 }
 
-.small-caps {
+.small-caps, .navbar-top {
   font-variant: small-caps;
 }
 
@@ -237,26 +265,33 @@ body {
   max-width: 600px; /* Ancho máximo de la alerta */
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 .alert-success {
   background: #0e791a;
   font-family: "Devil Fruit", fantasy;
+  text-align: center;
 }
 
 .alert-info {
   background: #1628c9;
-  color: white;
+  color: #4a4f53;
+  text-decoration: underline;
+  background: transparent;
+  text-align: center;
 }
 
 .alert-warning {
   background-color: #FFFF00;
   color: #212529;
+  text-align: center;
 }
 
 .alert-danger {
   background-color: #d9160f;
   color: white;
+  text-align: center;
 }
 
 .alert-icon {
@@ -297,7 +332,7 @@ body {
     max-height: 50px; /* Altura máxima del icono en pantallas pequeñas */
   }
 }
-.sombra_superior, .btn {
+.sombra_superior, .btn, .scroll-btn {
   box-shadow: 0px -25px 20px -20px #00eeff;
   margin: 20px;
   background-color: #b3b2b4;
@@ -333,7 +368,7 @@ body {
   background-color: #b3b2b4;
 }
 
-.btn {
+.btn, .scroll-btn {
   background-color: rosybrown;
   padding: 10px;
   width: 20px;
@@ -782,6 +817,119 @@ body {
   }
   .carousel-caption h1 {
     font-size: 30px;
+  }
+}
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.scroll-btn {
+  background-color: #9e0631;
+  color: #F1FAEE;
+}
+.scroll-btn:hover {
+  background-color: #6d0422;
+}
+.scroll-btn.animate {
+  animation: scrollAnimation 1s infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animated {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Estilos para la barra de navegación superior */
+.navbar-top {
+  background-color: #0e791a; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  padding: 10px; /* Espaciado interno */
+  width: 100%;
+  text-align: left; /* Centrar el texto */
+}
+
+.navbar-top .nav-item {
+  margin-right: 15px; /* Espaciado entre elementos */
+  font-weight: bold; /* Negrita */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Estilos para la barra de navegación lateral */
+.navbar-side {
+  background-color: #555; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  width: 40%; /* Ancho de la barra lateral */
+  margin: 0 auto; /* Centrar horizontalmente */
+  text-align: center;
+}
+
+.navbar-side .nav-item {
+  padding: 10px; /* Espaciado interno */
+}
+
+/* Estilos compartidos para los elementos de navegación */
+.nav-item {
+  display: inline-block; /* Mostrar en línea */
+  text-decoration: none; /* Quitar subrayado del texto */
+  color: inherit; /* Heredar color del texto */
+}
+
+/* Media query para ajustes responsivos */
+@media (max-width: 768px) {
+  .navbar-top {
+    display: block;
+    margin: 10px 0;
+  }
+  .navbar-top {
+    width: 50%; /* Ancho completo en dispositivos pequeños */
+  }
+  .navbar-side {
+    width: 100%; /* Ancho completo en dispositivos pequeños */
+  }
+  .navbar-side .nav-item {
+    display: block; /* Mostrar elementos uno debajo del otro en dispositivos pequeños */
+    margin: 10px 0; /* Espaciado entre elementos en dispositivos pequeños */
   }
 }
 

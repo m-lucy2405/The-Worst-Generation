@@ -1,4 +1,5 @@
 @use '../UTILIDADES/colores';
+@use '../Clases_Componentes/botones';
 // Animación para botón de scroll
 
 @keyframes scrollAnimation {
@@ -16,7 +17,7 @@
 .scroll-btn {
   @extend .btn;
   background-color: colores.$color-jinbe;
-  color: $color-secundario;
+  color: colores.$color-secundario;
   
   &:hover {
     background-color: darken(colores.$color-jinbe, 10%);

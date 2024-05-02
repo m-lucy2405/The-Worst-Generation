@@ -11,29 +11,36 @@
   max-width: 600px; /* Ancho máximo de la alerta */
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 // Estilos específicos para cada tipo de alerta
 .alert-success {
   background:  colores.$color-zoro;
  font-family: tipografia-tex.$font-devil-fruit;
- 
-
+ text-align: center;
+@extend .borde-brillante;
 }
 
 .alert-info {
   background:  colores.$color-sanji;
-  color: white;
+  color: colores.$color-sombra;
+  text-decoration: underline; 
+  background:  transparent;
+  @extend .borde-brillante;
+  text-align: center;
 }
 
 .alert-warning {
   background-color: colores.$color-usopp;
   color: #212529; // Color de texto oscuro para alertas amarillas
+  text-align: center;
 }
 
 .alert-danger {
   background-color: colores.$color-luffy;
   color: white;
+  text-align: center;
 }
 
 // Estilos para iconos dentro de las alertas

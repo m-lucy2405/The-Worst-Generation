@@ -194,7 +194,35 @@
     
 }
 
-/*------------------------------------------------*/
-/*      ESTILO DE HTML                            */
-/*------------------------------------------------*/
-
+/* Estilos para el borde brillante */
+.borde-brillante {
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    position: relative;
+  }
+  
+  /* Pseudo-elemento para crear el efecto brillante */
+  .borde-brillante::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(to right, #ffffff, #ff00ff, #00ffff, #ffffff);
+    z-index: -1;
+    border-radius: inherit;
+    animation: brillo 2s infinite linear alternate;
+  }
+  
+  /* Animación para el efecto de brillo */
+  @keyframes brillo {
+    0% {
+      background-position: -500% 0%;
+    }
+    100% {
+      background-position: 500% 0%;
+    }
+  }
+  
