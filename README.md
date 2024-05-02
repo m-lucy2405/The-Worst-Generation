@@ -17,7 +17,10 @@ One Piece The Worst Generation es una página web dedicada a todos los fanático
 Crear una plataforma en línea integral y de referencia para los fanáticos de One Piece, proporcionando un espacio centralizado donde los seguidores de la serie puedan acceder a una amplia gama de contenido relacionado, incluyendo información detallada sobre la trama, personajes, lugares, arte conceptual, productos de merchandising, noticias y actualizaciones, así como un foro de discusión activo para intercambiar teorías, opiniones y experiencias con otros fans.
 
 ### Indicaciones Generales
-
+* En primer lurgar debes descargar la libreria en este link.
+* Aparecera una carpeta que debes descomprimir.
+* Para accecer a los archivos descomprime la carpeta, puedes cambiar la ruta donde la descomprimiras o puedes hacerlo donde quedo guardada desde la descarga.
+* Dentro de la carpeta se mostraran otras, de las cuales, algunas de ellas no debes modificar
 ## Procesos
 ## Desarrolladores
                           
