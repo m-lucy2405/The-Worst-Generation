@@ -1,21 +1,22 @@
 @use '../UTILIDADES/bordes';
 @use '../UTILIDADES/colores';
 @use '../Clases_Componentes/botones';
+@use '../UTILIDADES/tipografia-tex';
 
 //***********************************************************
 //           FORMULARIO 1
 //***********************************************************
 .formulario {
-    form{
+    form {
         display: grid;
         flex-direction: column;
         gap: 16px;
-        align-items:first baseline;
+        align-items: first baseline;
         width: 100%;
         max-width: 500px;
-        margin: 15PX;
-        padding: 30px;
-        background-color: colores.$color-gris ;
+        margin: 5PX;
+        padding: 20px;
+        background-color: colores.$Azul-marino ;
     }
     label {
         display: block;
@@ -32,7 +33,6 @@
         width: 100%;
         padding: 8px;
         border-radius: 5px;
-        box-sizing: border-box;
         margin-bottom: 10px;
     }
 
@@ -54,49 +54,53 @@
     button[type="submit"]:hover {
         background-color: darken(colores.$color-zoro, 10%);
     }
-
 }
 
 
 //***********************************************************
 //           FORMULARIO 2
 //***********************************************************
-.formulario__2 {
-    form{
-        display: grid;
-        flex-direction: column;
-        gap: 16px;
-        align-items:first baseline;
-        width: 100%;
-        max-width: 500px;
-        margin: 15PX;
-        padding: 40px;
-        background-color: colores.$color-gris ;
-    }
-    
-    label {
-        display: block;
-    }
+.formulario__basico__2{ //clase general
+ 
+  
+  // Estilos generales del formulario
+  form{
+    @extend .sombra_inferior;
+    background-color: colores.$Verde-esmeralda;
+    max-width: 80%;
+    font-family: tipografia-tex.$font-marine;
 
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    textarea,
-    select {
-        @extend .borde__redondeado__50px  ;
-        background-color: colores.$Blanco;
-        width: 100%;
-        padding: 8px;
-    }
+  }
+  label{
+    font-size: 16px;
+    font-family: tipografia-tex.$font-marine;
+    color: colores.$color-negro;
 
-    textarea {
-        resize: vertical;
-    }
 
-    button[type="submit"] {
-        @extend .boton__animacion__4;
-        padding: 10px 20px;
+
+  }
+  
+  // Estilos para los campos de entrada
+    input {
+        @extend .borde__Esquinas_dedondeada;
     }
+  
+  // Estilos para el botón de enviar
+   button {
+    @extend .borde__Esquinas_dedondeada;
+  } 
+  
+  // Estilos para el área de mensaje
+   textarea,
+   select {
+    @extend .borde__Esquinas_dedondeada;
+
+   
+    &:focus {
+      outline: none;
+      border-color: blue;
+    }
+  }
 }
 //***********************************************************
 
@@ -107,10 +111,10 @@
     textarea,
     button {
         width: 100%;
-        margin-right: 0; //AACHOO
+        margin-right: 0; // No modificado
     }
 
     button[type="submit"] {
-        margin-top: 10px; //ESPACION 
+        margin-top: 10px; // No modificado
     }
 }
