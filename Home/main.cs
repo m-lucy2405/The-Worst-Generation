@@ -55,9 +55,17 @@
   margin: 20px;
 }
 
-.borde__Esquinas_dedondeada, .formulario__basico__2 input, .formulario__basico__2 textarea, .formulario__basico__2 fieldset, legend, input[type=checkbox],
-input[type=radio], input[type=text], input[type=password], input[type=email], select, option, .boton__animacion__1, .boton__animacion__2, .boton__animacion__3, .boton__animacion__4, .boton__basico__1, .boton__basico__2, .boton__basico__3, .boton__basico__4, .boton__blanco__1, .boton__blanco__2, .boton__blanco__3, .boton__blanco__4 {
+.borde__Esquinas_dedondeada, .formulario__basico__2 input, .formulario__basico__2 textarea, .formulario__basico__2 fieldset, .formulario__basico__2 legend, .formulario__basico__2 input[type=checkbox],
+.formulario__basico__2 input[type=radio], .formulario__basico__2 input[type=text], .formulario__basico__2 input[type=password], .formulario__basico__2 input[type=email], .formulario__basico__2 select, .formulario__basico__2 option, .boton__cambio__color, .boton__animacion__1, .boton__animacion__2, .boton__animacion__3, .boton__animacion__4, .boton__basico__1, .boton__basico__2, .boton__basico__3, .boton__basico__4, .boton__blanco__1, .boton__blanco__2, .boton__blanco__3, .boton__blanco__4, .form__inicio__de__secion input[type=text],
+.form__inicio__de__secion input[type=email],
+.form__inicio__de__secion input[type=password], .form__inicio__de__secion button {
   border-radius: 5px 5px 5px 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__Esquinas_dedondeada__3px {
+  border-radius: 3px 3px 3px 3px;
   padding: 20px;
   margin: 20px;
 }
@@ -70,11 +78,7 @@ input[type=radio], input[type=text], input[type=password], input[type=email], se
 /*------------------------------------------------*/
 /*                 BORDES REDONDEADOR             */
 /*------------------------------------------------*/
-.borde__redondeado__50px, .formulario label, .formulario input[type=text],
-.formulario input[type=email],
-.formulario input[type=password],
-.formulario textarea,
-.formulario select, .boton__Movimento__Rosa, .boton__Movimento__rojo, .boton__Movimento__verde, .boton__Movimento__naranja, .formulario button[type=submit], .formulario__basico__2, button {
+.borde__redondeado__50px, .boton__Movimento__Rosa, .boton__Movimento__rojo, .boton__Movimento__verde, .boton__Movimento__naranja, .formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button {
   border-radius: 50px;
   border: 0;
 }
@@ -143,9 +147,37 @@ input[type=radio], input[type=text], input[type=password], input[type=email], se
   border-radius: 13em/3em;
 }
 
-/*------------------------------------------------*/
-/*      ESTILO DE HTML                            */
-/*------------------------------------------------*/
+/* Estilos para el borde brillante */
+.borde-brillante, .alert-success, .alert-info {
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent;
+  position: relative;
+}
+
+/* Pseudo-elemento para crear el efecto brillante */
+.borde-brillante::after, .alert-success::after, .alert-info::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(to right, #ffffff, #ff00ff, #00ffff, #ffffff);
+  z-index: -1;
+  border-radius: inherit;
+  animation: brillo 2s infinite linear alternate;
+}
+
+/* Animación para el efecto de brillo */
+@keyframes brillo {
+  0% {
+    background-position: -500% 0%;
+  }
+  100% {
+    background-position: 500% 0%;
+  }
+}
 .sombra_superior, .btn {
   box-shadow: 0px -25px 20px -20px #00eeff;
   margin: 20px;
@@ -158,7 +190,7 @@ input[type=radio], input[type=text], input[type=password], input[type=email], se
   background-color: #b3b2b4;
 }
 
-.sombra_inferior, .formulario__basico__2 form {
+.sombra_inferior, .form__inicio__de__secion form, .formulario__basico__2 form {
   box-shadow: 0px 25px 20px -20px #00eeff;
   margin: 20px;
   background-color: #b3b2b4;
@@ -180,6 +212,99 @@ input[type=radio], input[type=text], input[type=password], input[type=email], se
   box-shadow: 0px -25px 20px -20px #00eeff, 0px 25px 20px -20px #00eeff;
   margin: 20px;
   background-color: #b3b2b4;
+}
+
+.sombra__superior__izquierda {
+  box-shadow: 0px -25px 20px -20px #4a4f53, -25px 0 20px -20px #8A2BE2;
+}
+
+.sombra__inferior__derecha {
+  box-shadow: 0px 25px 20px -20px #00eeff;
+}
+
+.todos__lados {
+  box-shadow: 0px -25px 20px -20px #4a4f53, 25px 0 20px -20px #4a4f53, 0px 25px 20px -20px #4a4f53, -25px 0 20px -20px #4a4f53;
+}
+
+/*----------------------------------------------------------------*/
+.Diseño__materiales__1 {
+  box-shadow: 0 1px 3px #4a4f53, #4a4f53;
+}
+
+.Diseño__materiales__2 {
+  box-shadow: 0 3px 6px #4a4f53, 0 3px 6px #4a4f53;
+}
+
+.Diseño__materiales__3 {
+  box-shadow: 0 10px 20px #4a4f53, 0 6px 6px #4a4f53;
+}
+
+.Diseño__materiales__4 {
+  box-shadow: 0 14px 28px #4a4f53, 0 10px 10px #4a4f53;
+}
+
+.Diseño__materiales__5 {
+  box-shadow: 0 19px 38px #4a4f53, 0 15px 12px #4a4f53;
+}
+
+.Diseño__materiales__6 {
+  box-shadow: 0 29px 52px #4a4f53, 0 25px 16px #4a4f53;
+}
+
+.Diseño__materiales__7 {
+  box-shadow: 0 45px 65px #4a4f53, 0 35px 22px #4a4f53;
+}
+
+.Diseño__materiales__8 {
+  box-shadow: 0 60px 80px #4a4f53, 0 45px 26px #4a4f53;
+}
+
+.Diseño__materiales__9 {
+  box-shadow: 0 1px 1px #4a4f53, 0 2px 2px #4a4f53;
+}
+
+.Diseño__materiales__10 {
+  box-shadow: 0 1px 1px #4a4f53, 0 2px 2px #4a4f53, 0 4px 4px #4a4f53, 0 8px 8px #4a4f53, 0 16px 16px #4a4f53;
+}
+
+.Diseño__materiales__11 {
+  box-shadow: 0 1px 1px #4a4f53, 0 2px 2px #4a4f53, 0 4px 4px #4a4f53, 0 8px 8px #4a4f53;
+}
+
+.Diseño__materiales__12 {
+  box-shadow: 0 1px 1px #4a4f53, 0 2px 2px #4a4f53, 0 4px 4px #4a4f53, 0 8px 8px #4a4f53, 0 16px 16px #4a4f53, 0 32px 32px #4a4f53;
+}
+
+.Diseño__materiales__13 {
+  box-shadow: 0 1px 1px #4a4f53, 0 2px 2px #4a4f53, 0 4px 4px #4a4f53, 0 8px 8px #4a4f53;
+}
+
+.Diseño__materiales__14 {
+  box-shadow: 0px 9px 30px #4a4f53;
+}
+
+.Diseño__materiales__15 {
+  box-shadow: 0 1px 2px #4a4f53, 0 2px 4px #4a4f53, 0 4px 8px #4a4f53, 0 8px 16px #4a4f53, 0 16px 32px #4a4f53, 0 32px 64px #4a4f53;
+}
+
+.Diseño__materiales__16 {
+  box-shadow: 0 20px 10px -20px #4a4f53 inset;
+}
+
+.Diseño__materiales__17 {
+  box-shadow: -20px 0 10px -20px #4a4f53 inset;
+}
+
+.Diseño__materiales__18 {
+  box-shadow: 0 -20px 10px -20px #4a4f53 inset;
+}
+
+.Diseño__materiales__19 {
+  box-shadow: 20px 0 10px -20px #4a4f53 inset;
+}
+
+.Diseño__materiales__20 {
+  box-shadow: 0 0 10px 0 #4a4f53 inset;
 }
 
 body {
@@ -241,26 +366,33 @@ body {
   max-width: 600px; /* Ancho máximo de la alerta */
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 .alert-success {
   background: #0e791a;
   font-family: "Devil Fruit", fantasy;
+  text-align: center;
 }
 
 .alert-info {
   background: #1628c9;
-  color: white;
+  color: #4a4f53;
+  text-decoration: underline;
+  background: transparent;
+  text-align: center;
 }
 
 .alert-warning {
   background-color: #FFFF00;
   color: #212529;
+  text-align: center;
 }
 
 .alert-danger {
   background-color: #d9160f;
   color: white;
+  text-align: center;
 }
 
 .alert-icon {
@@ -313,7 +445,7 @@ body {
   background-color: #b3b2b4;
 }
 
-.sombra_inferior, .formulario__basico__2 form {
+.sombra_inferior, .form__inicio__de__secion form, .formulario__basico__2 form {
   box-shadow: 0px 25px 20px -20px #00eeff;
   margin: 20px;
   background-color: #b3b2b4;
@@ -337,11 +469,119 @@ body {
   background-color: #b3b2b4;
 }
 
+.sombra__superior__izquierda {
+  box-shadow: 0px -25px 20px -20px #4a4f53, -25px 0 20px -20px #8A2BE2;
+}
+
+.sombra__inferior__derecha {
+  box-shadow: 0px 25px 20px -20px #00eeff;
+}
+
+.todos__lados {
+  box-shadow: 0px -25px 20px -20px #4a4f53, 25px 0 20px -20px #4a4f53, 0px 25px 20px -20px #4a4f53, -25px 0 20px -20px #4a4f53;
+}
+
+/*----------------------------------------------------------------*/
+.Diseño__materiales__1 {
+  box-shadow: 0 1px 3px #4a4f53, #4a4f53;
+}
+
+.Diseño__materiales__2 {
+  box-shadow: 0 3px 6px #4a4f53, 0 3px 6px #4a4f53;
+}
+
+.Diseño__materiales__3 {
+  box-shadow: 0 10px 20px #4a4f53, 0 6px 6px #4a4f53;
+}
+
+.Diseño__materiales__4 {
+  box-shadow: 0 14px 28px #4a4f53, 0 10px 10px #4a4f53;
+}
+
+.Diseño__materiales__5 {
+  box-shadow: 0 19px 38px #4a4f53, 0 15px 12px #4a4f53;
+}
+
+.Diseño__materiales__6 {
+  box-shadow: 0 29px 52px #4a4f53, 0 25px 16px #4a4f53;
+}
+
+.Diseño__materiales__7 {
+  box-shadow: 0 45px 65px #4a4f53, 0 35px 22px #4a4f53;
+}
+
+.Diseño__materiales__8 {
+  box-shadow: 0 60px 80px #4a4f53, 0 45px 26px #4a4f53;
+}
+
+.Diseño__materiales__9 {
+  box-shadow: 0 1px 1px #4a4f53, 0 2px 2px #4a4f53;
+}
+
+.Diseño__materiales__10 {
+  box-shadow: 0 1px 1px #4a4f53, 0 2px 2px #4a4f53, 0 4px 4px #4a4f53, 0 8px 8px #4a4f53, 0 16px 16px #4a4f53;
+}
+
+.Diseño__materiales__11 {
+  box-shadow: 0 1px 1px #4a4f53, 0 2px 2px #4a4f53, 0 4px 4px #4a4f53, 0 8px 8px #4a4f53;
+}
+
+.Diseño__materiales__12 {
+  box-shadow: 0 1px 1px #4a4f53, 0 2px 2px #4a4f53, 0 4px 4px #4a4f53, 0 8px 8px #4a4f53, 0 16px 16px #4a4f53, 0 32px 32px #4a4f53;
+}
+
+.Diseño__materiales__13 {
+  box-shadow: 0 1px 1px #4a4f53, 0 2px 2px #4a4f53, 0 4px 4px #4a4f53, 0 8px 8px #4a4f53;
+}
+
+.Diseño__materiales__14 {
+  box-shadow: 0px 9px 30px #4a4f53;
+}
+
+.Diseño__materiales__15 {
+  box-shadow: 0 1px 2px #4a4f53, 0 2px 4px #4a4f53, 0 4px 8px #4a4f53, 0 8px 16px #4a4f53, 0 16px 32px #4a4f53, 0 32px 64px #4a4f53;
+}
+
+.Diseño__materiales__16 {
+  box-shadow: 0 20px 10px -20px #4a4f53 inset;
+}
+
+.Diseño__materiales__17 {
+  box-shadow: -20px 0 10px -20px #4a4f53 inset;
+}
+
+.Diseño__materiales__18 {
+  box-shadow: 0 -20px 10px -20px #4a4f53 inset;
+}
+
+.Diseño__materiales__19 {
+  box-shadow: 20px 0 10px -20px #4a4f53 inset;
+}
+
+.Diseño__materiales__20 {
+  box-shadow: 0 0 10px 0 #4a4f53 inset;
+}
+
 .btn {
   background-color: rosybrown;
   padding: 10px;
   width: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.boton__cambio__color, .form__inicio__de__secion input[type=text],
+.form__inicio__de__secion input[type=email],
+.form__inicio__de__secion input[type=password], .form__inicio__de__secion button {
+  margin: 16px;
+  padding: 20px;
+  background-color: #28A745;
+  cursor: pointer;
+}
+
+.boton__cambio__color:hover, .form__inicio__de__secion input[type=text]:hover,
+.form__inicio__de__secion input[type=email]:hover,
+.form__inicio__de__secion input[type=password]:hover, .form__inicio__de__secion button:hover {
+  background-color: #0e791a;
 }
 
 .boton__animacion__1 {
@@ -350,6 +590,8 @@ body {
   margin: 16px;
   padding: 20px;
   justify-content: center;
+  cursor: pointer;
+  cursor: pointer;
 }
 
 .boton__animacion__1:hover {
@@ -362,6 +604,8 @@ body {
   margin: 16px;
   padding: 20px;
   justify-content: center;
+  cursor: pointer;
+  cursor: pointer;
 }
 
 .boton__animacion__2:hover {
@@ -374,6 +618,8 @@ body {
   margin: 16px;
   padding: 20px;
   justify-content: center;
+  cursor: pointer;
+  cursor: pointer;
 }
 
 .boton__animacion__3:hover {
@@ -396,24 +642,28 @@ body {
   margin: 16px;
   padding: 20px;
   background-color: #6C757D;
+  cursor: pointer;
 }
 
 .boton__basico__2 {
   margin: 16px;
   padding: 20px;
   background-color: #FFC107;
+  cursor: pointer;
 }
 
 .boton__basico__3 {
   margin: 16px;
   padding: 20px;
   background-color: #28A745;
+  cursor: pointer;
 }
 
 .boton__basico__4 {
   margin: 16px;
   padding: 20px;
   background-color: #d9160f;
+  cursor: pointer;
 }
 
 .boton__blanco__1 {
@@ -456,7 +706,7 @@ body {
   cursor: pointer;
 }
 
-.boton__Movimento__Rosa, .formulario button[type=submit], .formulario__basico__2, button {
+.boton__Movimento__Rosa, .formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button {
   padding: 17px 40px;
   background-color: #E83E8C;
   box-shadow: #000 0 0 8px;
@@ -468,13 +718,13 @@ body {
   font-family: "Ancient Text", serif;
   padding: 20px;
 }
-.boton__Movimento__Rosa:hover, .formulario button[type=submit]:hover, .formulario__basico__2:hover, button:hover {
+.boton__Movimento__Rosa:hover, .formulario__basico__2 .formulario__basico__2:hover, .formulario__basico__2 button:hover {
   line-height: 3px;
   background-color: #E83E8C;
   color: #F1FAEE;
   box-shadow: #46dffa 0 7px 29px 0;
 }
-.boton__Movimento__Rosa:active, .formulario button[type=submit]:active, .formulario__basico__2:active, button:active {
+.boton__Movimento__Rosa:active, .formulario__basico__2 .formulario__basico__2:active, .formulario__basico__2 button:active {
   line-height: 3px;
   background-color: #E83E8C;
   color: #F1FAEE;
@@ -580,9 +830,8 @@ body {
   .boton__blanco__3,
   .boton__blanco__4,
   .boton__Movimento__Rosa,
-  .formulario button[type=submit],
-  .formulario__basico__2,
-  button,
+  .formulario__basico__2 .formulario__basico__2,
+  .formulario__basico__2 button,
   .boton__Movimento__rojo,
   .boton__Movimento__verde,
   .boton__Movimento__naranja {
@@ -791,51 +1040,56 @@ body {
     font-size: 30px;
   }
 }
-.formulario form {
-  display: grid;
-  flex-direction: column;
-  gap: 16px;
-  align-items: first baseline;
-  width: 100%;
-  max-width: 500px;
-  margin: 5PX;
+.form__inicio__de__secion {
+  max-width: 100%;
+  font-family: "Marine", sans-serif;
   padding: 20px;
-  background-color: #003366;
+  margin: 16px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 16px;
+  background-size: cover; /* Para cubrir completamente el áre */
+  background-position: center; /* Para centrar la imagen de fondo */
+  background-color: #6C757D;
 }
-.formulario label {
-  display: block;
+.form__inicio__de__secion form {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f11f30;
 }
-.formulario input[type=text],
-.formulario input[type=email],
-.formulario input[type=password],
-.formulario textarea,
-.formulario select {
-  background-color: #6F42C1;
+.form__inicio__de__secion input[type=text],
+.form__inicio__de__secion input[type=email],
+.form__inicio__de__secion input[type=password] {
+  background-color: #ecaacd;
+  max-width: 70%;
   width: 100%;
-  padding: 8px;
-  border-radius: 5px;
-  margin-bottom: 10px;
 }
-.formulario textarea {
-  resize: vertical;
+.form__inicio__de__secion a {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
 }
-.formulario button[type=submit] {
-  padding: 10px 20px;
-  background-color: #0e791a;
-  color: #f88809;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.form__inicio__de__secion a:hover {
+  color: #003366;
 }
-.formulario button[type=submit]:hover {
-  background-color: #094b10;
+.form__inicio__de__secion button {
+  display: block;
+  text-align: left;
+  max-width: 70%;
+  width: 100%;
 }
 
 .formulario__basico__2 {
   max-width: 100%;
   font-family: "Marine", sans-serif;
-  background-image: linear-gradient(to right, rgb(146, 141, 153), rgb(99, 102, 99)); /* Degradado de azul a verde menta */
+  background-image: linear-gradient(to right, rgb(109, 28, 223), rgb(142, 221, 231)); /* Degradado de azul a verde menta */
   padding: 20px;
   margin: 16px;
   display: grid;
@@ -850,10 +1104,10 @@ body {
   align-items: center;
   gap: 16px;
   width: 100%;
-  max-width: 800px;
+  max-width: 80%;
   margin: 20px auto;
   padding: 20px;
-  background-color: #8136e2;
+  background-color: #6C757D;
   font-size: large;
 }
 .formulario__basico__2 label {
@@ -884,16 +1138,14 @@ body {
   align-items: start;
   justify-content: start;
 }
-
-legend {
+.formulario__basico__2 legend {
   border-radius: 10px;
   border-color: rgb(163, 255, 183);
   font-family: "Marine", sans-serif;
   margin: 10px;
 }
-
-input[type=checkbox],
-input[type=radio] {
+.formulario__basico__2 input[type=checkbox],
+.formulario__basico__2 input[type=radio] {
   max-width: 90%;
   width: 100%;
   font-family: "Marine", sans-serif;
@@ -902,38 +1154,36 @@ input[type=radio] {
   grid-template-rows: auto 1fr;
   align-items: start;
 }
-
-input[type=text] {
+.formulario__basico__2 input[type=text] {
   background-color: #ecaacd;
   max-width: 90%;
   width: 100%;
   font-family: "Marine", sans-serif;
 }
-
-input[type=password] {
+.formulario__basico__2 input[type=password] {
   background-color: #ecaacd;
   max-width: 90%;
   width: 100%;
   font: password; /* Ocult text*/
   font-family: "Marine", sans-serif;
 }
-
-input[type=email] {
+.formulario__basico__2 input[type=email] {
   background-color: #ecaacd;
   max-width: 90%;
   width: 100%;
   font-family: "Marine", sans-serif;
 }
-
-select {
+.formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button {
+  grid-template-rows: 2;
+}
+.formulario__basico__2 select {
   background-color: #ecaacd;
   max-width: 90%;
   width: 100%;
   appearance: none;
   font-size: 16px;
 }
-
-option {
+.formulario__basico__2 option {
   font-family: "Marine", sans-serif;
   background-color: #ecaacd;
   max-width: 90%;
@@ -942,22 +1192,18 @@ option {
   padding: 18px;
   height: 10px;
 }
-
-option:hover {
+.formulario__basico__2 option:hover {
   background-color: #094b10;
 }
 
 @media (max-width: 768px) {
-  form,
+  .formulario__basico__2 form,
   label,
   input,
   textarea,
   button {
     width: 100%;
     margin-right: 0;
-  }
-  button[type=""] {
-    margin-top: 10px;
   }
 }
 

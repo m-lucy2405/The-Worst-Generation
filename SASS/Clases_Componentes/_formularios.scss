@@ -1,7 +1,8 @@
 @use '../UTILIDADES/bordes';
 @use '../UTILIDADES/colores';
-@use '../Clases_Componentes/botones';
 @use '../UTILIDADES/tipografia-tex';
+@use '../UTILIDADES/sombras';
+@use '../Clases_Componentes/botones';
 
 
 //***********************************************************
@@ -15,56 +16,72 @@ $magen-contenido: 16px;
 //***********************************************************
 //           FORMULARIO 1
 //***********************************************************
-.formulario {
-    form {
-        display: grid;
-        flex-direction: column;
-        gap: 16px;
-        align-items: first baseline;
-        width: 100%;
-        max-width: 500px;
-        margin: 5PX;
-        padding: $pandin-contedido;
-        background-color: colores.$Azul-marino ;
-    }
-    label {
-        display: block;
-        @extend .borde__redondeado__50px;
-    }
 
+.form__inicio__de__secion{
+    max-width: 100%;
+    font-family: tipografia-tex.$font-marine;
+    padding: $pandin-contedido;
+    margin: $magen-contenido;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 16px;
+    background: url("SASS\IMGs\Thousend_Sunny.jpg");
+    background-size: cover; /* Para cubrir completamente el áre */
+    background-position: center; /* Para centrar la imagen de fondo */
+    background-color: colores.$color-gris;
+
+    form{
+        @extend .borde__Esquinas_dedondeada;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        max-width: 80%;
+        margin: 20px auto; // Agregar margen superior e inferior
+        padding: $pandin-contedido;
+        background-color: colores.$Azul-marino;  
+        font-size: large;
+
+    }
+    //*************************
+    //     IMPUT STYLES
+    //*************************
     input[type="text"],
     input[type="email"],
-    input[type="password"],
-    textarea,
-    select {
-        @extend .borde__redondeado__50px;
-        background-color: colores.$color-morado;
+    input[type="password"]{
+        @extend .boton__cambio__color;   
+        background-color: colores.$color-hana;
+        max-width: 70%;
         width: 100%;
-        padding: 8px;
-        border-radius: 5px;
-        margin-bottom: 10px;
     }
 
-    textarea {
-        resize: vertical;
+     //*************************
+    //     a STYLES
+    //*************************
+    a{
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        font-size: 16px;
+
+        &:hover{
+            color: colores.$Azul-marino;
+        }
     }
 
-    button[type="submit"] {
-        @extend .boton__Movimento__Rosa;
-        padding: 10px 20px;
-        background-color: colores.$color-zoro;
-        color: colores.$color-nami;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
+     //*************************
+    //     BUTTON STYLES
+    //*************************
+    button{
+        @extend .boton__cambio__color;   
+        display: block;
+        text-align: left;
+        max-width: 70%;
+        width: 100%;//
     }
 
-    button[type="submit"]:hover {
-        background-color: darken(colores.$color-zoro, 10%);
-    }
+
 }
-
 
 //***********************************************************
 //           FORMULARIO 2
@@ -88,7 +105,7 @@ $magen-contenido: 16px;
         align-items: center;
         gap: 16px;
         width: 100%;
-        max-width: 800px;
+        max-width: 80%;
         margin: 20px auto; // Agregar margen superior e inferior
         padding: $pandin-contedido;
         background-color: colores.$color-gris;  

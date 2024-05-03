@@ -1,46 +1,29 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario con Estilos Sass</title>
-    <link rel="stylesheet" href="/Home/main.css"> 
+    <link rel="stylesheet" href="/Home/main.css">
+    <title>inicio de secion</title>
 </head>
 <body>
-    <h2>Formulario con Elemento correspondientes</h2>
+    <h1>inicio de sesion</h1>
+    <form class="form__inicio__de__secion" action="" method="post">
+        <label class="title " for="">¡BIENVENIDO!</label>
+        <label class="subtitle" for="">Inicio de secion</label>
 
-    <div class="formulario">
-        <form>
-            <label class="title" for="nombre">FORMULARIO BASICO</label>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+        <input type="text" name="usuario" placeholder="usuario">
+        <input type="password" name="contrasena" placeholder="password">
 
-            <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
+        <!--BOTON INICIAR-->
+        <button  type=" ">Iniciar secion</button>
+        <a href="Index_sombras.html">¿Olvido su contraseña?</a>
+        <a href="Index_sombras.html">¿No tienes una cuentas?, Registrase Hoy</a>
 
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena" required>
+        
+        
+    </form>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-            <label for="opciones">Opciones:</label>
-            <select id="opciones" name="opciones">
-                <option value="opcion1">Opción 1</option>
-                <option value="opcion2">Opción 2</option>
-                <option value="opcion3">Opción 3</option>
-            </select>
-
-            <fieldset>
-                <legend>Preferencias:</legend>
-                <label><input type="checkbox" name="preferencia1"> Preferencia 1</label><br>
-                <label><input type="checkbox" name="preferencia2"> Preferencia 2</label><br>
-                <label><input type="checkbox" name="preferencia3"> Preferencia 3</label><br>
-            </fieldset>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-
+    
 </body>
 </html>

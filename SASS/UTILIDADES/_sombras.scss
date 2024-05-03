@@ -44,5 +44,147 @@
   margin: 20px;
   background-color: colores.$color-urarara;
   
- 
 }
+
+
+
+
+
+  //creando sombra en la parate superio e izquierda 
+  .sombra__superior__izquierda {
+    box-shadow: 0px -25px 20px -20px colores.$color-sombra,
+     -25px 0 20px -20px colores.$color-violeta;
+  }
+  //creando sombra en la parte inferior y derecha
+  .sombra__inferior__derecha {
+    box-shadow: 0px 25px 20px -20px colores.$color-toritorinomi;
+  }
+  
+  // Clase para aplicar la sombra en todos los lados
+  .todos__lados {
+    box-shadow: 
+    0px -25px 20px -20px colores.$color-sombra, 
+    25px 0 20px -20px colores.$color-sombra, 
+    0px 25px 20px -20px colores.$color-sombra, 
+    -25px 0 20px -20px colores.$color-sombra;
+  }
+  
+  /*----------------------------------------------------------------*/
+  
+  // Clase para aplicar la sombra Diseño__materiales__1
+  .Diseño__materiales__1 {  
+    box-shadow: 0 1px 3px colores.$color-sombra, colores.$color-sombra;
+  }
+  
+  // Clase para aplicar la sombra Diseño__materiales__2
+  .Diseño__materiales__2{
+    box-shadow: 0 3px 6px colores.$color-sombra, 0 3px 6px colores.$color-sombra;
+  
+  }
+  
+  // Clase para aplicar la sombra Diseño__materiales__3
+  .Diseño__materiales__3 {
+  
+      box-shadow: 0 10px 20px colores.$color-sombra, 0 6px 6px colores.$color-sombra;
+  
+  }
+  
+  // Clase para aplicar la sombra Diseño__materiales__4
+  
+  .Diseño__materiales__4{
+    box-shadow: 0 14px 28px colores.$color-sombra, 0 10px 10px colores.$color-sombra;
+  }
+  
+  // Clase para aplicar la sombra Diseño__materiales__5
+  .Diseño__materiales__5{
+    box-shadow: 0 19px 38px colores.$color-sombra, 0 15px 12px colores.$color-sombra;
+  }
+  
+  // Clase para aplicar la sombra Diseño__materiales__6
+  .Diseño__materiales__6{
+    box-shadow: 0 29px 52px colores.$color-sombra, 0 25px 16px colores.$color-sombra;
+  }
+  // Clase para aplicar la sombra Diseño__materiales__7
+  .Diseño__materiales__7{
+    box-shadow: 0 45px 65px colores.$color-sombra, 0 35px 22px colores.$color-sombra;
+  }
+  // Clase para aplicar la sombra Diseño__materiales__8
+  .Diseño__materiales__8{
+    box-shadow: 0 60px 80px colores.$color-sombra, 0 45px 26px colores.$color-sombra;
+  }
+  // Clase para aplicar la sombra Diseño__materiales__9
+  .Diseño__materiales__9{
+    box-shadow: 0 1px 1px colores.$color-sombra, 0 2px 2px colores.$color-sombra;
+  }
+  // Clase para aplicar la sombra Diseño__materiales__10
+  .Diseño__materiales__10{
+    box-shadow:
+     0 1px 1px colores.$color-sombra, 
+    0 2px 2px colores.$color-sombra,
+     0 4px 4px colores.$color-sombra, 
+     0 8px 8px colores.$color-sombra,
+     0 16px 16px colores.$color-sombra;
+  }
+  // Clase para aplicar la sombra Diseño__materiales__11
+  .Diseño__materiales__11{
+    box-shadow:
+     0 1px 1px colores.$color-sombra,
+      0 2px 2px colores.$color-sombra, 
+      0 4px 4px colores.$color-sombra, 
+      0 8px 8px colores.$color-sombra;
+  }
+  // Clase para aplicar la sombra Diseño__materiales__12
+  .Diseño__materiales__12{
+    box-shadow:
+     0 1px 1px colores.$color-sombra, 
+    0 2px 2px colores.$color-sombra, 
+    0 4px 4px colores.$color-sombra, 
+    0 8px 8px colores.$color-sombra, 
+    0 16px 16px colores.$color-sombra, 
+    0 32px 32px colores.$color-sombra;
+  }
+  // Clase para aplicar la sombra Diseño__materiales__13
+  .Diseño__materiales__13{
+    box-shadow:
+     0 1px 1px colores.$color-sombra, 
+    0 2px 2px colores.$color-sombra,
+     0 4px 4px colores.$color-sombra, 
+     0 8px 8px colores.$color-sombra;
+  }
+  // Clase para aplicar la sombra Diseño__materiales__14
+  .Diseño__materiales__14{
+    box-shadow: 0px 9px 30px colores.$color-sombra;
+  }
+  // Clase para aplicar la sombra Diseño__materiales__15
+  .Diseño__materiales__15{
+    box-shadow: 0 1px 2px  colores.$color-sombra,
+     0 2px 4px  colores.$color-sombra,
+      0 4px 8px  colores.$color-sombra,
+       0 8px 16px  colores.$color-sombra, 
+       0 16px 32px colores.$color-sombra, 
+       0 32px 64px  colores.$color-sombra;
+  }
+  // Clase para aplicar la sombra Diseño__materiales__16
+  .Diseño__materiales__16{
+    box-shadow: 0 20px 10px -20px colores.$color-sombra inset;
+  }
+  // Clase para aplicar la sombra Diseño__materiales__17
+  .Diseño__materiales__17{
+    box-shadow: -20px 0 10px -20px colores.$color-sombra inset;
+  }
+  // Clase para aplicar la sombra Diseño__materiales__18
+  .Diseño__materiales__18{
+    box-shadow: 0 -20px 10px -20px colores.$color-sombra inset;
+  }
+  // Clase para aplicar la sombra Diseño__materiales__19
+  .Diseño__materiales__19{
+    box-shadow: 20px 0 10px -20px colores.$color-sombra inset;
+  
+  }
+  // Clase para aplicar la sombra Diseño__materiales__20
+  .Diseño__materiales__20{
+    box-shadow: 0 0 10px 0 colores.$color-sombra inset;
+  }
+
+
+

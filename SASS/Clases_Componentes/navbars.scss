@@ -1,6 +1,6 @@
-@use '../UTILIDADES/movimientos';
-@use '../UTILIDADES/tipografia-tex';
-@use '../UTILIDADES/colores';
+@use 'UTILIDADES/movimientos';
+@use 'UTILIDADES/tipografia-tex';
+@use 'UTILIDADES/colores';
 /* Estilos para la barra de navegación superior */
 .navbar-top {
     background-color: colores.$color-zoro; /* Color de fondo */
