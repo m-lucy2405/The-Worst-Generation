@@ -3,6 +3,7 @@
 @use '../UTILIDADES/tipografia-tex';
 @use '../UTILIDADES/sombras';
 @use '../Clases_Componentes/botones';
+@use '../UTILIDADES/grid__alineamineto';
 
 
 //***********************************************************
@@ -236,11 +237,73 @@ $magen-contenido: 16px;
         
 }
 
-    
-  
-
-
 //***********************************************************
+//             FORMULARIO CREAR CUENTA
+//***********************************************************
+.crear__cuenta{
+    @extend .grid__justyfy__content__center;
+    max-width: 100%;
+    margin: $magen-contenido;
+    padding: $pandin-contedido;
+    grid-template-columns: 1fr;
+    font-family: tipografia-tex.$font-pirate;
+    background-color: colores.$color-nami;
+    img {
+        max-width: 100%; 
+        height: auto; //  según el ancho
+        display: block; 
+        margin: 0 auto; // Centra la imagen horizontalmente
+        margin-bottom: 20px;  
+        border-radius: 10px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // Añade una sombra suave a la imagen si es necesario
+    }
+    
+
+    form{
+        @extend .borde__Esquinas_dedondeada;
+        @extend .sombra_inferior;
+        @extend .grid__justyfy__content__center;
+        font-size: larger; 
+        margin: 3px;
+        width: 100%;
+        max-width: 70%;
+    }
+
+    label{
+        color: colores.$color-negro;
+        display: block;
+        text-align: left;
+    
+    }
+
+    //STYLE PARA IMPUTS
+    input,
+    input[type="text"],
+    input[type="email"],
+    input[type="password"]{
+        @extend .borde__redondeado__50px;
+        margin: 5px;
+        padding: 20px;
+        background-color: colores.$color-hana;
+        font-family: tipografia-tex.$font-pirate;
+        width: 100%;
+        max-width: 70%;
+
+        
+
+    }
+
+    button{
+        @extend .borde__redondeado__50px;
+        @extend .boton__animacion__2;
+        @extend .alinar__unica__fila__centrado;
+        font-family: tipografia-tex.$font-pirate;
+        width: 100%;
+        max-width: 80%;
+
+    }
+
+}
 
 
   
@@ -258,3 +321,6 @@ $magen-contenido: 16px;
 
     
 }
+
+
+//***********************************************************

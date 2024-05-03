@@ -56,9 +56,9 @@
 }
 
 .borde__Esquinas_dedondeada, .form__inicio__de__secion form, .formulario__basico__2 input, .formulario__basico__2 textarea, .formulario__basico__2 fieldset, .formulario__basico__2 legend, .formulario__basico__2 input[type=checkbox],
-.formulario__basico__2 input[type=radio], .formulario__basico__2 input[type=text], .formulario__basico__2 input[type=password], .formulario__basico__2 input[type=email], .formulario__basico__2 select, .formulario__basico__2 option, .boton__cambio__color, .boton__animacion__1, .boton__animacion__2, .boton__animacion__3, .boton__animacion__4, .boton__basico__1, .boton__basico__2, .boton__basico__3, .boton__basico__4, .boton__blanco__1, .boton__blanco__2, .boton__blanco__3, .boton__blanco__4, .form__inicio__de__secion input[type=text],
+.formulario__basico__2 input[type=radio], .formulario__basico__2 input[type=text], .formulario__basico__2 input[type=password], .formulario__basico__2 input[type=email], .formulario__basico__2 select, .formulario__basico__2 option, .crear__cuenta form, .boton__cambio__color, .boton__animacion__1, .boton__animacion__2, .boton__animacion__3, .boton__animacion__4, .boton__basico__1, .boton__basico__2, .boton__basico__3, .boton__basico__4, .boton__blanco__1, .boton__blanco__2, .boton__blanco__3, .boton__blanco__4, .form__inicio__de__secion input[type=text],
 .form__inicio__de__secion input[type=email],
-.form__inicio__de__secion input[type=password], .form__inicio__de__secion button {
+.form__inicio__de__secion input[type=password], .form__inicio__de__secion button, .crear__cuenta button {
   border-radius: 5px 5px 5px 5px;
   padding: 20px;
   margin: 20px;
@@ -78,9 +78,13 @@
 /*------------------------------------------------*/
 /*                 BORDES REDONDEADOR             */
 /*------------------------------------------------*/
-.borde__redondeado__50px, .boton__Movimento__Rosa, .boton__Movimento__rojo, .boton__Movimento__verde, .boton__Movimento__naranja, .formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button {
+.borde__redondeado__50px, .crear__cuenta input,
+.crear__cuenta input[type=text],
+.crear__cuenta input[type=email],
+.crear__cuenta input[type=password], .crear__cuenta button, .boton__Movimento__Rosa, .boton__Movimento__rojo, .boton__Movimento__verde, .boton__Movimento__naranja, .formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button {
   border-radius: 50px;
   border: 0;
+  border-color: #000;
 }
 
 .borde__redondeado__1 {
@@ -190,7 +194,7 @@
   background-color: #b3b2b4;
 }
 
-.sombra_inferior, .formulario__basico__2 form {
+.sombra_inferior, .formulario__basico__2 form, .crear__cuenta form {
   box-shadow: 0px 25px 20px -20px #00eeff;
   margin: 20px;
   background-color: #b3b2b4;
@@ -445,7 +449,7 @@ body {
   background-color: #b3b2b4;
 }
 
-.sombra_inferior, .formulario__basico__2 form {
+.sombra_inferior, .formulario__basico__2 form, .crear__cuenta form {
   box-shadow: 0px 25px 20px -20px #00eeff;
   margin: 20px;
   background-color: #b3b2b4;
@@ -598,7 +602,7 @@ body {
   box-shadow: 0 0 5px rgb(163, 255, 183), 0 0 25px rgb(163, 255, 183), 0 0 25px rgb(163, 255, 183), 0 0 50px rgb(163, 255, 183), 0 0 100px rgb(163, 255, 183), 0 0 150px rgb(163, 255, 183), 0 0 200px rgb(163, 255, 183);
 }
 
-.boton__animacion__2 {
+.boton__animacion__2, .crear__cuenta button {
   box-shadow: 0 0 5px #E83E8C, 0 0 25px #E83E8C;
   background-color: #E83E8C;
   margin: 16px;
@@ -608,7 +612,7 @@ body {
   cursor: pointer;
 }
 
-.boton__animacion__2:hover {
+.boton__animacion__2:hover, .crear__cuenta button:hover {
   box-shadow: 0 0 5px #E83E8C, 0 0 25px #E83E8C, 0 0 25px #E83E8C, 0 0 50px #E83E8C, 0 0 100px #E83E8C, 0 0 150px #E83E8C, 0 0 200px #E83E8C;
 }
 
@@ -818,7 +822,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .boton__animacion__1 .boton__animacion__2,
+  .boton__animacion__1 .boton__animacion__2, .boton__animacion__1 .crear__cuenta button, .crear__cuenta .boton__animacion__1 button,
   .boton__animacion__3,
   .boton__animacion__4,
   .boton__basico__1,
@@ -1040,6 +1044,23 @@ body {
     font-size: 30px;
   }
 }
+.grid__justyfy__content__center, .crear__cuenta, .crear__cuenta form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  justify-items: center; /* Alineación horizontal centrada */
+  align-items: center; /* Alineación vertical centrada */
+}
+
+.alinar__unica__fila__centrado, .crear__cuenta button {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Alineación vertical centrada */
+  justify-items: center; /* Alineación horizontal centrada */
+  justify-content: space-between;
+  gap: 16px;
+}
+
 .form__inicio__de__secion {
   max-width: 100%;
   font-family: "Marine", sans-serif;
@@ -1195,6 +1216,51 @@ body {
 }
 .formulario__basico__2 option:hover {
   background-color: #094b10;
+}
+
+.crear__cuenta {
+  max-width: 100%;
+  margin: 16px;
+  padding: 20px;
+  grid-template-columns: 1fr;
+  font-family: "Blackbeard", cursive;
+  background-color: #f88809;
+}
+.crear__cuenta img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.crear__cuenta form {
+  font-size: larger;
+  margin: 3px;
+  width: 100%;
+  max-width: 70%;
+}
+.crear__cuenta label {
+  color: #000;
+  display: block;
+  text-align: left;
+}
+.crear__cuenta input,
+.crear__cuenta input[type=text],
+.crear__cuenta input[type=email],
+.crear__cuenta input[type=password] {
+  margin: 5px;
+  padding: 20px;
+  background-color: #ecaacd;
+  font-family: "Blackbeard", cursive;
+  width: 100%;
+  max-width: 70%;
+}
+.crear__cuenta button {
+  font-family: "Blackbeard", cursive;
+  width: 100%;
+  max-width: 80%;
 }
 
 @media (max-width: 768px) {

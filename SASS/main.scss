@@ -1,12 +1,11 @@
 @use 'UTILIDADES/colores';
-
 @use 'UTILIDADES/bordes';
-
 @use 'UTILIDADES/sombras';
-
 @use 'UTILIDADES/media-query';
-
 @use 'UTILIDADES/tipografia-tex'; 
+
+
+//COMPONESTES
 
 @use 'Clases_Componentes/alertas';
 
@@ -15,6 +14,9 @@
 @use 'Clases_Componentes/carrusel';
 
 @use 'Clases_Componentes/formularios';
+
+@use 'UTILIDADES/grid__alineamineto'
+
 
 
 
