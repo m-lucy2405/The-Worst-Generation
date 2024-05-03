@@ -3,6 +3,15 @@
 @use '../Clases_Componentes/botones';
 @use '../UTILIDADES/tipografia-tex';
 
+
+//***********************************************************
+//           VARIABLES 
+//***********************************************************
+
+$pading-btn: 16px;
+$pandin-contedido: 20px;
+$magen-contenido: 16px;
+
 //***********************************************************
 //           FORMULARIO 1
 //***********************************************************
@@ -15,7 +24,7 @@
         width: 100%;
         max-width: 500px;
         margin: 5PX;
-        padding: 20px;
+        padding: $pandin-contedido;
         background-color: colores.$Azul-marino ;
     }
     label {
@@ -61,60 +70,174 @@
 //           FORMULARIO 2
 //***********************************************************
 .formulario__basico__2{ //clase general
- 
-  
-  // Estilos generales del formulario
-  form{
-    @extend .sombra_inferior;
-    background-color: colores.$Verde-esmeralda;
-    max-width: 80%;
+    max-width: 100%;
     font-family: tipografia-tex.$font-marine;
+    background-image: linear-gradient(to right, rgb(109, 28, 223), rgb(142, 221, 231)); /* Degradado de azul a verde menta */
+    padding: $pandin-contedido;
+    margin: $magen-contenido;
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(0, 1fr)); // Crea columnas 
+    justify-items: center;
+    align-items: center;
+    gap: 16px;
 
-  }
-  label{
-    font-size: 16px;
-    font-family: tipografia-tex.$font-marine;
-    color: colores.$color-negro;
-
-
-
-  }
+    form{
+        @extend .sombra_inferior;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        max-width: 800px;
+        margin: 20px auto; // Agregar margen superior e inferior
+        padding: $pandin-contedido;
+        background-color: colores.$color-gris;  
+        font-size: large;   
+    }
+    label{
+        color: colores.$color-negro;
+        font-family: tipografia-tex.$font-pirate;
+        margin: $magen-contenido;
+        display: block;
+        text-align: left;
+        max-width: 90%;
+        width: 100%;//OCUP EN ANCHO DISPONIBLE DE UN CONTENEDOR 
+    }
   
   // Estilos para los campos de entrada
-    input {
+     input{
         @extend .borde__Esquinas_dedondeada;
+        background-color: colores.$color-hana;
+        max-width: 90%;
+        width: 100%;//OCUP EN ANCHO DISPONIBLE DE UN CONTENEDOR       
     }
-  
-  // Estilos para el botón de enviar
-   button {
-    @extend .borde__Esquinas_dedondeada;
-  } 
-  
-  // Estilos para el área de mensaje
-   textarea,
-   select {
-    @extend .borde__Esquinas_dedondeada;
 
-   
-    &:focus {
-      outline: none;
-      border-color: blue;
+    // Estilos para el botón de enviar
+    textarea {
+        @extend .borde__Esquinas_dedondeada;
+        background-color: colores.$color-hana;
+        max-width: 90%;
+        width: 100%;//OCUP EN ANCHO DISPONIBLE DE UN CONTENEDOR 
+    
     }
-  }
+
+  
+    fieldset {
+        @extend .borde__Esquinas_dedondeada;
+        max-width: 90%;
+        width: 100%;//OCUP EN ANCHO DISPONIBLE DE UN CONTENEDOR
+        padding: 0.5rem; 
+        display: grid;
+        grid-template-rows: auto 1fr; // Primera columna 
+        align-items: start; 
+        justify-content: start
+    }
+
+    legend {
+        @extend .borde__Esquinas_dedondeada;
+        border-radius: 10px;
+        border-color: colores.$color-fondo-iluminado;
+        font-family: tipografia-tex.$font-marine;
+        margin: 10px;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        @extend .borde__Esquinas_dedondeada;
+        max-width: 90%;
+        width: 100%; // OCUP EN ANCHO DISPONIBLE DE UN CONTENEDOR 
+        font-family: tipografia-tex.$font-marine;
+        margin-right: 0.2rem; // Ajusta el margen derecho
+        display: grid;
+        grid-template-rows: auto 1fr;
+        align-items: start;
+    }
+
+
+    input[type="text"] {
+        @extend .borde__Esquinas_dedondeada;
+        background-color: colores.$color-hana;
+        max-width: 90%;
+        width: 100%;//OCUP EN ANCHO DISPONIBLE DE UN CONTENEDOR 
+        font-family: tipografia-tex.$font-marine;
+
+    }
+
+    
+    input[type="password"] {
+        @extend .borde__Esquinas_dedondeada;
+        background-color: colores.$color-hana;
+        max-width: 90%;
+        width: 100%;//OCUP EN ANCHO DISPONIBLE DE UN CONTENEDOR 
+        font: password; /* Ocult text*/
+        font-family: tipografia-tex.$font-marine;
+
+
+    }
+    input[type="email"] {
+        @extend .borde__Esquinas_dedondeada;
+        background-color: colores.$color-hana;
+        max-width: 90%;
+        width: 100%;//OCUP EN ANCHO DISPONIBLE DE UN CONTENEDOR 
+        font-family: tipografia-tex.$font-marine;
+
+    }
+
+    .formulario__basico__2, button {
+        @extend .boton__Movimento__Rosa;
+        grid-template-rows: 2;
+    }
+    
+    
+  
+    select {
+        @extend .borde__Esquinas_dedondeada;
+        background-color: colores.$color-hana;
+        max-width: 90%;
+        width: 100%; 
+        appearance: none; // 
+        font-size: 16px; //
+    }
+    option {
+        font-family: tipografia-tex.$font-marine;
+        @extend .borde__Esquinas_dedondeada;
+        background-color: colores.$color-hana;
+        max-width: 90%;
+        width: 100%;//OCUP EN ANCHO DISPONIBLE DE UN CONTENEDOR
+        color: colores.$color-nami;
+        padding: 18px;
+        height: 10px;
+        
+    }
+
+    option:hover {
+        background-color: darken(colores.$color-zoro, 10%);
+    }
+
+
+
+        
 }
+
+    
+  
+
+
 //***********************************************************
 
 
+  
+
 @media (max-width: 768px) {
+    .formulario__basico__2
+    form,
     label,
     input,
     textarea,
     button {
         width: 100%;
-        margin-right: 0; // No modificado
+        margin-right: 0; // 
     }
 
-    button[type="submit"] {
-        margin-top: 10px; // No modificado
-    }
+    
 }

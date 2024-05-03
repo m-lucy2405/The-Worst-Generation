@@ -55,8 +55,8 @@
   margin: 20px;
 }
 
-.borde__Esquinas_dedondeada, .formulario__basico__2 input, .formulario__basico__2 textarea, .formulario__basico__2 fieldset, .formulario__basico__2 legend, .formulario__basico__2 input[type=checkbox],
-.formulario__basico__2 input[type=radio], .formulario__basico__2 input[type=text], .formulario__basico__2 input[type=password], .formulario__basico__2 input[type=email], .formulario__basico__2 select, .formulario__basico__2 option, .boton__animacion__1, .boton__animacion__2, .boton__animacion__3, .boton__animacion__4, .boton__basico__1, .boton__basico__2, .boton__basico__3, .boton__basico__4, .boton__blanco__1, .boton__blanco__2, .boton__blanco__3, .boton__blanco__4 {
+.borde__Esquinas_dedondeada, .formulario__basico__2 input, .formulario__basico__2 textarea, .formulario__basico__2 fieldset, legend, input[type=checkbox],
+input[type=radio], input[type=text], input[type=password], input[type=email], select, option, .boton__animacion__1, .boton__animacion__2, .boton__animacion__3, .boton__animacion__4, .boton__basico__1, .boton__basico__2, .boton__basico__3, .boton__basico__4, .boton__blanco__1, .boton__blanco__2, .boton__blanco__3, .boton__blanco__4 {
   border-radius: 5px 5px 5px 5px;
   padding: 20px;
   margin: 20px;
@@ -74,7 +74,7 @@
 .formulario input[type=email],
 .formulario input[type=password],
 .formulario textarea,
-.formulario select, .boton__Movimento__Rosa, .boton__Movimento__rojo, .boton__Movimento__verde, .boton__Movimento__naranja, .formulario button[type=submit], .formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button {
+.formulario select, .boton__Movimento__Rosa, .boton__Movimento__rojo, .boton__Movimento__verde, .boton__Movimento__naranja, .formulario button[type=submit], .formulario__basico__2, button {
   border-radius: 50px;
   border: 0;
 }
@@ -456,7 +456,7 @@ body {
   cursor: pointer;
 }
 
-.boton__Movimento__Rosa, .formulario button[type=submit], .formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button {
+.boton__Movimento__Rosa, .formulario button[type=submit], .formulario__basico__2, button {
   padding: 17px 40px;
   background-color: #E83E8C;
   box-shadow: #000 0 0 8px;
@@ -468,13 +468,13 @@ body {
   font-family: "Ancient Text", serif;
   padding: 20px;
 }
-.boton__Movimento__Rosa:hover, .formulario button[type=submit]:hover, .formulario__basico__2 .formulario__basico__2:hover, .formulario__basico__2 button:hover {
+.boton__Movimento__Rosa:hover, .formulario button[type=submit]:hover, .formulario__basico__2:hover, button:hover {
   line-height: 3px;
   background-color: #E83E8C;
   color: #F1FAEE;
   box-shadow: #46dffa 0 7px 29px 0;
 }
-.boton__Movimento__Rosa:active, .formulario button[type=submit]:active, .formulario__basico__2 .formulario__basico__2:active, .formulario__basico__2 button:active {
+.boton__Movimento__Rosa:active, .formulario button[type=submit]:active, .formulario__basico__2:active, button:active {
   line-height: 3px;
   background-color: #E83E8C;
   color: #F1FAEE;
@@ -581,8 +581,8 @@ body {
   .boton__blanco__4,
   .boton__Movimento__Rosa,
   .formulario button[type=submit],
-  .formulario__basico__2 .formulario__basico__2,
-  .formulario__basico__2 button,
+  .formulario__basico__2,
+  button,
   .boton__Movimento__rojo,
   .boton__Movimento__verde,
   .boton__Movimento__naranja {
@@ -835,7 +835,7 @@ body {
 .formulario__basico__2 {
   max-width: 100%;
   font-family: "Marine", sans-serif;
-  background-image: linear-gradient(to right, rgb(109, 28, 223), rgb(142, 221, 231)); /* Degradado de azul a verde menta */
+  background-image: linear-gradient(to right, rgb(146, 141, 153), rgb(99, 102, 99)); /* Degradado de azul a verde menta */
   padding: 20px;
   margin: 16px;
   display: grid;
@@ -853,7 +853,7 @@ body {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #6C757D;
+  background-color: #8136e2;
   font-size: large;
 }
 .formulario__basico__2 label {
@@ -884,14 +884,16 @@ body {
   align-items: start;
   justify-content: start;
 }
-.formulario__basico__2 legend {
+
+legend {
   border-radius: 10px;
   border-color: rgb(163, 255, 183);
   font-family: "Marine", sans-serif;
   margin: 10px;
 }
-.formulario__basico__2 input[type=checkbox],
-.formulario__basico__2 input[type=radio] {
+
+input[type=checkbox],
+input[type=radio] {
   max-width: 90%;
   width: 100%;
   font-family: "Marine", sans-serif;
@@ -900,36 +902,38 @@ body {
   grid-template-rows: auto 1fr;
   align-items: start;
 }
-.formulario__basico__2 input[type=text] {
+
+input[type=text] {
   background-color: #ecaacd;
   max-width: 90%;
   width: 100%;
   font-family: "Marine", sans-serif;
 }
-.formulario__basico__2 input[type=password] {
+
+input[type=password] {
   background-color: #ecaacd;
   max-width: 90%;
   width: 100%;
   font: password; /* Ocult text*/
   font-family: "Marine", sans-serif;
 }
-.formulario__basico__2 input[type=email] {
+
+input[type=email] {
   background-color: #ecaacd;
   max-width: 90%;
   width: 100%;
   font-family: "Marine", sans-serif;
 }
-.formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button {
-  grid-template-rows: 2;
-}
-.formulario__basico__2 select {
+
+select {
   background-color: #ecaacd;
   max-width: 90%;
   width: 100%;
   appearance: none;
   font-size: 16px;
 }
-.formulario__basico__2 option {
+
+option {
   font-family: "Marine", sans-serif;
   background-color: #ecaacd;
   max-width: 90%;
@@ -938,12 +942,13 @@ body {
   padding: 18px;
   height: 10px;
 }
-.formulario__basico__2 option:hover {
+
+option:hover {
   background-color: #094b10;
 }
 
 @media (max-width: 768px) {
-  .formulario__basico__2 form,
+  form,
   label,
   input,
   textarea,
@@ -951,6 +956,9 @@ body {
     width: 100%;
     margin-right: 0;
   }
+  button[type=""] {
+    margin-top: 10px;
+  }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.cs.map */
