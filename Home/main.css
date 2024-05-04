@@ -1320,25 +1320,44 @@ body {
   animation: fadeInUp 1s ease forwards;
 }
 
-.animated2, .sidebar {
+.animated2 {
   opacity: 0;
   animation: fadeInUpX 1s ease forwards;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  transition: margin-left 0.3s ease, margin-top 0.3s ease; /* Ajuste adicional */
+}
+
+header {
+  background-color: #14213D;
+  color: #fff;
+  padding: 10px;
+}
+
 /* Estilos para la barra de navegación superior */
 .navbar-top {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #14213D; /* Color de fondo */
   color: #fff; /* Color del texto */
   padding: 10px; /* Espaciado interno */
-  width: 100%;
-  display: flex;
+  z-index: 1000;
+  transition: margin-left 0.3s ease; /* Ajuste adicional */
   align-items: center;
   justify-content: space-evenly;
   text-align: center; /* Centrar el texto */
 }
 
 .navbar-top .nav-item {
-  margin-right: 15px; /* Espaciado entre elementos */
+  align-items: center;
+  padding: auto; /* Espaciado entre elementos */
   font-weight: bold; /* Negrita */
 }
 .navbar-top .nav-item--active {
@@ -1348,6 +1367,7 @@ body {
   color: #FFFF00;
 }
 
+/* Estilos para la barra Dropdown */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -1373,7 +1393,7 @@ body {
   display: block;
 }
 
-/* Estilos para la barra de navegación corta*/
+/* Estilos para la barra de navegación corta en el Main*/
 .navbar-side {
   background: linear-gradient(to right, #ff0000, #0000ff); /* Color de fondo */
   color: #fff; /* Color del texto */
@@ -1399,21 +1419,29 @@ body {
   color: inherit; /* Heredar color del texto */
 }
 
-/* Estilo para la barra lateral */
+/* Estilo para la Barra Lateral */
 .sidebar {
-  font-family: "Blackbeard", cursive;
-  padding: 20px;
   position: fixed;
-  top: 85px;
-  left: 0;
+  font-family: "Blackbeard", cursive;
+  margin-top: 50px;
+  padding: 20px;
+  top: 0;
+  left: -300px;
+  width: 250px;
   height: 100%;
-  width: 150px;
   background-color: #14213D;
+  transition: left 0.3s ease;
+  z-index: 999;
   color: #fff;
   overflow-y: auto; /* Permite desplazamiento vertical */
+  /*@extend .animated2;*/
 }
 
-/* Estilos para los enlaces del menú lateral */
+.sidebar.open {
+  left: 0;
+}
+
+/* Estilos para los enlaces del Menú Lateral */
 .sidebar-link {
   display: block;
   padding: 10px 0;
@@ -1456,6 +1484,21 @@ body {
 /* Handle on hover (cursor del scrollbar al pasar el ratón) */
 .sidebar::-webkit-scrollbar-thumb:hover {
   background: #FFFF00;
+}
+
+main {
+  margin-left: 0; /* Ajuste adicional */
+  margin-top: 50px; /* Ajuste adicional */
+  padding: 20px;
+  transition: margin-left 0.3s ease; /* Ajuste adicional */
+}
+
+main.sidebar-open {
+  margin-left: 250px; /* Ajuste adicional */
+}
+
+main.sidebar-open .navbar-top {
+  margin-left: 250px; /* Ajuste adicional */
 }
 
 /* Media query para ajustes responsivos */

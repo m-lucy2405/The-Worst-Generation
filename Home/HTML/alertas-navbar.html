@@ -7,11 +7,30 @@
   <link rel="stylesheet" href="../main.css">
   <title>alertas y navbar</title>
 </head>
+
 <body>
-    <!-- Barra de navegación superior -->
-    <nav class="navbar-top">
-      <img src="../HTML/OnePiece.png" alt="Descripción de la imagen" style="width: 180px; margin-right: 0px; margin-left: px;  margin-top: 0px;
-      margin-bottom: 0px;">
+
+  <!-- SCRIPT PARA ANIMACION DE BARRIDO / NAVBAR -->
+  <script src="/Home/script_navbar.js"></script>
+
+  <!-- Barra de Navegación Superior -->
+  
+  <header>
+    
+    <button class="toggleSidebar">Abrir Barra Lateral</button> 
+
+  </header>
+  
+  
+  <nav class="navbar-top">
+
+    <button class="toggleTopMenu">
+      Abrir Menú Lateral  
+    </button>
+
+    <a href="#" class="nav-item">
+      <img src="../HTML/OnePiece.png" alt="Descripción de la imagen" style="width: 180px; margin-bottom: 0px;">
+      </a>
       <a href="#" class="nav-item">Inicio</a>
       <a href="#" class="nav-item">Acerca de</a>
       <a href="#" class="nav-item">Contacto</a>
@@ -25,52 +44,71 @@
           <a href="#">Opción 3</a>
         </div>
       </div>
-    </nav>
+  </nav>
+    <!-- Barra de Navegación Lateral -->
+    
+    <div class="sidebar">
+
+      <button class="closeSidebar">Cerrar Barra Lateral</button>
+
+      <a  class="sidebar-superior">Inicio</a>
+      <a href="#" class="sidebar-link">Acerca de</a>
+      <a href="#" class="sidebar-link">Contacto</a>
+
+      <a href="#" class="sidebar-superior">Inicio</a>
+      <a href="#" class="sidebar-link">Acerca de</a>
+      <a href="#" class="sidebar-link">Contacto</a>
+
+      <a  class="sidebar-superior">Inicio</a>
+      <a href="#" class="sidebar-link">Acerca de</a>
+      <a href="#" class="sidebar-link">Contacto</a>
+
+      <a  class="sidebar-superior">Inicio</a>
+      <a href="#" class="sidebar-link">Acerca de</a>
+      <a href="#" class="sidebar-link">Contacto</a>
+
+      <a href="#" class="sidebar-link">Inicio</a>
+      <a href="#" class="sidebar-link">Acerca de</a>
+      <a href="#" class="sidebar-link">Contacto</a>
+
+      <a href="#" class="sidebar-link">Inicio</a>
+      <a href="#" class="sidebar-link">Acerca de</a>
+      <a href="#" class="sidebar-link">Contacto</a>
+
+      <a href="#" class="sidebar-link">Inicio</a>
+      <a href="#" class="sidebar-link">Acerca de</a>
+      <a href="#" class="sidebar-link">Contacto</a>
+
+      <a href="#" class="sidebar-link">Inicio</a>
+      <a href="#" class="sidebar-link">Acerca de</a>
+      <a href="#" class="sidebar-link">Contacto</a>
+
+      <a href="#" class="sidebar-link">Inicio</a>
+      <a href="#" class="sidebar-link">Acerca de</a>
+      <a href="#" class="sidebar-link">Contacto</a>
+      
+      <a href="#" class="sidebar-link">Inicio</a>
+      <a href="#" class="sidebar-link">Acerca de</a>
+      <a href="#" class="sidebar-link">Contacto</a>
+    </div>
+    
+  <!-- Contenido principal -->  
+
+  <main>
+
     <nav class="navbar-side">
       <a href="#" class="nav-item">Inicio</a>
       <a href="#" class="nav-item">Acerca de</a>
       <a href="#" class="nav-item">Contacto</a>
     </nav>
-    <div class="sidebar">
-      <a  class="sidebar-superior">Inicio</a>
-      <a href="#" class="sidebar-link">Acerca de</a>
-      <a href="#" class="sidebar-link">Contacto</a>
-      <a href="#" class="sidebar-superior">Inicio</a>
-      <a href="#" class="sidebar-link">Acerca de</a>
-      <a href="#" class="sidebar-link">Contacto</a>
-      <a  class="sidebar-superior">Inicio</a>
-      <a href="#" class="sidebar-link">Acerca de</a>
-      <a href="#" class="sidebar-link">Contacto</a>
-      <a  class="sidebar-superior">Inicio</a>
-      <a href="#" class="sidebar-link">Acerca de</a>
-      <a href="#" class="sidebar-link">Contacto</a>
-      <a href="#" class="sidebar-link">Inicio</a>
-      <a href="#" class="sidebar-link">Acerca de</a>
-      <a href="#" class="sidebar-link">Contacto</a>
-      <a href="#" class="sidebar-link">Inicio</a>
-      <a href="#" class="sidebar-link">Acerca de</a>
-      <a href="#" class="sidebar-link">Contacto</a>
-      <a href="#" class="sidebar-link">Inicio</a>
-      <a href="#" class="sidebar-link">Acerca de</a>
-      <a href="#" class="sidebar-link">Contacto</a>
-      <a href="#" class="sidebar-link">Inicio</a>
-      <a href="#" class="sidebar-link">Acerca de</a>
-      <a href="#" class="sidebar-link">Contacto</a>
-      <a href="#" class="sidebar-link">Inicio</a>
-      <a href="#" class="sidebar-link">Acerca de</a>
-      <a href="#" class="sidebar-link">Contacto</a>
-      <a href="#" class="sidebar-link">Inicio</a>
-      <a href="#" class="sidebar-link">Acerca de</a>
-      <a href="#" class="sidebar-link">Contacto</a>
-    </div>
-  
-  
-    <!-- Contenido principal -->
+
     <div style="margin-left: 270px; padding: 20px;"> <!-- Ajusta el margen izquierdo para dejar espacio para la barra lateral -->
       <h1>Contenido Principal</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat tincidunt odio, et consectetur felis rhoncus id.</p>
     </div>
-    <!-- Contenido de las alertas -->
+
+  <!-- Contenido de las alertas -->
+
     <h2 style="  text-align: center;">Alertas</h2>
     <div class="alert alert-success">¡Éxito! La operación se completó correctamente.</div>
     <div class="alert alert-info">¡Información: Esta es una nota importante que debes tener en cuenta! <a href="#" class="alert-link"> ejemplo link</a></div>
@@ -86,6 +124,10 @@
     <div class="alert alert-info">¡Información: Esta es una nota importante que debes tener en cuenta! <a href="#" class="alert-link"> ejemplo link</a></div>
     <div class="alert alert-warning">¡Advertencia: Esta acción puede tener consecuencias no deseadas.</div>
     <div class="alert alert-danger">¡Error: No se pudo completar la operación debido a un error inesperado.</div>
+
+
+  </main>
+    
   </body>
   </html>
 </body>
