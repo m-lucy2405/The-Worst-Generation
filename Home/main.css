@@ -1226,6 +1226,9 @@ body {
   font-family: "Blackbeard", cursive;
   background-color: #f88809;
 }
+.crear__cuenta body {
+  background-color: black;
+}
 .crear__cuenta img {
   max-width: 100%;
   height: auto;
@@ -1272,6 +1275,13 @@ body {
     width: 100%;
     margin-right: 0;
   }
+}
+.icono__candado {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../Home/Iconos_img/candado.svg");
+  background-size: cover;
 }
 
 /*# sourceMappingURL=main.css.map */

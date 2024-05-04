@@ -241,6 +241,9 @@ $magen-contenido: 16px;
 //             FORMULARIO CREAR CUENTA
 //***********************************************************
 .crear__cuenta{
+    body{
+        background-color: black
+    }
     @extend .grid__justyfy__content__center;
     max-width: 100%;
     margin: $magen-contenido;
