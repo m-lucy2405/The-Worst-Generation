@@ -76,7 +76,7 @@ $icon-danger: url('error.png');
 }
 
 // Media queries para ajustes responsivos
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .alert {
     flex-direction: column; /* Cambiar la dirección de los elementos en pantallas pequeñas */
     text-align: center; /* Centrar el texto en pantallas pequeñas */

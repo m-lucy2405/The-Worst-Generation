@@ -1,0 +1,169 @@
+@use '../UTILIDADES/bordes';
+@use '../UTILIDADES/tipografia-tex';
+@use '../UTILIDADES/colores';
+@use '../UTILIDADES/movimientos';
+/* Estilos para la barra de navegación superior */
+.navbar-top {
+    background-color: colores.$color-robin; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center; /* Centrar el texto */
+    @extend .small-caps;   
+  }
+  
+  .navbar-top .nav-item {
+    margin-right: 15px; /* Espaciado entre elementos */
+    font-weight: bold; /* Negrita */
+    &--active{
+      text-decoration: underline;
+    }
+    &:hover{
+        color: colores.$color-usopp;
+    }
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  
+      a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+  
+        &:hover {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+  
+    &:hover .dropdown-content {
+      display: block;
+    }
+  }
+  
+  
+  /* Estilos para la barra de navegación corta*/
+  .navbar-side {
+    background: linear-gradient(to right, #ff0000, #0000ff);; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    width: 40%; /* Ancho de la barra lateral */
+    margin: 0 auto; /* Centrar horizontalmente */
+    text-align: center;  
+    @extend .animated;
+  }
+
+  
+  .navbar-side .nav-item {
+    padding: 10px; /* Espaciado interno */
+    &--active{
+      text-decoration: underline;
+    }
+    &:hover{
+        color: colores.$color-usopp;
+    }
+   
+  }
+  
+  /* Estilos compartidos para los elementos de navegación */
+  .nav-item {
+    display: inline-block; /* Mostrar en línea */
+    text-decoration: none; /* Quitar subrayado del texto */
+    color: inherit; /* Heredar color del texto */
+  }
+
+/* Estilo para la barra lateral */
+.sidebar {
+  font-family: tipografia-tex.$font-pirate;
+  padding: 20px; 
+  position: fixed; 
+  top: 85px; 
+  left: 0; 
+  height: 100%;
+  width: 150px;
+  background-color: colores.$color-robin;
+  color: #fff;
+  overflow-y: auto; /* Permite desplazamiento vertical */
+  @extend .animated2;
+}
+
+/* Estilos para los enlaces del menú lateral */
+.sidebar-link {
+  display: block;
+  padding: 10px 0;
+  margin-left: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.sidebar-superior {
+  display: block;
+  padding: 1px 0;
+  margin-left: 0;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+/* Estilos para los enlaces del menú lateral al pasar el ratón */
+.sidebar-link:hover {
+  background-color: colores.$color-luffy;
+  text-align: center;
+}
+
+/* Personalización del scrollbar */
+.sidebar::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track (barra del scrollbar) */
+.sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle (cursor del scrollbar) */
+.sidebar::-webkit-scrollbar-thumb {
+  background: colores.$color-naranja;
+}
+
+/* Handle on hover (cursor del scrollbar al pasar el ratón) */
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: colores.$color-usopp;
+}
+  
+  /* Media query para ajustes responsivos */
+  @media (max-width: 1005px) {
+    .navbar-top {
+        display: block;
+        margin: 10px 0;
+    }
+    .navbar-top {
+      display: none;/* Ancho completo en dispositivos pequeños */
+      }
+  
+    .navbar-side {
+       display: flex;/* Ocultar barra de navegación superior en dispositivos pequeños */
+     
+    }
+    .sidebar {
+      display: none; /* Ocultar barra de navegación superior en dispositivos pequeños */
+    }
+    
+    .navbar-side .nav-item {
+      display: block; /* Mostrar elementos uno debajo del otro en dispositivos pequeños */
+      margin: 10px 0; /* Espaciado entre elementos en dispositivos pequeños */
+    }
+  }
+  

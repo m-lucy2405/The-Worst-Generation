@@ -1202,7 +1202,9 @@ body {
   background-color: #ecaacd;
   max-width: 90%;
   width: 100%;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   font-size: 16px;
 }
 .formulario__basico__2 option {
@@ -1477,6 +1479,4 @@ body {
     display: block; /* Mostrar elementos uno debajo del otro en dispositivos pequeños */
     margin: 10px 0; /* Espaciado entre elementos en dispositivos pequeños */
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
