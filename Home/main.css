@@ -1226,6 +1226,9 @@ body {
   font-family: "Blackbeard", cursive;
   background-color: #f88809;
 }
+.crear__cuenta body {
+  background-color: black;
+}
 .crear__cuenta img {
   max-width: 100%;
   height: auto;
@@ -1273,6 +1276,7 @@ body {
     margin-right: 0;
   }
 }
+<<<<<<< HEAD
 @keyframes scrollAnimation {
   0% {
     transform: translateY(0);
@@ -1477,6 +1481,14 @@ body {
     display: block; /* Mostrar elementos uno debajo del otro en dispositivos pequeños */
     margin: 10px 0; /* Espaciado entre elementos en dispositivos pequeños */
   }
+=======
+.icono__candado {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../Home/Iconos_img/candado.svg");
+  background-size: cover;
+>>>>>>> yoss
 }
 
 /*# sourceMappingURL=main.css.map */

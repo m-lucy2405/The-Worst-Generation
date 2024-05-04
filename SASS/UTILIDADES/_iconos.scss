@@ -1,0 +1,14 @@
+@use '../UTILIDADES/colores';
+
+// Estilos para el icono personalizado
+.icono__candado {
+    display: inline-block;
+    width: 24px; // Ancho deseado del icono
+    height: 4px; // Altura deseada del icono
+    background-image: url('../../Home/Iconos_img/candado.svg'); // Ruta de tu imagen
+    background-size: cover; // Ajusta el tamaño del fondo según el contenedor
+  }
+  
+  // Si deseas agregar estilos adicionales al icono, puedes hacerlo aquí
+  
+ 
