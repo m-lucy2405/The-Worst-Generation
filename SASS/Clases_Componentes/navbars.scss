@@ -1,6 +1,6 @@
-@use 'UTILIDADES/movimientos';
-@use 'UTILIDADES/tipografia-tex';
-@use 'UTILIDADES/colores';
+@use '../UTILIDADES/bordes';
+@use '../UTILIDADES/tipografia-tex';
+@use '../UTILIDADES/colores';
 /* Estilos para la barra de navegación superior */
 .navbar-top {
     background-color: colores.$color-zoro; /* Color de fondo */
@@ -9,11 +9,18 @@
     width: 100%;
     text-align: left; /* Centrar el texto */
     @extend .small-caps;
+    @extend .borde__dotted ;
   }
   
   .navbar-top .nav-item {
     margin-right: 15px; /* Espaciado entre elementos */
     font-weight: bold; /* Negrita */
+    &--active{
+      text-decoration: underline;
+    }
+    &:hover{
+        color: colores.$color-luffy;
+    }
   }
   .dropdown {
     position: relative;
@@ -65,6 +72,32 @@
     text-decoration: none; /* Quitar subrayado del texto */
     color: inherit; /* Heredar color del texto */
   }
+  /* Estilos para la barra lateral */
+.sidebar {
+    padding: 10px; 
+    position: fixed; 
+    top: 50px; 
+    left: 0; 
+    height: 100%;
+    width: 150px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Estilos para los enlaces del menú lateral */
+  .sidebar-link {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  /* Estilos para los enlaces del menú lateral al pasar el ratón */
+  .sidebar-link:hover {
+    background-color: #555;
+  }
+  
   
   /* Media query para ajustes responsivos */
   @media (max-width: 768px) {
