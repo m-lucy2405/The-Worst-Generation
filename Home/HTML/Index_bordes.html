@@ -3,20 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Home/main.css">
+    <link rel="stylesheet" href="../../Home/main.css">
     <title>Bordes</title>
 </head>
 <body>
-    <div class="borde__solido">ESTILO DE BORDE</div>
-    <div class="borde__dotted "> DOTED</div>
-    <div class="borde__dashed">dashed</div>
-    <div class="borde__double">Borde</div>
-    <div class="borde__outset">Borde</div>
-    <div class="borde__inset">Borde</div>
-    <div class="borde__ridge ">Borde</div>
-    <div class="borde__groove">Borde</div>
-    <div class="borde__Esquinas_dedondeada">Borde</div>
+
+    <h1 class="title">Bordes y redondeado</h1>
+    <div class="contenedor__Bordes">
+        <!-- Ejemplo de borde sólido -->
+    <div class="borde__solido">
+        Contenido con borde sólido
+    </div>
+
+    <!-- Ejemplo de borde punteado -->
+    <div class="borde__dotted">
+        Contenido con borde punteado
+    </div>
+
+    <!-- Ejemplo de borde discontinuo -->
+    <div class="borde__dashed">
+        Contenido con borde discontinuo
+    </div>
+
+    <!-- Ejemplo de borde doble -->
+    <div class="borde__double">
+        Contenido con borde doble
+    </div>
+
+    <!-- Ejemplo de borde en relieve -->
+    <div class="borde__ridge">
+        Contenido con borde en relieve
+    </div>
+
+    <!-- Ejemplo de borde en hendidura -->
+    <div class="borde__groove">
+        Contenido con borde en hendidura
+    </div>
+
+    <!-- Ejemplo de borde en incrustación -->
+    <div class="borde__inset">
+        Contenido con borde en incrustación
+    </div>
+
+    <!-- Ejemplo de borde saliente -->
+    <div class="borde__outset">
+        Contenido con borde saliente
+    </div>
+
+    <!-- Ejemplo de borde con esquinas redondeadas -->
+    <div class="borde__Esquinas_dedondeada">
+        Contenido con esquinas redondeadas
+    </div>
+
+    <!-- Ejemplo de borde con esquinas redondeadas de 3px -->
+    <div class="borde__Esquinas_dedondeada__3px">
+        Contenido con esquinas redondeadas de 3px
+    </div>
+
+    <!-- Ejemplo de borde redondeado a 50px -->
+    <div class="borde__redondeado__50px">
+        Contenido con borde redondeado a 50px
+    </div>
+
+    <!-- Ejemplo de borde redondeado al estilo 1 -->
+    <div class="borde__redondeado__1">
+        Contenido con borde redondeado al estilo 1
+    </div>
+
+    <!-- Ejemplo de borde redondeado al estilo 2 -->
+    <div class="borde__redondeado__2">
+        Contenido con borde redondeado al estilo 2
+    </div>
+
+    <!-- Ejemplo de borde redondeado al estilo 3 -->
+    <div class="borde__redondeado__3">
+        Contenido con borde redondeado al estilo 3
+    </div>
+
+    <!-- Ejemplo de borde redondeado al estilo 4 -->
+    <div class="borde__redondeado__4">
+        Contenido con borde redondeado al estilo 4
+    </div>
+
+    <!-- Ejemplo de borde redondeado al estilo 5 -->
+    <div class="borde__redondeado__5">
+        Contenido con borde redondeado al estilo 5
+    </div>
+
+    <!-- Ejemplo de borde redondeado al estilo 6 -->
+    <div class="borde__redondeado__6">
+        Contenido con borde redondeado al estilo 6
+    </div>
+
+    <!-- Ejemplo de borde redondeado al estilo 7 -->
+    <div class="borde__redondeado__7">
+        Contenido con borde redondeado al estilo 7
+    </div>
+
+    <!-- Ejemplo de borde redondeado al estilo 8 -->
+    <div class="borde__redondeado__8">
+        Contenido con borde redondeado al estilo 8
+    </div>
+
+    <!-- Ejemplo de borde redondeado al estilo 9 -->
+    <div class="borde__redondeado__9">
+        Contenido con borde redondeado al estilo 9
+    </div>
+
+    <!-- Ejemplo de borde redondeado al estilo 10 -->
+    <div class="borde__redondeado__10">
+        Contenido con borde redondeado al estilo 10
+    </div>
+
+    <!-- Ejemplo de borde circular -->
+    <div class="borde__circle">
+        Contenido con borde circular
+    </div>
+
+    <!-- Ejemplo de borde con esquinas redondeadas equitativas -->
+    <div class="borde__equna">
+        Contenido con esquinas redondeadas equitativas
+    </div>
+
+    <!-- Ejemplo de borde redondeado al estilo 15 -->
+    <div class="borde__redondeado__15">Contenido con borde redondeado al estilo 15</div>
+
+    <!-- Ejemplo de borde brillante -->
+    <div class="borde-brillante">Contenido con borde brillante</div>
+    </div>
 
     
 </body>
 </html>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+   .contenedor__Bordes{
+    border: none;
+    width: 100%;
+    height: auto;
+    background-color: rgb(250, 248, 248);
+    color: rgb(32, 3, 3);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: fantasy;
+
+ 
+    
+ 
+   }
+   div {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+    
+    
+</style>
