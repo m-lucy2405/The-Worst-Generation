@@ -12,7 +12,7 @@ body, html {
 
 header {
   background-color: colores.$color-robin;
-  color: #fff;
+  color: colores.$color-hana;
   padding: 10px;
 }
 
@@ -25,7 +25,7 @@ header {
     left: 0;
     width: 100%;
     background-color: colores.$color-robin; /* Color de fondo */
-    color: #fff; /* Color del texto */
+    color: colores.$color-hana; /* Color del texto */
     padding: 10px; /* Espaciado interno */
     z-index: 1000;
     transition: margin-left 0.3s ease; /* Ajuste adicional */
@@ -56,19 +56,19 @@ header {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: colores.$color-robin;
     min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 
     a {
-      color: black;
+      color: colores.$Dorado;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
 
       &:hover {
-        background-color: #f1f1f1;
+        background-color: colores.$color-hebihebino;
       }
     }
   }
@@ -82,7 +82,7 @@ header {
 
   .navbar-side {
     background: linear-gradient(to right, #ff0000, #0000ff);; /* Color de fondo */
-    color: #fff; /* Color del texto */
+    color: colores.$color-hana; /* Color del texto */
     width: 40%; /* Ancho de la barra lateral */
     margin: 0 auto; /* Centrar horizontalmente */
     text-align: center;  
@@ -123,7 +123,7 @@ header {
   background-color: colores.$color-robin;
   transition: left 0.3s ease;
   z-index: 999;
-  color: #fff;
+  color:colores.$color-hana;
   overflow-y: auto; /* Permite desplazamiento vertical */
   /*@extend .animated2;*/
 }
@@ -183,10 +183,12 @@ main {
   margin-top: 50px; /* Ajuste adicional */
   padding: 20px;
   transition: margin-left 0.3s ease; /* Ajuste adicional */
+  background-color: transparent;
 }
 
 main.sidebar-open {
   margin-left: 250px; /* Ajuste adicional */
+ 
 }
 
 main.sidebar-open .navbar-top {
