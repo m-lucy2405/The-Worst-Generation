@@ -76,7 +76,7 @@
 /*------------------------------------------------*/
 /*                 BORDES REDONDEADOR             */
 /*------------------------------------------------*/
-.borde__redondeado__50px, .boton__Movimento__Rosa, .boton__Movimento__Rosa__pequeño, .boton__Movimento__Rosa__mediano, .boton__Movimento__Rosa__grande, .boton__Movimento__Rosa__extra_grande, .boton__Movimento__rojo, .boton__Movimento__rojo__pequeño, .boton__Movimento__rojo__mediano, .boton__Movimento__rojo__grande, .boton__Movimento__rojo__extra_grande, .boton__Movimento__verde, .boton__Movimento__verde__pequeño, .boton__Movimento__verde__mediano, .boton__Movimento__verde__grande, .boton__Movimento__verde__extra_grande, .boton__Movimento__naranja, .boton__Movimento__naranja__pequeño, .boton__Movimento__naranja__mediano, .boton__Movimento__naranja__grande, .boton__Movimento__naranja__extra_grande, .container__inicio__secion form button, .container__crear__cuenta form button, .formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button {
+.borde__redondeado__50px, .boton__Movimento__Rosa, .boton__Movimento__Rosa__pequeño, .boton__Movimento__Rosa__mediano, .boton__Movimento__Rosa__grande, .boton__Movimento__Rosa__extra_grande, .boton__Movimento__rojo, .boton__Movimento__rojo__pequeño, .boton__Movimento__rojo__mediano, .boton__Movimento__rojo__grande, .boton__Movimento__rojo__extra_grande, .boton__Movimento__verde, .boton__Movimento__verde__pequeño, .boton__Movimento__verde__mediano, .boton__Movimento__verde__grande, .boton__Movimento__verde__extra_grande, .boton__Movimento__naranja, .boton__Movimento__naranja__pequeño, .boton__Movimento__naranja__mediano, .boton__Movimento__naranja__grande, .boton__Movimento__naranja__extra_grande, .container__inicio__secion form button, .container__crear__cuenta form button[type=submit], .formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button {
   border-radius: 50px;
   border: 0;
   border-color: #000;
@@ -761,7 +761,7 @@ body {
 }
 
 /*BONTON verdeee*/
-.boton__Movimento__verde, .boton__Movimento__verde__extra_grande, .boton__Movimento__verde__grande, .boton__Movimento__verde__mediano, .boton__Movimento__verde__pequeño, .container__inicio__secion form button, .container__crear__cuenta form button {
+.boton__Movimento__verde, .boton__Movimento__verde__extra_grande, .boton__Movimento__verde__grande, .boton__Movimento__verde__mediano, .boton__Movimento__verde__pequeño, .container__inicio__secion form button, .container__crear__cuenta form button[type=submit] {
   padding: 17px 40px;
   background-color: #0e791a;
   box-shadow: #000 0 0 8px;
@@ -773,13 +773,13 @@ body {
   font-family: "Ancient Text", serif;
   padding: 20px;
 }
-.boton__Movimento__verde:hover, .boton__Movimento__verde__extra_grande:hover, .boton__Movimento__verde__grande:hover, .boton__Movimento__verde__mediano:hover, .boton__Movimento__verde__pequeño:hover, .container__inicio__secion form button:hover, .container__crear__cuenta form button:hover {
+.boton__Movimento__verde:hover, .boton__Movimento__verde__extra_grande:hover, .boton__Movimento__verde__grande:hover, .boton__Movimento__verde__mediano:hover, .boton__Movimento__verde__pequeño:hover, .container__inicio__secion form button:hover, .container__crear__cuenta form button[type=submit]:hover {
   line-height: 3px;
   background-color: #0e791a;
   color: #F1FAEE;
   box-shadow: #000 0 7px 29px 0;
 }
-.boton__Movimento__verde:active, .boton__Movimento__verde__extra_grande:active, .boton__Movimento__verde__grande:active, .boton__Movimento__verde__mediano:active, .boton__Movimento__verde__pequeño:active, .container__inicio__secion form button:active, .container__crear__cuenta form button:active {
+.boton__Movimento__verde:active, .boton__Movimento__verde__extra_grande:active, .boton__Movimento__verde__grande:active, .boton__Movimento__verde__mediano:active, .boton__Movimento__verde__pequeño:active, .container__inicio__secion form button:active, .container__crear__cuenta form button[type=submit]:active {
   line-height: 3px;
   background-color: #0e791a;
   color: #F1FAEE;
@@ -816,7 +816,7 @@ body {
   transition: 100ms;
 }
 
-.boton__pequeno, .boton__animacion_1_pequeno, .boton__animacion_2_pequeno, .boton__animacion_3_pequeno, .boton__animacion_4_pequeno, .boton__basico__1__pequeno, .boton__basico__2__pequeno, .boton__basico__3__pequeno, .boton__basico__4__pequeno, .boton__blanco__1_pequño, .boton__blanco__2_pequeno, .boton__blanco__3_pequeno, .boton__blanco__4_pequeno, .boton__Movimento__Rosa__pequeño, .boton__Movimento__rojo__pequeño, .boton__Movimento__verde__pequeño, .container__inicio__secion form button, .container__crear__cuenta form button, .boton__Movimento__naranja__pequeño {
+.boton__pequeno, .boton__animacion_1_pequeno, .boton__animacion_2_pequeno, .boton__animacion_3_pequeno, .boton__animacion_4_pequeno, .boton__basico__1__pequeno, .boton__basico__2__pequeno, .boton__basico__3__pequeno, .boton__basico__4__pequeno, .boton__blanco__1_pequño, .boton__blanco__2_pequeno, .boton__blanco__3_pequeno, .boton__blanco__4_pequeno, .boton__Movimento__Rosa__pequeño, .boton__Movimento__rojo__pequeño, .boton__Movimento__verde__pequeño, .container__inicio__secion form button, .container__crear__cuenta form button[type=submit], .boton__Movimento__naranja__pequeño {
   padding: 10px;
 }
 
@@ -899,7 +899,7 @@ body {
   .boton__Movimento__verde,
   .boton__Movimento__verde__pequeño,
   .container__inicio__secion form button,
-  .container__crear__cuenta form button,
+  .container__crear__cuenta form button[type=submit],
   .boton__Movimento__verde__mediano,
   .boton__Movimento__verde__grande,
   .boton__Movimento__verde__extra_grande,
@@ -1332,39 +1332,41 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120vh;
+  height: 100vh;
   background-color: linear-gradient(to right, #E83E8C, #8A2BE2);
 }
 
 .container__crear__cuenta form {
-  width: 500px;
-  height: auto;
+  width: 300px;
   padding: 20px;
   background: linear-gradient(to right, #6581fa, #33d369);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: center;
 }
 
 .container__crear__cuenta form h2 {
   margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 .container__crear__cuenta form .form__group {
   margin-bottom: 20px;
 }
 
-.container__crear__cuenta form .form__group label {
+.container__crear__cuenta form label {
   display: block;
   margin-bottom: 5px;
   text-align: left;
 }
 
-.container__crear__cuenta form .form__group .input__with__icon input,
-.container__crear__cuenta form input[type=email],
-.container__crear__cuenta form input[type=password],
+.container__crear__cuenta form .input__with__icon {
+  position: relative;
+}
+
 .container__crear__cuenta form input[type=text],
-.container__crear__cuenta form input[type=tel] {
+.container__crear__cuenta form input[type=tel],
+.container__crear__cuenta form input[type=email],
+.container__crear__cuenta form input[type=password] {
   font-family: "Devil Fruit", fantasy;
   width: 100%;
   padding: 10px;
@@ -1374,7 +1376,7 @@ body {
   padding-left: 30px;
 }
 
-.container__crear__cuenta form .form__group .input__with__icon .icon {
+.container__crear__cuenta form .icon {
   position: absolute;
   top: 50%;
   left: 10px;
@@ -1384,17 +1386,40 @@ body {
   background-size: cover;
 }
 
-.container__crear__cuenta form .form__group .input__with__icon .email__icon {
+.container__crear__cuenta form .id__icon {
+  background-image: url("../../Home/Iconos_img/id.svg");
+}
+
+.container__crear__cuenta form .nombre__icon {
+  background-image: url("../../Home/Iconos_img/usuario.svg");
+}
+
+.container__crear__cuenta form .direccion__icon {
+  background-image: url("../../Home/Iconos_img/ubicacion.svg");
+}
+
+.container__crear__cuenta form .telefono__icon {
+  background-image: url("../../Home/Iconos_img/telefono..svg");
+}
+
+.container__crear__cuenta form .email__icon {
   background-image: url("../../Home/Iconos_img/gmail.svg");
 }
 
-.container__crear__cuenta form .form__group .input__with__icon .password__icon {
+.container__crear__cuenta form .nombre__usuario__icon {
+  background-image: url("../../Home/Iconos_img/usuario.svg");
+}
+
+.container__crear__cuenta form .password__icon {
   background-image: url("../../Home/Iconos_img/candado.svg");
 }
 
-.container__crear__cuenta form button:hover {
+.container__crear__cuenta form button[type=submit] {
+  font-family: "Devil Fruit", fantasy;
+}
+
+.container__crear__cuenta form button[type=submit]:hover {
   background-color: #d306d3;
-  margin: 16px;
 }
 
 .container__form__contatos {
@@ -1403,7 +1428,7 @@ body {
   justify-content: center;
   align-items: center;
   justify-items: center;
-  height: 100vh;
+  height: 120vh;
   background-color: linear-gradient(to right, #E83E8C, #8A2BE2);
   margin: 20px auto;
 }

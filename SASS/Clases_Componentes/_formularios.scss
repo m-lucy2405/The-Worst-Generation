@@ -110,7 +110,7 @@ $magen-contenido: 16px;
     gap: 16px;
     margin-bottom: 20px;
     margin-top: 20x;
-    height: 100vh;
+    height: 110vh;
     margin-top: 20px;
 
 
@@ -139,7 +139,7 @@ $magen-contenido: 16px;
     }
   
   // Estilos para los campos de entrada
-     input{
+    input{
         @extend .borde__Esquinas_dedondeada;
         background-color: colores.$color-hana;
         max-width: 90%;
@@ -151,8 +151,7 @@ $magen-contenido: 16px;
         @extend .borde__Esquinas_dedondeada;
         background-color: colores.$color-hana;
         max-width: 90%;
-        width: 100%;//OCUP EN ANCHO DISPONIBLE DE UN CONTENEDOR 
-    
+        width: 100%;//OCUP EN ANCHO DISPONIBLE DE UN CONTENEDOR     
     }
 
   
@@ -194,10 +193,7 @@ $magen-contenido: 16px;
         max-width: 90%;
         width: 100%;//OCUP EN ANCHO DISPONIBLE DE UN CONTENEDOR 
         font-family: tipografia-tex.$font-marine;
-
-    }
-
-    
+    }    
     input[type="password"] {
         @extend .borde__Esquinas_dedondeada;
         background-color: colores.$color-hana;
@@ -221,9 +217,7 @@ $magen-contenido: 16px;
         @extend .boton__Movimento__Rosa;
         grid-template-rows: 2;
     }
-    
-    
-  
+ 
     select {
         @extend .borde__Esquinas_dedondeada;
         background-color: colores.$color-hana;
@@ -257,46 +251,48 @@ $magen-contenido: 16px;
 //             FORMULARIO CREAR CUENTA
 //***********************************************************
 
+
 .container__crear__cuenta {
     font-family: tipografia-tex.$font-devil-fruit;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120vh;
+    height: 100vh;
     background-color: colores.$degradado-rosa-morado;
 }
 
 .container__crear__cuenta form {
     @extend .Diseño__materiales__8;
-    width: 500px;
-    height: auto;
+    width: 300px;
     padding: 20px;
     background: colores.$degradado-azul-verde;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    text-align: center;
 }
 
 .container__crear__cuenta form h2 {
     margin-bottom: 20px;
-    margin-top: 20px;
-
 }
 
 .container__crear__cuenta form .form__group {
     margin-bottom: 20px;
 }
 
-.container__crear__cuenta form .form__group label {
+.container__crear__cuenta form label {
     display: block;
     margin-bottom: 5px;
     text-align: left;
 }
 
-.container__crear__cuenta form .form__group .input__with__icon input,
-.container__crear__cuenta form input[type="email"],
-.container__crear__cuenta form input[type="password"],
+.container__crear__cuenta form .input__with__icon {
+    position: relative;
+}
+
 .container__crear__cuenta form input[type="text"],
-.container__crear__cuenta form input[type="tel"] {
+.container__crear__cuenta form input[type="tel"],
+.container__crear__cuenta form input[type="email"],
+.container__crear__cuenta form input[type="password"] {
     font-family: tipografia-tex.$font-devil-fruit;
     width: 100%;
     padding: 10px;
@@ -306,7 +302,7 @@ $magen-contenido: 16px;
     padding-left: 30px;
 }
 
-.container__crear__cuenta form .form__group .input__with__icon .icon {
+.container__crear__cuenta form .icon {
     position: absolute;
     top: 50%;
     left: 10px;
@@ -316,25 +312,43 @@ $magen-contenido: 16px;
     background-size: cover;
 }
 
-.container__crear__cuenta form .form__group .input__with__icon .email__icon {
+.container__crear__cuenta form .id__icon {
+    background-image: url('../../Home/Iconos_img/id.svg');
+}
+
+.container__crear__cuenta form .nombre__icon {
+    background-image: url('../../Home/Iconos_img/usuario.svg');
+}
+
+.container__crear__cuenta form .direccion__icon {
+    background-image: url('../../Home/Iconos_img/ubicacion.svg');
+}
+
+.container__crear__cuenta form .telefono__icon {
+    background-image: url('../../Home/Iconos_img/telefono..svg');
+}
+
+.container__crear__cuenta form .email__icon {
     background-image: url('../../Home/Iconos_img/gmail.svg');
 }
 
-.container__crear__cuenta form .form__group .input__with__icon .password__icon {
+.container__crear__cuenta form .nombre__usuario__icon {
+    background-image: url('../../Home/Iconos_img/usuario.svg');
+}
+
+.container__crear__cuenta form .password__icon {
     background-image: url('../../Home/Iconos_img/candado.svg');
 }
 
-.container__crear__cuenta form button {
-    @extend   .boton__Movimento__verde__pequeño;
+.container__crear__cuenta form button[type="submit"] {
+    @extend .boton__Movimento__verde__pequeño;
+    font-family: tipografia-tex.$font-devil-fruit;
+
 }
 
-.container__crear__cuenta form button:hover {
+.container__crear__cuenta form button[type="submit"]:hover {
     background-color: colores.$color-chopper;
-    margin: 16px;
 }
-
-
-
 
 
 //*******************************************
@@ -346,7 +360,7 @@ $magen-contenido: 16px;
     justify-content: center;
     align-items: center;
     justify-items: center;
-    height: 100vh;
+    height: 120vh;
     background-color: colores.$degradado-rosa-morado;
     margin: 20px auto;
 
