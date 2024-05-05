@@ -55,14 +55,12 @@
   margin: 20px;
 }
 
-.borde__Esquinas_dedondeada, .form__inicio__de__secion form, .formulario__basico__2 input, .formulario__basico__2 textarea, .formulario__basico__2 fieldset, .formulario__basico__2 legend, .formulario__basico__2 input[type=checkbox],
+.borde__Esquinas_dedondeada, .formulario__basico__2 input, .formulario__basico__2 textarea, .formulario__basico__2 fieldset, .formulario__basico__2 legend, .formulario__basico__2 input[type=checkbox],
 .formulario__basico__2 input[type=radio], .formulario__basico__2 input[type=text], .formulario__basico__2 input[type=password], .formulario__basico__2 input[type=email], .formulario__basico__2 select, .formulario__basico__2 option, .formulario__contactos input[type=text],
 .formulario__contactos input[type=email],
 .formulario__contactos input[type=tel],
 .formulario__contactos input[type=" "],
-.formulario__contactos textarea, .boton__cambio__color, .boton__animacion__1, .boton__animacion_1_pequeno, .boton__animacion_1_mediano, .boton__animacion_1_grande, .boton__animacion_1_extra_grande, .boton__animacion__2, .boton__animacion_2_pequeno, .boton__animacion_2_mediano, .boton__animacion_2_grande, .boton__animacion_2_extra_grande, .boton__animacion__3, .boton__animacion_3_pequeno, .boton__animacion_3_mediano, .boton__animacion_3_grande, .boton__animacion_3_extra_grande, .boton__animacion__4, .boton__animacion_4_pequeno, .boton__animacion_4_mediano, .boton__animacion_4_grande, .boton__animacion_4_extra_grande, .boton__basico__1, .boton__basico__1__pequeno, .boton__basico__1__mediano, .boton__basico__1__grande, .boton__basico__1__extra_grande, .boton__basico__2, .boton__basico__2__pequeno, .boton__basico__2__mediano, .boton__basico__2__grande, .boton__basico__2__extra_grande, .boton__basico__3, .boton__basico__3__pequeno, .boton__basico__3__mediano, .boton__basico__3__grande, .boton__basico__3__extra_grande, .boton__basico__4, .boton__basico__4__pequeno, .boton__basico__4__mediano, .boton__basico__4__grande, .boton__basico__4__extra_grande, .boton__blanco__1, .boton__blanco__1_pequño, .boton__blanco__1_mediano, .boton__blanco__1_grande, .boton__blanco__1_extra_grande, .boton__blanco__2, .boton__blanco__2_pequeno, .boton__blanco__2_mediano, .boton__blanco__2_grande, .boton__blanco__2_extra_grande, .boton__blanco__3, .boton__blanco__3_pequeno, .boton__blanco__3_mediano, .boton__blanco__3_grande, .boton__blanco__3_extra_grande, .boton__blanco__4, .boton__blanco__4_pequeno, .boton__blanco__4_mediano, .boton__blanco__4_grande, .boton__blanco__4_extra_grande, .form__inicio__de__secion input[type=text],
-.form__inicio__de__secion input[type=email],
-.form__inicio__de__secion input[type=password], .form__inicio__de__secion button, .formulario__contactos button[type=submit],
+.formulario__contactos textarea, .boton__cambio__color, .boton__animacion__1, .boton__animacion_1_pequeno, .boton__animacion_1_mediano, .boton__animacion_1_grande, .boton__animacion_1_extra_grande, .boton__animacion__2, .boton__animacion_2_pequeno, .boton__animacion_2_mediano, .boton__animacion_2_grande, .boton__animacion_2_extra_grande, .boton__animacion__3, .boton__animacion_3_pequeno, .boton__animacion_3_mediano, .boton__animacion_3_grande, .boton__animacion_3_extra_grande, .boton__animacion__4, .boton__animacion_4_pequeno, .boton__animacion_4_mediano, .boton__animacion_4_grande, .boton__animacion_4_extra_grande, .boton__basico__1, .boton__basico__1__pequeno, .boton__basico__1__mediano, .boton__basico__1__grande, .boton__basico__1__extra_grande, .boton__basico__2, .boton__basico__2__pequeno, .boton__basico__2__mediano, .boton__basico__2__grande, .boton__basico__2__extra_grande, .boton__basico__3, .boton__basico__3__pequeno, .boton__basico__3__mediano, .boton__basico__3__grande, .boton__basico__3__extra_grande, .boton__basico__4, .boton__basico__4__pequeno, .boton__basico__4__mediano, .boton__basico__4__grande, .boton__basico__4__extra_grande, .boton__blanco__1, .boton__blanco__1_pequño, .boton__blanco__1_mediano, .boton__blanco__1_grande, .boton__blanco__1_extra_grande, .boton__blanco__2, .boton__blanco__2_pequeno, .boton__blanco__2_mediano, .boton__blanco__2_grande, .boton__blanco__2_extra_grande, .boton__blanco__3, .boton__blanco__3_pequeno, .boton__blanco__3_mediano, .boton__blanco__3_grande, .boton__blanco__3_extra_grande, .boton__blanco__4, .boton__blanco__4_pequeno, .boton__blanco__4_mediano, .boton__blanco__4_grande, .boton__blanco__4_extra_grande, .formulario__contactos button[type=submit],
 input [type=file] {
   border-radius: 5px 5px 5px 5px;
   padding: 20px;
@@ -83,7 +81,7 @@ input [type=file] {
 /*------------------------------------------------*/
 /*                 BORDES REDONDEADOR             */
 /*------------------------------------------------*/
-.borde__redondeado__50px, .boton__Movimento__Rosa, .boton__Movimento__Rosa__pequeño, .boton__Movimento__Rosa__mediano, .boton__Movimento__Rosa__grande, .boton__Movimento__Rosa__extra_grande, .boton__Movimento__rojo, .boton__Movimento__rojo__pequeño, .boton__Movimento__rojo__mediano, .boton__Movimento__rojo__grande, .boton__Movimento__rojo__extra_grande, .boton__Movimento__verde, .boton__Movimento__verde__pequeño, .boton__Movimento__verde__mediano, .boton__Movimento__verde__grande, .boton__Movimento__verde__extra_grande, .boton__Movimento__naranja, .boton__Movimento__naranja__pequeño, .boton__Movimento__naranja__mediano, .boton__Movimento__naranja__grande, .boton__Movimento__naranja__extra_grande, .formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button, .crear__cuenta button[type=submit] {
+.borde__redondeado__50px, .boton__Movimento__Rosa, .boton__Movimento__Rosa__pequeño, .boton__Movimento__Rosa__mediano, .boton__Movimento__Rosa__grande, .boton__Movimento__Rosa__extra_grande, .boton__Movimento__rojo, .boton__Movimento__rojo__pequeño, .boton__Movimento__rojo__mediano, .boton__Movimento__rojo__grande, .boton__Movimento__rojo__extra_grande, .boton__Movimento__verde, .boton__Movimento__verde__pequeño, .boton__Movimento__verde__mediano, .boton__Movimento__verde__grande, .boton__Movimento__verde__extra_grande, .boton__Movimento__naranja, .boton__Movimento__naranja__pequeño, .boton__Movimento__naranja__mediano, .boton__Movimento__naranja__grande, .boton__Movimento__naranja__extra_grande, .formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button {
   border-radius: 50px;
   border: 0;
   border-color: #000;
@@ -133,6 +131,7 @@ input [type=file] {
 .borde__redondeado__10 {
   border-end-start-radius: 50%;
   writing-mode: vertical-rl;
+  background: linear-gradient(to right, #E83E8C, #8A2BE2);
 }
 
 /*------------------------------------------------*/
@@ -140,6 +139,7 @@ input [type=file] {
 /*------------------------------------------------*/
 .borde__circle {
   border-radius: 50px;
+  background: linear-gradient(to right, #E83E8C, #8A2BE2);
 }
 
 /*------------------------------------------------*/
@@ -147,10 +147,12 @@ input [type=file] {
 /*------------------------------------------------*/
 .borde__equna {
   border-radius: 60px/20px;
+  background: linear-gradient(to right, #E83E8C, #8A2BE2);
 }
 
 .borde__redondeado__15 {
   border-radius: 13em/3em;
+  background: linear-gradient(to right, #E83E8C, #8A2BE2);
 }
 
 /* Estilos para el borde brillante */
@@ -261,7 +263,7 @@ input [type=file] {
   box-shadow: 0 45px 65px #4a4f53, 0 35px 22px #4a4f53;
 }
 
-.Diseño__materiales__8 {
+.Diseño__materiales__8, .container__inicio__secion form, .container__crear__cuenta form {
   box-shadow: 0 60px 80px #4a4f53, 0 45px 26px #4a4f53;
 }
 
@@ -516,7 +518,7 @@ body {
   box-shadow: 0 45px 65px #4a4f53, 0 35px 22px #4a4f53;
 }
 
-.Diseño__materiales__8 {
+.Diseño__materiales__8, .container__inicio__secion form, .container__crear__cuenta form {
   box-shadow: 0 60px 80px #4a4f53, 0 45px 26px #4a4f53;
 }
 
@@ -575,9 +577,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.boton__cambio__color, .form__inicio__de__secion input[type=text],
-.form__inicio__de__secion input[type=email],
-.form__inicio__de__secion input[type=password], .form__inicio__de__secion button, .formulario__contactos button[type=submit],
+.boton__cambio__color, .formulario__contactos button[type=submit],
 input [type=file] {
   margin: 16px;
   padding: 20px;
@@ -585,9 +585,7 @@ input [type=file] {
   cursor: pointer;
 }
 
-.boton__cambio__color:hover, .form__inicio__de__secion input[type=text]:hover,
-.form__inicio__de__secion input[type=email]:hover,
-.form__inicio__de__secion input[type=password]:hover, .form__inicio__de__secion button:hover, .formulario__contactos button[type=submit]:hover,
+.boton__cambio__color:hover, .formulario__contactos button[type=submit]:hover,
 input [type=file]:hover {
   background-color: #0e791a;
 }
@@ -714,7 +712,7 @@ input [type=file]:hover {
   cursor: pointer;
 }
 
-.boton__Movimento__Rosa, .formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button, .crear__cuenta button[type=submit], .boton__Movimento__Rosa__extra_grande, .boton__Movimento__Rosa__grande, .boton__Movimento__Rosa__mediano, .boton__Movimento__Rosa__pequeño {
+.boton__Movimento__Rosa, .formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button, .boton__Movimento__Rosa__extra_grande, .boton__Movimento__Rosa__grande, .boton__Movimento__Rosa__mediano, .boton__Movimento__Rosa__pequeño {
   padding: 17px 40px;
   background-color: #E83E8C;
   box-shadow: #000 0 0 8px;
@@ -726,13 +724,13 @@ input [type=file]:hover {
   font-family: "Ancient Text", serif;
   padding: 20px;
 }
-.boton__Movimento__Rosa:hover, .formulario__basico__2 .formulario__basico__2:hover, .formulario__basico__2 button:hover, .crear__cuenta button[type=submit]:hover, .boton__Movimento__Rosa__extra_grande:hover, .boton__Movimento__Rosa__grande:hover, .boton__Movimento__Rosa__mediano:hover, .boton__Movimento__Rosa__pequeño:hover {
+.boton__Movimento__Rosa:hover, .formulario__basico__2 .formulario__basico__2:hover, .formulario__basico__2 button:hover, .boton__Movimento__Rosa__extra_grande:hover, .boton__Movimento__Rosa__grande:hover, .boton__Movimento__Rosa__mediano:hover, .boton__Movimento__Rosa__pequeño:hover {
   line-height: 3px;
   background-color: #E83E8C;
   color: #F1FAEE;
   box-shadow: #46dffa 0 7px 29px 0;
 }
-.boton__Movimento__Rosa:active, .formulario__basico__2 .formulario__basico__2:active, .formulario__basico__2 button:active, .crear__cuenta button[type=submit]:active, .boton__Movimento__Rosa__extra_grande:active, .boton__Movimento__Rosa__grande:active, .boton__Movimento__Rosa__mediano:active, .boton__Movimento__Rosa__pequeño:active {
+.boton__Movimento__Rosa:active, .formulario__basico__2 .formulario__basico__2:active, .formulario__basico__2 button:active, .boton__Movimento__Rosa__extra_grande:active, .boton__Movimento__Rosa__grande:active, .boton__Movimento__Rosa__mediano:active, .boton__Movimento__Rosa__pequeño:active {
   line-height: 3px;
   background-color: #E83E8C;
   color: #F1FAEE;
@@ -896,7 +894,6 @@ input [type=file]:hover {
   .boton__Movimento__Rosa,
   .formulario__basico__2 .formulario__basico__2,
   .formulario__basico__2 button,
-  .crear__cuenta button[type=submit],
   .boton__Movimento__Rosa__pequeño,
   .boton__Movimento__Rosa__mediano,
   .boton__Movimento__Rosa__grande,
@@ -1154,51 +1151,83 @@ input [type=file]:hover {
   background-size: contain;
 }
 
-.form__inicio__de__secion {
-  max-width: 100%;
-  font-family: "Marine", sans-serif;
-  padding: 20px;
-  margin: 16px;
-  display: grid;
-  justify-items: center;
+.container__inicio__secion {
+  font-family: "Devil Fruit", fantasy;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 16px;
-  background: url("SASSIMGsThousend_Sunny.jpg");
-  background-size: cover; /* Para cubrir completamente el áre */
-  background-position: center; /* Para centrar la imagen de fondo */
-  background-color: #6C757D;
+  height: 100vh;
+  background-color: linear-gradient(to right, #E83E8C, #8A2BE2);
 }
-.form__inicio__de__secion form {
-  align-items: center;
-  gap: 16px;
-  width: 100%;
-  max-width: 80%;
-  margin: 20px auto;
+
+.container__inicio__secion form {
+  width: 300px;
   padding: 20px;
-  background-color: #003366;
-  font-size: large;
+  background: linear-gradient(to right, #6581fa, #33d369);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: center;
 }
-.form__inicio__de__secion input[type=text],
-.form__inicio__de__secion input[type=email],
-.form__inicio__de__secion input[type=password] {
-  background-color: #ecaacd;
-  max-width: 70%;
-  width: 100%;
+
+.container__inicio__secion form h2 {
+  margin-bottom: 20px;
 }
-.form__inicio__de__secion a {
+
+.container__inicio__secion form .form__group {
+  margin-bottom: 20px;
+}
+
+.container__inicio__secion form label {
   display: block;
+  margin-bottom: 5px;
   text-align: left;
-  text-decoration: none;
-  font-size: 16px;
 }
-.form__inicio__de__secion a:hover {
-  color: #003366;
+
+.container__inicio__secion form .input__with__icon {
+  position: relative;
 }
-.form__inicio__de__secion button {
-  display: block;
-  text-align: left;
-  max-width: 70%;
+
+.container__inicio__secion form input[type=email],
+.container__inicio__secion form input[type=password] {
   width: 100%;
+  padding: 10px;
+  border: 2px solid #0e791a;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+
+.container__inicio__secion form .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+
+.container__inicio__secion form .email-icon {
+  background-image: url("../../Home/Iconos_img/gmail.svg");
+}
+
+.container__inicio__secion form .password__icon {
+  background-image: url("../../Home/Iconos_img/candado.svg");
+}
+
+.container__inicio__secion form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0e791a;
+  color: #F1FAEE;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.container__inicio__secion form button:hover {
+  background-color: #d306d3;
 }
 
 .formulario__basico__2 {
@@ -1311,40 +1340,74 @@ input [type=file]:hover {
   background-color: #094b10;
 }
 
-.crear__cuenta {
-  max-width: 500px;
-  margin: 0 auto;
+.container__crear__cuenta {
+  font-family: "Devil Fruit", fantasy;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container__crear__cuenta form {
+  width: 400px;
   padding: 20px;
-  border: 1px solid #ccc;
+  background: linear-gradient(to right, #6581fa, #33d369);
   border-radius: 8px;
-  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: center;
 }
-.crear__cuenta label {
+.container__crear__cuenta form h2 {
+  margin-bottom: 20px;
+}
+.container__crear__cuenta form .form__group {
+  margin-bottom: 20px;
+}
+.container__crear__cuenta form .form__group label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  text-align: left;
 }
-.crear__cuenta img {
-  display: block;
-  margin-bottom: 10px;
+.container__crear__cuenta form .form__group .input__with__icon {
+  position: relative;
 }
-.crear__cuenta input[type=text],
-.crear__cuenta input[type=" "],
-.crear__cuenta input[type=tel],
-.crear__cuenta input[type=email],
-.crear__cuenta input[type=password] {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-.crear__cuenta button[type=submit] {
+.container__crear__cuenta form .form__group .input__with__icon input,
+.container__crear__cuenta form .form__group .input__with__icon input[type=email],
+.container__crear__cuenta form .form__group .input__with__icon input[type=password] {
+  font-family: "Devil Fruit", fantasy;
   width: 100%;
   padding: 10px;
-  margin-top: 10px;
+  border: 2px solid #0e791a;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding-left: 30px;
 }
-.crear__cuenta button[type=submit]:hover {
-  background-color: #6ca500;
+.container__crear__cuenta form .form__group .input__with__icon .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+.container__crear__cuenta form .form__group .input__with__icon .email-icon {
+  background-image: url("../../Home/Iconos_img/gmail.svg");
+}
+.container__crear__cuenta form .form__group .input__with__icon .password__icon {
+  background-image: url("../../Home/Iconos_img/candado.svg");
+}
+.container__crear__cuenta form .form__group button {
+  margin-bottom: 16px;
+  width: 100%;
+  padding: 10px;
+  background-color: #0e791a;
+  color: #F1FAEE;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.container__crear__cuenta form .form__group button:hover {
+  background-color: #d306d3;
 }
 
 .formulario__contactos {

@@ -19,70 +19,86 @@ $magen-contenido: 16px;
 //           FORMULARIO 1
 //***********************************************************
 
-.form__inicio__de__secion{
-    max-width: 100%;
-    font-family: tipografia-tex.$font-marine;
-    padding: $pandin-contedido;
-    margin: $magen-contenido;
-    display: grid;
-    justify-items: center;
+.container__inicio__secion {
+    font-family: tipografia-tex.$font-devil-fruit;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 16px;
-    background: url("SASS\IMGs\Thousend_Sunny.jpg");
-    background-size: cover; /* Para cubrir completamente el áre */
-    background-position: center; /* Para centrar la imagen de fondo */
-    background-color: colores.$color-gris;
+    height: 100vh;
+    background-color: colores.$degradado-rosa-morado;
+}
 
-    form{
-        @extend .borde__Esquinas_dedondeada;
-        align-items: center;
-        gap: 16px;
-        width: 100%;
-        max-width: 80%;
-        margin: 20px auto; // Agregar margen superior e inferior
-        padding: $pandin-contedido;
-        background-color: colores.$Azul-marino;  
-        font-size: large;
+.container__inicio__secion form {
+    @extend .Diseño__materiales__8;
+    width: 300px;
+    padding: 20px;
+    background: colores.$degradado-azul-verde;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
 
-    }
-    //*************************
-    //     IMPUT STYLES
-    //*************************
-    input[type="text"],
-    input[type="email"],
-    input[type="password"]{
-        @extend .boton__cambio__color;   
-        background-color: colores.$color-hana;
-        max-width: 70%;
-        width: 100%;
-    }
+.container__inicio__secion form h2 {
+    margin-bottom: 20px;
+}
 
-     //*************************
-    //     a STYLES
-    //*************************
-    a{
-        display: block;
-        text-align: left;
-        text-decoration: none;
-        font-size: 16px;
+.container__inicio__secion form .form__group {
+    margin-bottom: 20px;
+}
 
-        &:hover{
-            color: colores.$Azul-marino;
-        }
-    }
+.container__inicio__secion form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
 
-     //*************************
-    //     BUTTON STYLES
-    //*************************
-    button{
-        @extend .boton__cambio__color;   
-        display: block;
-        text-align: left;
-        max-width: 70%;
-        width: 100%;//
-    }
+.container__inicio__secion form .input__with__icon {
+    position: relative;
+}
 
+.container__inicio__secion form input[type="email"],
+.container__inicio__secion form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid colores.$color-zoro;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 30px;
+}
 
+.container__inicio__secion form .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
+
+.container__inicio__secion form .email-icon {
+    background-image: url('../../Home/Iconos_img/gmail.svg');
+
+}
+
+.container__inicio__secion form .password__icon {
+    background-image: url('../../Home/Iconos_img/candado.svg');
+
+}
+
+.container__inicio__secion form button {
+    width: 100%;
+    padding: 10px;
+    background-color: colores.$color-zoro;
+    color: colores.$color-secundario;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container__inicio__secion form button:hover {
+    background-color: colores.$color-chopper;
 }
 
 //***********************************************************
@@ -241,48 +257,93 @@ $magen-contenido: 16px;
 //***********************************************************
 //             FORMULARIO CREAR CUENTA
 //***********************************************************
-.crear__cuenta {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    
-    label {
-        display: block;
-        margin-bottom: 10px;
-    }
-    
-    img {
-        display: block;
-        margin-bottom: 10px;
-    }
-    
-    input[type="text"],
-    input[type=" "],
-    input[type="tel"],
-    input[type="email"],
-    input[type="password"] {
-        width: calc(100% - 20px);
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-    
-    button[type="submit"] {
-        @extend .boton__Movimento__Rosa;
-        width: 100%;
-        padding: 10px;
-        margin-top: 10px;
-        
-    }
-    
-    button[type="submit"]:hover {
-        background-color: #6ca500;
+
+
+.container__crear__cuenta {
+    font-family: tipografia-tex.$font-devil-fruit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+
+    form {
+        @extend .Diseño__materiales__8;
+        width: 400px;
+        padding: 20px;
+        background: colores.$degradado-azul-verde;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        text-align: center;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .form__group {
+            margin-bottom: 20px;
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+                text-align: left;
+            }
+
+            .input__with__icon {
+                position: relative;
+
+                input,
+                input[type="email"],
+                input[type="password"] {
+                    font-family: tipografia-tex.$font-devil-fruit;
+
+                    width: 100%;
+                    padding: 10px;
+                    border: 2px solid colores.$color-zoro;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    padding-left: 30px;
+                }
+
+                .icon {
+                    position: absolute;
+                    top: 50%;
+                    left: 10px;
+                    transform: translateY(-50%);
+                    width: 20px;
+                    height: 20px;
+                    background-size: cover;
+                }
+
+                .email-icon {
+                    background-image: url('../../Home/Iconos_img/gmail.svg');
+                }
+
+                .password__icon {
+                    background-image: url('../../Home/Iconos_img/candado.svg');
+                }
+            }
+
+            button {
+                margin-bottom: 16px;
+                width: 100%;
+                padding: 10px;
+                background-color: colores.$color-zoro;
+                color: colores.$color-secundario;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: colores.$color-chopper;
+                }
+            }
+        }
     }
 }
+
+
+
 
 
 //*******************************************

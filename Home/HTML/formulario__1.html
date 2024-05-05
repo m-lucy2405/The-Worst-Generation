@@ -7,23 +7,30 @@
     <title>inicio de secion</title>
 </head>
 <body>
-    <h1>inicio de sesion</h1>
-    <form class="form__inicio__de__secion" action="" method="post">
-        <label class="title " for="">¡BIENVENIDO!</label>
-        <label class="subtitle" for="">Inicio de secion</label>
+    <div class="container__inicio__secion">
+        <form class="form__inicio__de__secion">
+          <h2>Iniciar Sesión</h2>
+          <div class="form__group">
+            <label for="email">Correo Electrónico:</label>
+            <div class="input__with__icon">
+              <span class="icon email-icon"></span>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="password">Contraseña:</label>
+            <div class="input__with__icon">
+              <span class="icon password__icon"></span>
+              <input type="password" id="password" name="password" required>
+            </div>
+          </div>
+          <button type="submit">Iniciar Sesión</button>
+        </form>
+      </div>
 
-        <input type="text" name="usuario" placeholder="usuario">
-        <input type="password" name="contrasena" placeholder="password">
 
-        <!--BOTON INICIAR-->
-        <button  type=" ">Iniciar secion</button>
-        <a href="Index_sombras.html">¿Olvido su contraseña?</a>
-        <a href="Index_sombras.html">¿No tienes una cuentas?, Registrase Hoy</a>
+   
 
-        
-        
-    </form>
-
-    
 </body>
 </html>
+
