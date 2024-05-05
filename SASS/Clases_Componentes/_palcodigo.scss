@@ -1,0 +1,20 @@
+@use '../UTILIDADES/colores';
+
+.pre{
+    border-radius: 10px;
+    background: colores.$degradado-rosa-morado;
+    color: colores.$color-brook;
+    height: auto;
+}
+.code{
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+}
+.container-code{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 100%;
+  }
