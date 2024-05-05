@@ -10,13 +10,10 @@
     <link rel="icon" href="../SASS/IMGs/thestrawhead_pirates.ico">
     
     <!----- ESTILO ----->
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- JS -->
-    <link rel="stylesheet" href="../owl.carousel.js">
+    <link rel="stylesheet" href= "main.css">
+    <link rel="stylesheet" href= "/CSS/style.css">
 
-    <title>ONE PIECE - FAN PAGE</title>
+    <title>ONE PIECE - LIBRERIA DE ESTILOS</title>
 
 </head>
 
@@ -32,23 +29,36 @@
 
         <!-- Inicio Contenedor Principal Navbar -->
 
-        <div class="navar-containe-lg-position relative" style="background-color: brown;">
+        <div class="navar-containe-lg-position relative">
+              
+              <nav class="navbar-top">
             
-            <nav> 
-
-                <a href="index.html" class="navbar-brand">
-                    <img src="../SASS/IMGs/OnePiece.png" alt="The Straw Head" style="width: 20% ;">
-                </a>
-
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-            </nav>
+                <a href="/Home/index.html" class="nav-item">
+                  <img src="/SASS/IMGs/OnePiece.png" alt="Descripción de la imagen" style="width: 180px; margin-bottom: 0px;">
+                  </a>
+                  <a href="#" class="nav-item">Documentacion</a>
+                  <a href="#" class="nav-item">Acerca de One Piece</a>
+                  <a href="https://onepiece.fandom.com/es/wiki/One_Piece_Wiki" class="nav-item">Mas Informacion</a>
+                  
+                  <!-- Dropdown link -->
+                  <div class="dropdown">
+                    <a href="#" class="nav-item">Más opciones</a>
+                    <div class="dropdown-content">
+                      <a href="#">Opción 1</a>
+                      <a href="#">Opción 2</a>
+                      <a href="#">Opción 3</a>
+                    </div>
+                  </div>
+              </nav>
 
         </div>
 
         <!-- Termina Contenedor Principal Navbar -->
+
+</header>
+
+    <main>
+
         <!-- Empieza Container Carrusel de Bienvenida -->
 
         <div class="container-fluid p-0">
@@ -58,10 +68,10 @@
                 <div class="carousel-inner">
                     
                     <div class="carousel-item active">
-                        <img class="w-100" src="SASS/IMGs/Muguis-Carrusel.jpg" alt="Miguiwaras">
+                        <img class="w-100" src="/SASS/IMGs/Muguis-Carrusel.jpg" alt="Miguiwaras">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
-                                <h4 class="text-white text-uppercase mb-md-3">Fan Page Oficial de ONE PIECE </h4>
+                                <h4 class="text-white text-uppercase mb-md-3">Libreria de Estilos Oficial de ONE PIECE </h4>
                                 <h1 class="display-3 text-white mb-md-4">BIENVENIDOS NAKAMAS</h1>
                             
                                 <a href="" class="boton btn-primary py-md-3 px-md-5 mt-2">We Are!</a>
@@ -71,11 +81,11 @@
                     </div>
 
                     <div class="carousel-item">
-                        <img class="w-100" src= "SASS/IMGs/Thousend_Sunny.jpg" alt="Miguiwaras">
+                        <img class="w-100" src= "/SASS/IMGs/Thousend_Sunny.jpg" alt="Miguiwaras">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h4 class="text-white text-uppercase mb-md-3">¡Vamos por el One Pice, Juntos!</h4>
-                                <h1 class="display-3 text-white mb-md-4">ENCONTRARAS TODO SOBRE ONE PIECE AQUI</h1>
+                                <h1 class="display-3 text-white mb-md-4">ENCONTRARAS TODO LOS ESTILOS SOBRE ONE PIECE AQUI</h1>
                             
                                 <a href="" class="boton btn-primary py-md-3 px-md-5 mt-2">Navegar por el Grand Line</a>
                             
@@ -107,7 +117,9 @@
         
     </div>
 
-    </header>
+    </main>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
