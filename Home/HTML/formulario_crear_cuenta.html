@@ -10,47 +10,58 @@
 
     <div class="container__crear__cuenta">
         <form>
-            <h2>CREAR CUENTA</h2>
+            <h2>Crear Cuenta</h2>
             <div class="form__group">
-                <input type="text" name="id" placeholder="ID">
-            </div>
-            <div class="form__group">
-                <input type="text" name="nombre" placeholder="Nombre">
-            </div>
-            <div class="form__group">
-                <input type="text" name="direccion" placeholder="Dirección" required>
+                <div class="input__with__icon">
+                    <input type="text" id="id" name="id" placeholder="ID">
+                    <span class="icon id__icon"></span>
+                </div>
             </div>
             <div class="form__group">
-                <input type="text" name="telefono" placeholder="Teléfono" pattern="[0-9]+" required>
+                <div class="input__with__icon">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                    <span class="icon nombre__icon"></span>
+                </div>
             </div>
             <div class="form__group">
-                <input type="email" name="correo" placeholder="Correo electrónico" required>
-                <i class="email__icon"></i>
+                <div class="input__with__icon">
+                    <input type="text" id="direccion" name="direccion" placeholder="Dirección">
+                    <span class="icon direccion__icon"></span>
+                </div>
             </div>
             <div class="form__group">
-                <input type="text" name="usuario" placeholder="Nombre de usuario" required>
-            </div>
-            <div class="form__group input__with__icon">
-                <input type="password" name="contrasena" id="password" placeholder="Contraseña" required>
-                <span class="icon password__icon"></span>
-            </div>
-            <div class="form__group">
-                <label class="form-check-label">
-                    <input type="checkbox"> Mostrar Contraseña
-                </label>
+                <div class="input__with__icon">
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+                    <span class="icon telefono__icon"></span>
+                </div>
             </div>
             <div class="form__group">
-                <button type="submit">Crear Cuenta</button>
-                <button type="button">Iniciar Sesión</button>
+                <div class="input__with__icon">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <span class="icon email__icon"></span>
+                </div>
             </div>
+            <div class="form__group">
+                <div class="input__with__icon">
+                    <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Nombre de Usuario">
+                    <span class="icon nombre__usuario__icon"></span>
+                </div>
+            </div>
+            <div class="form__group">
+                <div class="input__with__icon">
+                    <input type="password" id="password" name="password" placeholder="Contraseña">
+                    <span class="icon password__icon"></span>
+                </div>
+            </div>
+            <label for="">mostrar contraseña<input type="checkbox"></label>
+            <button type="submit">Crear Cuenta</button><br>
+            <a href="">iniciar secion</a>
         </form>
     </div>
     
     
+    
 
-    
-   
-    
 </body>
 </html>
 
