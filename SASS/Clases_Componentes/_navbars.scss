@@ -3,12 +3,6 @@
 @use '../UTILIDADES/colores';
 @use '../UTILIDADES/movimientos';
 
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  transition: margin-left 0.3s ease, margin-top 0.3s ease; /* Ajuste adicional */
-}
 
 header {
   background-color: colores.$color-robin;
