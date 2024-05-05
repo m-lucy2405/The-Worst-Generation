@@ -2,63 +2,81 @@
 @use '../UTILIDADES/tipografia-tex';
 @use '../UTILIDADES/colores';
 @use '../UTILIDADES/movimientos';
+
+
+header {
+  background-color: colores.$color-robin;
+  color: colores.$color-hana;
+  padding: 10px;
+}
+
 /* Estilos para la barra de navegación superior */
+
 .navbar-top {
-    background-color: colores.$color-robin; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    padding: 10px; /* Espaciado interno */
-    width: 100%;
+    position: fixed;
     display: flex;
-    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: colores.$color-robin; /* Color de fondo */
+    color: colores.$color-hana; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    z-index: 1000;
+    transition: margin-left 0.3s ease; /* Ajuste adicional */
+    align-items: center;    
     justify-content: space-evenly;
     text-align: center; /* Centrar el texto */
     @extend .small-caps;   
+}
+  
+.navbar-top .nav-item {
+  align-items: center;
+  padding: auto; /* Espaciado entre elementos */
+  font-weight: bold; /* Negrita */
+  &--active{
+    text-decoration: underline;
   }
-  
-  .navbar-top .nav-item {
-    margin-right: 15px; /* Espaciado entre elementos */
-    font-weight: bold; /* Negrita */
-    &--active{
-      text-decoration: underline;
-    }
-    &:hover{
-        color: colores.$color-usopp;
-    }
+  &:hover{
+      color: colores.$color-usopp;
   }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 100px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-  
-      a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-  
-        &:hover {
-          background-color: #f1f1f1;
-        }
+}
+
+/* Estilos para la barra Dropdown */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: colores.$color-robin;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    a {
+      color: colores.$Dorado;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+
+      &:hover {
+        background-color: colores.$color-hebihebino;
       }
     }
-  
-    &:hover .dropdown-content {
-      display: block;
-    }
   }
+
+  &:hover .dropdown-content {
+    display: block;
+  }
+}
   
-  
-  /* Estilos para la barra de navegación corta*/
+  /* Estilos para la barra de navegación corta en el Main*/
+
   .navbar-side {
     background: linear-gradient(to right, #ff0000, #0000ff);; /* Color de fondo */
-    color: #fff; /* Color del texto */
+    color: colores.$color-hana; /* Color del texto */
     width: 40%; /* Ancho de la barra lateral */
     margin: 0 auto; /* Centrar horizontalmente */
     text-align: center;  
@@ -78,28 +96,38 @@
   }
   
   /* Estilos compartidos para los elementos de navegación */
+
   .nav-item {
     display: inline-block; /* Mostrar en línea */
     text-decoration: none; /* Quitar subrayado del texto */
     color: inherit; /* Heredar color del texto */
   }
 
-/* Estilo para la barra lateral */
+/* Estilo para la Barra Lateral */
+
 .sidebar {
-  font-family: tipografia-tex.$font-pirate;
-  padding: 20px; 
   position: fixed; 
-  top: 85px; 
-  left: 0; 
+  font-family: tipografia-tex.$font-pirate;
+  margin-top: 50px;
+  padding: 20px; 
+  top: 0; 
+  left: -300px;
+  width: 250px;
   height: 100%;
-  width: 150px;
   background-color: colores.$color-robin;
-  color: #fff;
+  transition: left 0.3s ease;
+  z-index: 999;
+  color:colores.$color-hana;
   overflow-y: auto; /* Permite desplazamiento vertical */
-  @extend .animated2;
+  /*@extend .animated2;*/
 }
 
-/* Estilos para los enlaces del menú lateral */
+.sidebar.open {
+  left: 0;
+}
+
+/* Estilos para los enlaces del Menú Lateral */
+
 .sidebar-link {
   display: block;
   padding: 10px 0;
@@ -108,6 +136,7 @@
   text-decoration: none;
   transition: background-color 0.3s;
 }
+
 .sidebar-superior {
   display: block;
   padding: 1px 0;
@@ -142,8 +171,27 @@
 .sidebar::-webkit-scrollbar-thumb:hover {
   background: colores.$color-usopp;
 }
+
+main {
+  margin-left: 0; /* Ajuste adicional */
+  margin-top: 50px; /* Ajuste adicional */
+  padding: 20px;
+  transition: margin-left 0.3s ease; /* Ajuste adicional */
+  background-color: transparent;
+}
+
+main.sidebar-open {
+  margin-left: 250px; /* Ajuste adicional */
+ 
+}
+
+main.sidebar-open .navbar-top {
+  margin-left: 250px; /* Ajuste adicional */
+}
+
   
-  /* Media query para ajustes responsivos */
+/* Media query para ajustes responsivos */
+
   @media (max-width: 1005px) {
     .navbar-top {
         display: block;
@@ -165,5 +213,5 @@
       display: block; /* Mostrar elementos uno debajo del otro en dispositivos pequeños */
       margin: 10px 0; /* Espaciado entre elementos en dispositivos pequeños */
     }
-  }
+}
   
