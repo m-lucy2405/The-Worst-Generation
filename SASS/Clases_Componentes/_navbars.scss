@@ -198,26 +198,26 @@ main.sidebar-open .navbar-top {
   
 /* Media query para ajustes responsivos */
 
-  @media (max-width: 1005px) {
+ /* @media (max-width: 1005px) {
     .navbar-top {
         display: block;
         margin: 10px 0;
     }
     .navbar-top {
-      display: none;/* Ancho completo en dispositivos pequeños */
+      display: none;/* Ancho completo en dispositivos pequeños 
       }
   
     .navbar-side {
-       display: flex;/* Ocultar barra de navegación superior en dispositivos pequeños */
+       display: flex;/* Ocultar barra de navegación superior en dispositivos pequeños 
      
     }
     .sidebar {
-      display: none; /* Ocultar barra de navegación superior en dispositivos pequeños */
+      display: none; /* Ocultar barra de navegación superior en dispositivos pequeños 
     }
     
     .navbar-side .nav-item {
-      display: block; /* Mostrar elementos uno debajo del otro en dispositivos pequeños */
-      margin: 10px 0; /* Espaciado entre elementos en dispositivos pequeños */
+      display: block; /* Mostrar elementos uno debajo del otro en dispositivos pequeños 
+      margin: 10px 0; /* Espaciado entre elementos en dispositivos pequeños 
     }
-}
+}*/
   
