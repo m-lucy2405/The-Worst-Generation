@@ -1443,13 +1443,6 @@ input [type=file] {
   animation: fadeInUpX 1s ease forwards;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  transition: margin-left 0.3s ease, margin-top 0.3s ease; /* Ajuste adicional */
-}
-
 header {
   background-color: #14213D;
   color: #ecaacd;
@@ -1621,23 +1614,146 @@ main.sidebar-open .navbar-top {
 }
 
 /* Media query para ajustes responsivos */
-@media (max-width: 1005px) {
-  .navbar-top {
-    display: block;
-    margin: 10px 0;
+/* @media (max-width: 1005px) {
+    .navbar-top {
+        display: block;
+        margin: 10px 0;
+    }
+    .navbar-top {
+      display: none;/* Ancho completo en dispositivos pequeños 
+      }
+
+    .navbar-side {
+       display: flex;/* Ocultar barra de navegación superior en dispositivos pequeños 
+
+    }
+    .sidebar {
+      display: none; /* Ocultar barra de navegación superior en dispositivos pequeños 
+    }
+
+    .navbar-side .nav-item {
+      display: block; /* Mostrar elementos uno debajo del otro en dispositivos pequeños 
+      margin: 10px 0; /* Espaciado entre elementos en dispositivos pequeños 
+    }
+}*/
+main.cards {
+  display: flex;
+  padding: 40px;
+}
+
+main.cards section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  max-height: 350px;
+  max-width: 250px;
+  margin-left: 32px;
+}
+
+main.cards section.card.Luffy {
+  background: linear-gradient(to bottom, #d9160f 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #f11f30;
+  color: #d9160f;
+}
+
+main.cards section.card.Zoro {
+  background: linear-gradient(to bottom, #0e791a 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #28A745;
+  color: #0e791a;
+}
+
+main.cards section.card.Usopp {
+  background: linear-gradient(to bottom, #FFFF00 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #FFC107;
+  color: #FFC107;
+}
+
+main.cards section.card.Sanji {
+  background: linear-gradient(to bottom, #1628c9 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #1D3557;
+  color: #1628c9;
+}
+
+main.cards section.card.Nami {
+  background: linear-gradient(to bottom, #f88809 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #FD7E14;
+  color: #FD7E14;
+}
+
+main.cards section.card.Chopper {
+  background: linear-gradient(to bottom, #d306d3 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #E83E8C;
+  color: #d306d3;
+}
+
+main.cards section.card.Robin {
+  background: linear-gradient(to bottom, #14213D 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #8A2BE2;
+  color: #14213D;
+}
+
+main.cards section.card.Franky {
+  background: linear-gradient(to bottom, #46dffa 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #2a5fcf;
+  color: #2a5fcf;
+}
+
+main.cards section.card.Brook {
+  background: linear-gradient(to bottom, #000 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #000;
+  color: #000;
+}
+
+main.cards section.card.Jinbe {
+  background: linear-gradient(to bottom, #9e0631 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #c7374f;
+  color: #9e0631;
+}
+
+main.cards section.card:first-child {
+  margin-left: 0;
+}
+
+main.cards section.card .foto-perfil {
+  margin-top: 40px;
+  width: 50%;
+  object-fit: scale-down;
+}
+
+main.cards section.card p {
+  font-size: 100%;
+  margin: 16px 0;
+  font-family: "Devil Fruit", fantasy;
+}
+
+main.cards section.card img {
+  margin-bottom: 10px;
+  width: 120px;
+  border-radius: 100%;
+}
+
+main.cards section.card span {
+  font-weight: 300;
+  max-width: 240px;
+  font-size: 80%;
+  margin-bottom: 16px;
+  font-family: "Skull and Cross", sans-serif;
+  color: #000;
+}
+
+@media screen and (max-width: 720px) {
+  main.cards {
+    flex-direction: column;
   }
-  .navbar-top {
-    display: none; /* Ancho completo en dispositivos pequeños */
+  main.cards section.card {
+    margin-left: 0;
+    margin-bottom: 32px;
   }
-  .navbar-side {
-    display: flex; /* Ocultar barra de navegación superior en dispositivos pequeños */
-  }
-  .sidebar {
-    display: none; /* Ocultar barra de navegación superior en dispositivos pequeños */
-  }
-  .navbar-side .nav-item {
-    display: block; /* Mostrar elementos uno debajo del otro en dispositivos pequeños */
-    margin: 10px 0; /* Espaciado entre elementos en dispositivos pequeños */
+  main.cards section.card:last-child {
+    margin-bottom: 0;
   }
 }
 
