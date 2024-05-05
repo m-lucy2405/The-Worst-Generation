@@ -87,14 +87,8 @@ $magen-contenido: 16px;
 }
 
 .container__inicio__secion form button {
-    width: 100%;
-    padding: 10px;
-    background-color: colores.$color-zoro;
-    color: colores.$color-secundario;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    @extend   .boton__Movimento__verde__pequeño;
+
 }
 
 .container__inicio__secion form button:hover {
@@ -107,7 +101,6 @@ $magen-contenido: 16px;
 .formulario__basico__2{ //clase general
     max-width: 100%;
     font-family: tipografia-tex.$font-marine;
-    background-image: linear-gradient(to right, rgb(109, 28, 223), rgb(142, 221, 231)); /* Degradado de azul a verde menta */
     padding: $pandin-contedido;
     margin: $magen-contenido;
     display: grid;
@@ -258,88 +251,80 @@ $magen-contenido: 16px;
 //             FORMULARIO CREAR CUENTA
 //***********************************************************
 
-
 .container__crear__cuenta {
     font-family: tipografia-tex.$font-devil-fruit;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
+    height: 120vh;
+    background-color: colores.$degradado-rosa-morado;
+}
 
-    form {
-        @extend .Diseño__materiales__8;
-        width: 400px;
-        padding: 20px;
-        background: colores.$degradado-azul-verde;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-        text-align: center;
+.container__crear__cuenta form {
+    @extend .Diseño__materiales__8;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    background: colores.$degradado-azul-verde;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
 
-        h2 {
-            margin-bottom: 20px;
-        }
+.container__crear__cuenta form h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
 
-        .form__group {
-            margin-bottom: 20px;
+}
 
-            label {
-                display: block;
-                margin-bottom: 5px;
-                text-align: left;
-            }
+.container__crear__cuenta form .form__group {
+    margin-bottom: 20px;
+}
 
-            .input__with__icon {
-                position: relative;
+.container__crear__cuenta form .form__group label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
 
-                input,
-                input[type="email"],
-                input[type="password"] {
-                    font-family: tipografia-tex.$font-devil-fruit;
+.container__crear__cuenta form .form__group .input__with__icon input,
+.container__crear__cuenta form input[type="email"],
+.container__crear__cuenta form input[type="password"],
+.container__crear__cuenta form input[type="text"],
+.container__crear__cuenta form input[type="tel"] {
+    font-family: tipografia-tex.$font-devil-fruit;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid colores.$color-zoro;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 30px;
+}
 
-                    width: 100%;
-                    padding: 10px;
-                    border: 2px solid colores.$color-zoro;
-                    border-radius: 5px;
-                    box-sizing: border-box;
-                    padding-left: 30px;
-                }
+.container__crear__cuenta form .form__group .input__with__icon .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
 
-                .icon {
-                    position: absolute;
-                    top: 50%;
-                    left: 10px;
-                    transform: translateY(-50%);
-                    width: 20px;
-                    height: 20px;
-                    background-size: cover;
-                }
+.container__crear__cuenta form .form__group .input__with__icon .email-icon {
+    background-image: url('../../Home/Iconos_img/gmail.svg');
+}
 
-                .email-icon {
-                    background-image: url('../../Home/Iconos_img/gmail.svg');
-                }
+.container__crear__cuenta form .form__group .input__with__icon .password__icon {
+    background-image: url('../../Home/Iconos_img/candado.svg');
+}
 
-                .password__icon {
-                    background-image: url('../../Home/Iconos_img/candado.svg');
-                }
-            }
+.container__crear__cuenta form button {
+    @extend   .boton__Movimento__verde__pequeño;
+}
 
-            button {
-                margin-bottom: 16px;
-                width: 100%;
-                padding: 10px;
-                background-color: colores.$color-zoro;
-                color: colores.$color-secundario;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                transition: background-color 0.3s;
-
-                &:hover {
-                    background-color: colores.$color-chopper;
-                }
-            }
-        }
-    }
+.container__crear__cuenta form button:hover {
+    background-color: colores.$color-chopper;
+    margin: 16px;
 }
 
 
@@ -349,40 +334,87 @@ $magen-contenido: 16px;
 //*******************************************
 //           FORMULARIO CONTACTOS
 //******************************************
-.formulario__contactos {
-    max-width: 400px; 
-    margin: 0 auto; 
-    padding: 20px; /* Espaciado interno */
-    border: 1px solid #ccc; /* Borde del formulario */
-    border-radius: 8px; /* Bordes redondeados */
-    background-color: #f9f9f9; /* Color de fondo */
-}
+.container__form__contatos {
+    font-family: tipografia-tex.$font-devil-fruit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    background-color: colores.$degradado-rosa-morado;
+    margin: 20px auto;
 
-.formulario__contactos label {
-    display: block; /* Mostrar cada etiqueta en una línea nueva */
-    margin-bottom: 8px; /* Espaciado entre etiquetas y campos de entrada */
-}
+    form {
+        @extend .Diseño__materiales__8;
+        width: 400px;
+        padding: 20px;
+        background: colores.$degradado-azul-verde;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        text-align: center;
+        margin: 20px auto;
+        
 
-.formulario__contactos input[type="text"],
-.formulario__contactos input[type="email"],
-.formulario__contactos input[type="tel"],
-.formulario__contactos input[type=" "],
-.formulario__contactos textarea {
-    @extend .borde__Esquinas_dedondeada;
-    width: 100%; /* Ancho completo */
-    padding: 8px; /* Espaciado interno */
-    margin-bottom: 16px; /* Espaciado inferior */
-    box-sizing: border-box; /* Incluir el borde en el ancho total */
-}
+        h2 {
+            margin-bottom: 20px;
+        }
 
-.formulario__contactos button[type="submit"],
-    input [type="file"]{
-    @extend  .boton__cambio__color;
-    padding: 10px 20px; /* Espaciado interno del botón */
-}
-   
-.formulario__contactos button[type="submit"]:hover {
-    background-color: #6ca500; /* Cambia el color de fondo al pasar el cursor */
+        .form__group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid colores.$color-zoro;
+            border-radius: 5px;
+            box-sizing: border-box;
+            padding-left: 30px;
+        }
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background-size: cover;
+        }
+
+        .email-icon {
+            background-image: url('../../Home/Iconos_img/gmail.svg');
+        }
+
+        .password__icon {
+            background-image: url('../../Home/Iconos_img/candado.svg');
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: colores.$color-zoro;
+            color: colores.$color-negro;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: colores.$color-nami;
+            }
+        }
+    }
 }
 
   
@@ -392,8 +424,12 @@ $magen-contenido: 16px;
     form,
     label,
     input,
-    textarea,
-    button {
+    button,
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="file"],
+    textarea {
         width: 100%;
         margin-right: 0; // 
     }
