@@ -1,0 +1,27 @@
+// Mixin para botón de tamaño pequeño
+@mixin boton-pequeno {
+    padding: 10px; // Tamaño pequeño
+
+   
+}
+
+// Mixin para botón de tamaño mediano
+@mixin boton-mediano {
+    padding: 20px; // Tamaño mediano
+
+   
+}
+
+// Mixin para botón de tamaño grande
+@mixin boton-grande {
+    padding: 30px; // Tamaño grande
+
+    
+}
+
+// Mixin para botón de tamaño extra grande
+@mixin boton-extra-grande {
+    padding: 40px; // Tamaño extra grande
+
+    
+}

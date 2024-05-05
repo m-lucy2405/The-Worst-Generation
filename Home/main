@@ -1202,9 +1202,7 @@ body {
   background-color: #ecaacd;
   max-width: 90%;
   width: 100%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   font-size: 16px;
 }
 .formulario__basico__2 option {
@@ -1227,6 +1225,9 @@ body {
   grid-template-columns: 1fr;
   font-family: "Blackbeard", cursive;
   background-color: #f88809;
+}
+.crear__cuenta body {
+  background-color: black;
 }
 .crear__cuenta img {
   max-width: 100%;
@@ -1479,4 +1480,13 @@ body {
     display: block; /* Mostrar elementos uno debajo del otro en dispositivos pequeños */
     margin: 10px 0; /* Espaciado entre elementos en dispositivos pequeños */
   }
-}/*# sourceMappingURL=main.css.map */
+}
+.icono__candado {
+  background-image: url("../../Home/Iconos_img/candado.svg");
+  display: inline-block;
+  width: 24px;
+  height: 4px;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=main.map */

@@ -1,14 +1,31 @@
 @use '../UTILIDADES/colores';
+$ancho-icon: 24px;
+$alto-icon: 24 px;
+$zise-icon: contain;
+$displey-icon: inline-block;
+$contenido-vacio: "";
 
 // Estilos para el icono personalizado
 .icono__candado {
-    display: inline-block;
-    width: 24px; // Ancho deseado del icono
-    height: 4px; // Altura deseada del icono
-    background-image: url('../../Home/Iconos_img/candado.svg'); // Ruta de tu imagen
-    background-size: cover; // Ajusta el tamaño del fondo según el contenedor
-  }
+  background-image: url('../../Home/Iconos_img/candado.svg');
+  display: $displey-icon;
+  width: $ancho-icon; // Ancho deseado del icono
+  height: $alto-icon; // Altura deseada del icono
+  background-size: $zise-icon; 
+}
+
+//ICONO DE OJO
+.icono__ojo {
+  background-image: url('../../Home/Iconos_img/ojo.svg');
+  display: $displey-icon;
+  width: $ancho-icon;
+  height: $alto-icon; 
+  background-size: $zise-icon; 
+}
   
-  // Si deseas agregar estilos adicionales al icono, puedes hacerlo aquí
   
- 
+
+
+
+
+

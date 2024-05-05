@@ -2,6 +2,7 @@
 @use '../UTILIDADES/sombras';
 @use '../UTILIDADES/bordes';
 @use '../UTILIDADES/tipografia-tex';
+@import '../Mixin/mixinBtn';
 
 @import '../UTILIDADES/sombras';
 
@@ -23,6 +24,7 @@ $margin_btn: 16px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
 }
+//BTN CAMBIO DE COLOR
 .boton__cambio__color{
     @extend .borde__Esquinas_dedondeada;
     margin: 16px;
@@ -46,9 +48,6 @@ $margin_btn: 16px;
     justify-content: center;
         cursor: pointer;
     cursor: pointer;
-
-
-
 }
 .boton__animacion__1:hover {
     box-shadow:
@@ -62,6 +61,36 @@ $margin_btn: 16px;
     
 }
 
+//****ANMIMACION PEQUEÑA
+.boton__animacion_1_pequeno{
+    @extend .boton__animacion__1;
+    @extend .boton__pequeno;
+}
+
+//animacion mediana
+.boton__animacion_1_mediano{
+    @extend .boton__animacion__1;
+    @extend .boton__mediano;
+}
+
+//animacion grande
+
+.boton__animacion_1_grande{
+    @extend .boton__animacion__1;
+    @extend .boton__grande;
+}
+
+//animacion extra grages
+.boton__animacion_1_extra_grande{
+    @extend .boton__animacion__1;
+    @extend .boton__extra_grande;
+}
+
+
+
+//TAMNOS DE BTS PRA  NAIMACION 1
+
+//****************************
 
 //CREANDO BTN CON AMIMACION 2
 .boton__animacion__2{
@@ -89,6 +118,45 @@ $margin_btn: 16px;
         0 0 150px colores.$color-rosa,
         0 0 200px colores.$color-rosa;
 }
+
+//TAMNOS DE BTS PRA  NAIMACION 2
+//borton pequeño animacion 2
+
+.boton__animacion_2_pequeno{
+    @extend .boton__animacion__2;
+    @extend .boton__pequeno;
+}
+
+//borton mediano animacion 2
+
+.boton__animacion_2_mediano{
+    @extend .boton__animacion__2;
+    @extend .boton__mediano;
+}
+
+//borton grande animacion 2
+
+.boton__animacion_2_grande{
+    @extend .boton__animacion__2;
+    @extend .boton__grande;
+}
+
+//borton extra grande animacion 2
+
+.boton__animacion_2_extra_grande{
+    @extend .boton__animacion__2;
+    @extend .boton__extra_grande;
+}
+
+
+
+
+
+
+
+
+
+
 
 //CREANDO BTN CON AMIMACION 3
 .boton__animacion__3{
@@ -118,6 +186,36 @@ $margin_btn: 16px;
         0 0 200px colores.$color-mar;
 }
 
+//TAMNOS DE BTS PRA  NAIMACION 3
+// tamaño pequeño
+
+.boton__animacion_3_pequeno{
+    @extend .boton__animacion__3;
+    @extend .boton__pequeno;
+}
+
+//tamaño mediano
+
+.boton__animacion_3_mediano{
+    @extend .boton__animacion__3;
+    @extend .boton__mediano;
+}
+
+//tamaño grande
+
+.boton__animacion_3_grande{
+    @extend .boton__animacion__3;
+    @extend .boton__grande;
+}
+
+//tamaño extra grande
+
+.boton__animacion_3_extra_grande{
+    @extend .boton__animacion__3;
+    @extend .boton__extra_grande;
+}
+
+
 
 //CREANDO BTN CON AMIMACION 4
 .boton__animacion__4{
@@ -144,6 +242,35 @@ $margin_btn: 16px;
         0 0 200px colores.$color-nami;
 }
 
+//TAMNOS DE BTS PRA  NAIMACION 4
+//tamaño pequeño
+
+.boton__animacion_4_pequeno{
+    @extend .boton__animacion__4;
+    @extend .boton__pequeno;
+}
+
+//tamaño mediano
+
+.boton__animacion_4_mediano{
+    @extend .boton__animacion__4;
+    @extend .boton__mediano;
+}
+
+//tamaño grande
+
+.boton__animacion_4_grande{
+    @extend .boton__animacion__4;
+    @extend .boton__grande;
+}
+
+//tamaño extra grande
+
+.boton__animacion_4_extra_grande{
+    @extend .boton__animacion__4;
+    @extend .boton__extra_grande;
+}
+
 //CREANDO BTN BASICOSS
 .boton__basico__1{
     @extend .borde__Esquinas_dedondeada;
@@ -151,9 +278,31 @@ $margin_btn: 16px;
     padding: 20px;
     background-color: colores.$color-gris;
     cursor: pointer;
+}
 
+//crando tamano de bt basico
+//boton basico pequeno
+.boton__basico__1__pequeno{
+    @extend .boton__basico__1;
+    @extend .boton__pequeno;
+}
 
+//boton basico mediano
+.boton__basico__1__mediano{
+    @extend .boton__basico__1;
+    @extend .boton__mediano;
+}
 
+//boton basico grande
+.boton__basico__1__grande{
+    @extend .boton__basico__1;
+    @extend .boton__grande;
+}
+
+//boton basico extra grande
+.boton__basico__1__extra_grande{
+    @extend .boton__basico__1;
+    @extend .boton__extra_grande;
 }
 
 .boton__basico__2{
@@ -164,7 +313,33 @@ $margin_btn: 16px;
     cursor: pointer;
     
 }
+//tamaño pequeño
 
+.boton__basico__2__pequeno{
+    @extend .boton__basico__2;
+    @extend .boton__pequeno;
+}
+
+//tamaño mediano
+
+.boton__basico__2__mediano{
+    @extend .boton__basico__2;
+    @extend .boton__mediano;
+}
+
+//tamaño grande
+
+.boton__basico__2__grande{
+    @extend .boton__basico__2;
+    @extend .boton__grande;
+}
+
+//tamaño extra grande
+
+.boton__basico__2__extra_grande{
+    @extend .boton__basico__2;
+    @extend .boton__extra_grande;
+}
 
 
 
@@ -174,9 +349,34 @@ $margin_btn: 16px;
     padding: 20px;
     background-color: colores.$color-verde;
     cursor: pointer;
+}
 
+//tamaño pequeño
 
+.boton__basico__3__pequeno{
+    @extend .boton__basico__3;
+    @extend .boton__pequeno;
+}
 
+//tamaño mediano
+
+.boton__basico__3__mediano{
+    @extend .boton__basico__3;
+    @extend .boton__mediano;
+}
+
+//tamaño grande
+
+.boton__basico__3__grande{
+    @extend .boton__basico__3;
+    @extend .boton__grande;
+}
+
+//tamaño extra grande
+
+.boton__basico__3__extra_grande{
+    @extend .boton__basico__3;
+    @extend .boton__extra_grande;
 }
 
 .boton__basico__4{
@@ -185,8 +385,34 @@ $margin_btn: 16px;
     padding: 20px;
     background-color: colores.$color-luffy;
     cursor: pointer;
+}
 
+//tamaño pequeño
 
+.boton__basico__4__pequeno{
+    @extend .boton__basico__4;
+    @extend .boton__pequeno;
+}
+
+//tamaño mediano
+
+.boton__basico__4__mediano{
+    @extend .boton__basico__4;
+    @extend .boton__mediano;
+}
+
+//tamaño grande
+
+.boton__basico__4__grande{
+    @extend .boton__basico__4;
+    @extend .boton__grande;
+}
+
+//tamaño extra grande
+
+.boton__basico__4__extra_grande{
+    @extend .boton__basico__4;
+    @extend .boton__extra_grande;
 }
 
 //Botones con fondo balnco 
@@ -200,7 +426,28 @@ $margin_btn: 16px;
     border-color: colores.$color-verde;
     cursor: pointer;
     @extend .quote;
+}
 
+//crean tamaño de boton fondo blaco
+//fondo blanco pequeno
+.boton__blanco__1_pequño{
+    @extend .boton__blanco__1;
+    @extend .boton__pequeno;
+}
+//fondo balco mediano
+.boton__blanco__1_mediano{
+    @extend .boton__blanco__1;
+    @extend .boton__mediano;
+}
+//fondo fondo balco grande
+.boton__blanco__1_grande{
+    @extend .boton__blanco__1;
+    @extend .boton__grande;
+}
+//fondo balco extragrade
+.boton__blanco__1_extra_grande{
+    @extend .boton__blanco__1;
+    @extend .boton__extra_grande;
 }
 
 //FONDO BALCOLO 2
@@ -215,6 +462,30 @@ $margin_btn: 16px;
     cursor: pointer;
     @extend .quote;
 }
+//pequeño
+
+.boton__blanco__2_pequeno{
+    @extend .boton__blanco__2;
+    @extend .boton__pequeno;
+}
+//mediano
+
+.boton__blanco__2_mediano{
+    @extend .boton__blanco__2;
+    @extend .boton__mediano;
+}
+//grande
+
+.boton__blanco__2_grande{
+    @extend .boton__blanco__2;
+    @extend .boton__grande;
+}
+//extra grande
+
+.boton__blanco__2_extra_grande{
+    @extend .boton__blanco__2;
+    @extend .boton__extra_grande;
+}
 
 //FONDO BALCOLO 3
 .boton__blanco__3{
@@ -228,6 +499,32 @@ $margin_btn: 16px;
     cursor: pointer;
     @extend .quote;
 }
+
+//pequeño
+
+.boton__blanco__3_pequeno{
+    @extend .boton__blanco__3;
+    @extend .boton__pequeno;
+}
+//mediano
+
+.boton__blanco__3_mediano{
+    @extend .boton__blanco__3;
+    @extend .boton__mediano;
+}
+//grande
+
+.boton__blanco__3_grande{
+    @extend .boton__blanco__3;
+    @extend .boton__grande;
+}
+//extra grande
+
+.boton__blanco__3_extra_grande{
+    @extend .boton__blanco__3;
+    @extend .boton__extra_grande;
+}
+
 //FONDO BALCOLO 4
 .boton__blanco__4{
     @extend .borde__Esquinas_dedondeada;
@@ -239,6 +536,32 @@ $margin_btn: 16px;
     border-color: colores.$color-usopp;
     cursor: pointer;
     @extend .quote;
+}
+
+
+//pequeño
+
+.boton__blanco__4_pequeno{
+    @extend .boton__blanco__4;
+    @extend .boton__pequeno;
+}
+//mediano
+
+.boton__blanco__4_mediano{
+    @extend .boton__blanco__4;
+    @extend .boton__mediano;
+}
+//grande
+
+.boton__blanco__4_grande{
+    @extend .boton__blanco__4;
+    @extend .boton__grande;
+}
+//extra grande
+
+.boton__blanco__4_extra_grande{
+    @extend .boton__blanco__4;
+    @extend .boton__extra_grande;
 }
 
 
@@ -275,6 +598,32 @@ $margin_btn: 16px;
         transition: 100ms;
     }
 }
+   
+    //CODIFICANDO TAMAÑO PARA BTS 
+    //tamaño pequeño 
+    .boton__Movimento__Rosa__pequeño{
+        @extend .boton__Movimento__Rosa;
+        @extend .boton__pequeno;
+    }
+    //tamaño mediano
+    .boton__Movimento__Rosa__mediano{
+        @extend .boton__Movimento__Rosa;
+        @extend .boton__mediano;
+    }
+    //tamaño grande
+    .boton__Movimento__Rosa__grande{
+        @extend .boton__Movimento__Rosa;
+        @extend .boton__grande;
+    }
+    //tamaño extra grande
+    .boton__Movimento__Rosa__extra_grande{
+        @extend .boton__Movimento__Rosa;
+        @extend .boton__extra_grande;
+    }
+
+
+
+
     //----------------------------------------------------//
     /*BONTON ROJO */
     //----------------------------------------------------//
@@ -309,6 +658,28 @@ $margin_btn: 16px;
             transform: translate(18px);
             transition: 100ms;
         }
+    }
+
+    //CODIFICANDO TAMAÑO PARA BTS
+    //tamaño pequeño 
+    .boton__Movimento__rojo__pequeño{
+        @extend .boton__Movimento__rojo;
+        @extend .boton__pequeno;
+    }
+    //tamaño mediano
+    .boton__Movimento__rojo__mediano{
+        @extend .boton__Movimento__rojo;
+        @extend .boton__mediano;
+    }
+    //tamaño grande
+    .boton__Movimento__rojo__grande{
+        @extend .boton__Movimento__rojo;
+        @extend .boton__grande;
+    }
+    //tamaño extra grande
+    .boton__Movimento__rojo__extra_grande{
+        @extend .boton__Movimento__rojo;
+        @extend .boton__extra_grande;
     }
 
 
@@ -349,6 +720,28 @@ $margin_btn: 16px;
         }
     }
 
+    //CODIFICANDO TAMAÑO PARA BTS
+    //tamaño pequeño 
+    .boton__Movimento__verde__pequeño{
+        @extend .boton__Movimento__verde;
+        @extend .boton__pequeno;
+    }
+    //tamaño mediano
+    .boton__Movimento__verde__mediano{
+        @extend .boton__Movimento__verde;
+        @extend .boton__mediano;
+    }
+    //tamaño grande
+    .boton__Movimento__verde__grande{
+        @extend .boton__Movimento__verde;
+        @extend .boton__grande;
+    }
+    //tamaño extra grande
+    .boton__Movimento__verde__extra_grande{
+        @extend .boton__Movimento__verde;
+        @extend .boton__extra_grande;
+    }
+
 
      //----------------------------------------------------//
     /*BONTON NARAJA*/
@@ -386,9 +779,52 @@ $margin_btn: 16px;
         }
     }
 
+    //CODIFICANDO TAMAÑO PARA BTS
+    //tamaño pequeño 
+    .boton__Movimento__naranja__pequeño{
+        @extend .boton__Movimento__naranja;
+        @extend .boton__pequeno;
+    }
+    //tamaño mediano
+    .boton__Movimento__naranja__mediano{
+        @extend .boton__Movimento__naranja;
+        @extend .boton__mediano;
+    }
+    //tamaño grande
+    .boton__Movimento__naranja__grande{
+        @extend .boton__Movimento__naranja;
+        @extend .boton__grande;
+    }
+    //tamaño extra grande
+    .boton__Movimento__naranja__extra_grande{
+        @extend .boton__Movimento__naranja;
+        @extend .boton__extra_grande;
+    }
 
 
 
+
+//CLASE DE TAMNO 
+
+// Botón tamaño pequeño
+.boton__pequeno {
+    padding: 10px; // Tamaño pequeño
+}
+
+// Botón tamaño mediano
+.boton__mediano {
+    padding: 20px; // Tamaño mediano
+}
+
+// Botón tamaño grande
+.boton__grande {
+    padding: 30px; // Tamaño grande
+}
+
+// Botón tamaño extra grande
+.boton__extra_grande {
+    padding: 40px; // Tamaño extra grande
+}
 
 
 

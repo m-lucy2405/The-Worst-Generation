@@ -4,6 +4,7 @@
 @use '../UTILIDADES/sombras';
 @use '../Clases_Componentes/botones';
 @use '../UTILIDADES/grid__alineamineto';
+@use '../UTILIDADES/iconos';
 
 
 //***********************************************************
@@ -240,71 +241,88 @@ $magen-contenido: 16px;
 //***********************************************************
 //             FORMULARIO CREAR CUENTA
 //***********************************************************
-.crear__cuenta{
-    @extend .grid__justyfy__content__center;
-    max-width: 100%;
-    margin: $magen-contenido;
-    padding: $pandin-contedido;
-    grid-template-columns: 1fr;
-    font-family: tipografia-tex.$font-pirate;
-    background-color: colores.$color-nami;
-    img {
-        max-width: 100%; 
-        height: auto; //  según el ancho
-        display: block; 
-        margin: 0 auto; // Centra la imagen horizontalmente
-        margin-bottom: 20px;  
-        border-radius: 10px; 
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // Añade una sombra suave a la imagen si es necesario
-    }
+.crear__cuenta {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
     
-
-    form{
-        @extend .borde__Esquinas_dedondeada;
-        @extend .sombra_inferior;
-        @extend .grid__justyfy__content__center;
-        font-size: larger; 
-        margin: 3px;
-        width: 100%;
-        max-width: 70%;
-    }
-
-    label{
-        color: colores.$color-negro;
+    label {
         display: block;
-        text-align: left;
+        margin-bottom: 10px;
+    }
     
+    img {
+        display: block;
+        margin-bottom: 10px;
     }
-
-    //STYLE PARA IMPUTS
-    input,
+    
     input[type="text"],
+    input[type=" "],
+    input[type="tel"],
     input[type="email"],
-    input[type="password"]{
-        @extend .borde__redondeado__50px;
-        margin: 5px;
-        padding: 20px;
-        background-color: colores.$color-hana;
-        font-family: tipografia-tex.$font-pirate;
+    input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    button[type="submit"] {
+        @extend .boton__Movimento__Rosa;
         width: 100%;
-        max-width: 70%;
-
+        padding: 10px;
+        margin-top: 10px;
         
-
     }
-
-    button{
-        @extend .borde__redondeado__50px;
-        @extend .boton__animacion__2;
-        @extend .alinar__unica__fila__centrado;
-        font-family: tipografia-tex.$font-pirate;
-        width: 100%;
-        max-width: 80%;
-
+    
+    button[type="submit"]:hover {
+        background-color: #6ca500;
     }
-
 }
 
+
+//*******************************************
+//           FORMULARIO CONTACTOS
+//******************************************
+.formulario__contactos {
+    max-width: 400px; 
+    margin: 0 auto; 
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Color de fondo */
+}
+
+.formulario__contactos label {
+    display: block; /* Mostrar cada etiqueta en una línea nueva */
+    margin-bottom: 8px; /* Espaciado entre etiquetas y campos de entrada */
+}
+
+.formulario__contactos input[type="text"],
+.formulario__contactos input[type="email"],
+.formulario__contactos input[type="tel"],
+.formulario__contactos input[type=" "],
+.formulario__contactos textarea {
+    @extend .borde__Esquinas_dedondeada;
+    width: 100%; /* Ancho completo */
+    padding: 8px; /* Espaciado interno */
+    margin-bottom: 16px; /* Espaciado inferior */
+    box-sizing: border-box; /* Incluir el borde en el ancho total */
+}
+
+.formulario__contactos button[type="submit"],
+    input [type="file"]{
+    @extend  .boton__cambio__color;
+    padding: 10px 20px; /* Espaciado interno del botón */
+}
+   
+.formulario__contactos button[type="submit"]:hover {
+    background-color: #6ca500; /* Cambia el color de fondo al pasar el cursor */
+}
 
   
 
@@ -319,7 +337,7 @@ $magen-contenido: 16px;
         margin-right: 0; // 
     }
 
-    
+
 }
 
 

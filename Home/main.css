@@ -56,9 +56,14 @@
 }
 
 .borde__Esquinas_dedondeada, .form__inicio__de__secion form, .formulario__basico__2 input, .formulario__basico__2 textarea, .formulario__basico__2 fieldset, .formulario__basico__2 legend, .formulario__basico__2 input[type=checkbox],
-.formulario__basico__2 input[type=radio], .formulario__basico__2 input[type=text], .formulario__basico__2 input[type=password], .formulario__basico__2 input[type=email], .formulario__basico__2 select, .formulario__basico__2 option, .crear__cuenta form, .boton__cambio__color, .boton__animacion__1, .boton__animacion__2, .boton__animacion__3, .boton__animacion__4, .boton__basico__1, .boton__basico__2, .boton__basico__3, .boton__basico__4, .boton__blanco__1, .boton__blanco__2, .boton__blanco__3, .boton__blanco__4, .form__inicio__de__secion input[type=text],
+.formulario__basico__2 input[type=radio], .formulario__basico__2 input[type=text], .formulario__basico__2 input[type=password], .formulario__basico__2 input[type=email], .formulario__basico__2 select, .formulario__basico__2 option, .formulario__contactos input[type=text],
+.formulario__contactos input[type=email],
+.formulario__contactos input[type=tel],
+.formulario__contactos input[type=" "],
+.formulario__contactos textarea, .boton__cambio__color, .boton__animacion__1, .boton__animacion_1_pequeno, .boton__animacion_1_mediano, .boton__animacion_1_grande, .boton__animacion_1_extra_grande, .boton__animacion__2, .boton__animacion_2_pequeno, .boton__animacion_2_mediano, .boton__animacion_2_grande, .boton__animacion_2_extra_grande, .boton__animacion__3, .boton__animacion_3_pequeno, .boton__animacion_3_mediano, .boton__animacion_3_grande, .boton__animacion_3_extra_grande, .boton__animacion__4, .boton__animacion_4_pequeno, .boton__animacion_4_mediano, .boton__animacion_4_grande, .boton__animacion_4_extra_grande, .boton__basico__1, .boton__basico__1__pequeno, .boton__basico__1__mediano, .boton__basico__1__grande, .boton__basico__1__extra_grande, .boton__basico__2, .boton__basico__2__pequeno, .boton__basico__2__mediano, .boton__basico__2__grande, .boton__basico__2__extra_grande, .boton__basico__3, .boton__basico__3__pequeno, .boton__basico__3__mediano, .boton__basico__3__grande, .boton__basico__3__extra_grande, .boton__basico__4, .boton__basico__4__pequeno, .boton__basico__4__mediano, .boton__basico__4__grande, .boton__basico__4__extra_grande, .boton__blanco__1, .boton__blanco__1_pequño, .boton__blanco__1_mediano, .boton__blanco__1_grande, .boton__blanco__1_extra_grande, .boton__blanco__2, .boton__blanco__2_pequeno, .boton__blanco__2_mediano, .boton__blanco__2_grande, .boton__blanco__2_extra_grande, .boton__blanco__3, .boton__blanco__3_pequeno, .boton__blanco__3_mediano, .boton__blanco__3_grande, .boton__blanco__3_extra_grande, .boton__blanco__4, .boton__blanco__4_pequeno, .boton__blanco__4_mediano, .boton__blanco__4_grande, .boton__blanco__4_extra_grande, .form__inicio__de__secion input[type=text],
 .form__inicio__de__secion input[type=email],
-.form__inicio__de__secion input[type=password], .form__inicio__de__secion button, .crear__cuenta button {
+.form__inicio__de__secion input[type=password], .form__inicio__de__secion button, .formulario__contactos button[type=submit],
+input [type=file] {
   border-radius: 5px 5px 5px 5px;
   padding: 20px;
   margin: 20px;
@@ -78,10 +83,7 @@
 /*------------------------------------------------*/
 /*                 BORDES REDONDEADOR             */
 /*------------------------------------------------*/
-.borde__redondeado__50px, .crear__cuenta input,
-.crear__cuenta input[type=text],
-.crear__cuenta input[type=email],
-.crear__cuenta input[type=password], .crear__cuenta button, .boton__Movimento__Rosa, .boton__Movimento__rojo, .boton__Movimento__verde, .boton__Movimento__naranja, .formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button {
+.borde__redondeado__50px, .boton__Movimento__Rosa, .boton__Movimento__Rosa__pequeño, .boton__Movimento__Rosa__mediano, .boton__Movimento__Rosa__grande, .boton__Movimento__Rosa__extra_grande, .boton__Movimento__rojo, .boton__Movimento__rojo__pequeño, .boton__Movimento__rojo__mediano, .boton__Movimento__rojo__grande, .boton__Movimento__rojo__extra_grande, .boton__Movimento__verde, .boton__Movimento__verde__pequeño, .boton__Movimento__verde__mediano, .boton__Movimento__verde__grande, .boton__Movimento__verde__extra_grande, .boton__Movimento__naranja, .boton__Movimento__naranja__pequeño, .boton__Movimento__naranja__mediano, .boton__Movimento__naranja__grande, .boton__Movimento__naranja__extra_grande, .formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button, .crear__cuenta button[type=submit] {
   border-radius: 50px;
   border: 0;
   border-color: #000;
@@ -194,7 +196,7 @@
   background-color: #b3b2b4;
 }
 
-.sombra_inferior, .formulario__basico__2 form, .crear__cuenta form {
+.sombra_inferior, .formulario__basico__2 form {
   box-shadow: 0px 25px 20px -20px #00eeff;
   margin: 20px;
   background-color: #b3b2b4;
@@ -335,7 +337,7 @@ body {
   font-size: 1em;
 }
 
-.quote, .boton__blanco__1, .boton__blanco__2, .boton__blanco__3, .boton__blanco__4 {
+.quote, .boton__blanco__1, .boton__blanco__1_pequño, .boton__blanco__1_mediano, .boton__blanco__1_grande, .boton__blanco__1_extra_grande, .boton__blanco__2, .boton__blanco__2_pequeno, .boton__blanco__2_mediano, .boton__blanco__2_grande, .boton__blanco__2_extra_grande, .boton__blanco__3, .boton__blanco__3_pequeno, .boton__blanco__3_mediano, .boton__blanco__3_grande, .boton__blanco__3_extra_grande, .boton__blanco__4, .boton__blanco__4_pequeno, .boton__blanco__4_mediano, .boton__blanco__4_grande, .boton__blanco__4_extra_grande {
   font-family: "Devil Fruit", fantasy;
   font-size: 1.2em;
   color: #457B9D;
@@ -449,7 +451,7 @@ body {
   background-color: #b3b2b4;
 }
 
-.sombra_inferior, .formulario__basico__2 form, .crear__cuenta form {
+.sombra_inferior, .formulario__basico__2 form {
   box-shadow: 0px 25px 20px -20px #00eeff;
   margin: 20px;
   background-color: #b3b2b4;
@@ -575,7 +577,8 @@ body {
 
 .boton__cambio__color, .form__inicio__de__secion input[type=text],
 .form__inicio__de__secion input[type=email],
-.form__inicio__de__secion input[type=password], .form__inicio__de__secion button {
+.form__inicio__de__secion input[type=password], .form__inicio__de__secion button, .formulario__contactos button[type=submit],
+input [type=file] {
   margin: 16px;
   padding: 20px;
   background-color: #28A745;
@@ -584,11 +587,12 @@ body {
 
 .boton__cambio__color:hover, .form__inicio__de__secion input[type=text]:hover,
 .form__inicio__de__secion input[type=email]:hover,
-.form__inicio__de__secion input[type=password]:hover, .form__inicio__de__secion button:hover {
+.form__inicio__de__secion input[type=password]:hover, .form__inicio__de__secion button:hover, .formulario__contactos button[type=submit]:hover,
+input [type=file]:hover {
   background-color: #0e791a;
 }
 
-.boton__animacion__1 {
+.boton__animacion__1, .boton__animacion_1_extra_grande, .boton__animacion_1_grande, .boton__animacion_1_mediano, .boton__animacion_1_pequeno {
   box-shadow: 0 0 5px rgb(163, 255, 183), 0 0 25px rgb(163, 255, 183);
   background-color: rgb(163, 255, 183);
   margin: 16px;
@@ -598,11 +602,11 @@ body {
   cursor: pointer;
 }
 
-.boton__animacion__1:hover {
+.boton__animacion__1:hover, .boton__animacion_1_extra_grande:hover, .boton__animacion_1_grande:hover, .boton__animacion_1_mediano:hover, .boton__animacion_1_pequeno:hover {
   box-shadow: 0 0 5px rgb(163, 255, 183), 0 0 25px rgb(163, 255, 183), 0 0 25px rgb(163, 255, 183), 0 0 50px rgb(163, 255, 183), 0 0 100px rgb(163, 255, 183), 0 0 150px rgb(163, 255, 183), 0 0 200px rgb(163, 255, 183);
 }
 
-.boton__animacion__2, .crear__cuenta button {
+.boton__animacion__2, .boton__animacion_2_extra_grande, .boton__animacion_2_grande, .boton__animacion_2_mediano, .boton__animacion_2_pequeno {
   box-shadow: 0 0 5px #E83E8C, 0 0 25px #E83E8C;
   background-color: #E83E8C;
   margin: 16px;
@@ -612,11 +616,11 @@ body {
   cursor: pointer;
 }
 
-.boton__animacion__2:hover, .crear__cuenta button:hover {
+.boton__animacion__2:hover, .boton__animacion_2_extra_grande:hover, .boton__animacion_2_grande:hover, .boton__animacion_2_mediano:hover, .boton__animacion_2_pequeno:hover {
   box-shadow: 0 0 5px #E83E8C, 0 0 25px #E83E8C, 0 0 25px #E83E8C, 0 0 50px #E83E8C, 0 0 100px #E83E8C, 0 0 150px #E83E8C, 0 0 200px #E83E8C;
 }
 
-.boton__animacion__3 {
+.boton__animacion__3, .boton__animacion_3_extra_grande, .boton__animacion_3_grande, .boton__animacion_3_mediano, .boton__animacion_3_pequeno {
   box-shadow: 0 0 5px #2a5fcf, 0 0 25px #2a5fcf;
   background-color: #2a5fcf;
   margin: 16px;
@@ -626,11 +630,11 @@ body {
   cursor: pointer;
 }
 
-.boton__animacion__3:hover {
+.boton__animacion__3:hover, .boton__animacion_3_extra_grande:hover, .boton__animacion_3_grande:hover, .boton__animacion_3_mediano:hover, .boton__animacion_3_pequeno:hover {
   box-shadow: 0 0 5px #2a5fcf, 0 0 25px #2a5fcf, 0 0 25px #2a5fcf, 0 0 50px #2a5fcf, 0 0 100px #2a5fcf, 0 0 150px #2a5fcf, 0 0 200px #2a5fcf;
 }
 
-.boton__animacion__4 {
+.boton__animacion__4, .boton__animacion_4_extra_grande, .boton__animacion_4_grande, .boton__animacion_4_mediano, .boton__animacion_4_pequeno {
   box-shadow: 0 0 5px #f88809, 0 0 25px #f88809;
   background-color: #f88809;
   margin: 16px;
@@ -638,39 +642,39 @@ body {
   justify-content: center;
 }
 
-.boton__animacion__4:hover {
+.boton__animacion__4:hover, .boton__animacion_4_extra_grande:hover, .boton__animacion_4_grande:hover, .boton__animacion_4_mediano:hover, .boton__animacion_4_pequeno:hover {
   box-shadow: 0 0 5px #f88809, 0 0 25px #f88809, 0 0 25px #f88809, 0 0 50px #f88809, 0 0 100px #f88809, 0 0 150px #f88809, 0 0 200px #f88809;
 }
 
-.boton__basico__1 {
+.boton__basico__1, .boton__basico__1__extra_grande, .boton__basico__1__grande, .boton__basico__1__mediano, .boton__basico__1__pequeno {
   margin: 16px;
   padding: 20px;
   background-color: #6C757D;
   cursor: pointer;
 }
 
-.boton__basico__2 {
+.boton__basico__2, .boton__basico__2__extra_grande, .boton__basico__2__grande, .boton__basico__2__mediano, .boton__basico__2__pequeno {
   margin: 16px;
   padding: 20px;
   background-color: #FFC107;
   cursor: pointer;
 }
 
-.boton__basico__3 {
+.boton__basico__3, .boton__basico__3__extra_grande, .boton__basico__3__grande, .boton__basico__3__mediano, .boton__basico__3__pequeno {
   margin: 16px;
   padding: 20px;
   background-color: #28A745;
   cursor: pointer;
 }
 
-.boton__basico__4 {
+.boton__basico__4, .boton__basico__4__extra_grande, .boton__basico__4__grande, .boton__basico__4__mediano, .boton__basico__4__pequeno {
   margin: 16px;
   padding: 20px;
   background-color: #d9160f;
   cursor: pointer;
 }
 
-.boton__blanco__1 {
+.boton__blanco__1, .boton__blanco__1_extra_grande, .boton__blanco__1_grande, .boton__blanco__1_mediano, .boton__blanco__1_pequño {
   margin: 16px;
   padding: 10px;
   background-color: #F1FAEE;
@@ -680,7 +684,7 @@ body {
   cursor: pointer;
 }
 
-.boton__blanco__2 {
+.boton__blanco__2, .boton__blanco__2_extra_grande, .boton__blanco__2_grande, .boton__blanco__2_mediano, .boton__blanco__2_pequeno {
   margin: 16px;
   padding: 10px;
   background-color: #F1FAEE;
@@ -690,7 +694,7 @@ body {
   cursor: pointer;
 }
 
-.boton__blanco__3 {
+.boton__blanco__3, .boton__blanco__3_extra_grande, .boton__blanco__3_grande, .boton__blanco__3_mediano, .boton__blanco__3_pequeno {
   margin: 16px;
   padding: 10px;
   background-color: #F1FAEE;
@@ -700,7 +704,7 @@ body {
   cursor: pointer;
 }
 
-.boton__blanco__4 {
+.boton__blanco__4, .boton__blanco__4_extra_grande, .boton__blanco__4_grande, .boton__blanco__4_mediano, .boton__blanco__4_pequeno {
   margin: 16px;
   padding: 10px;
   background-color: #F1FAEE;
@@ -710,7 +714,7 @@ body {
   cursor: pointer;
 }
 
-.boton__Movimento__Rosa, .formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button {
+.boton__Movimento__Rosa, .formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button, .crear__cuenta button[type=submit], .boton__Movimento__Rosa__extra_grande, .boton__Movimento__Rosa__grande, .boton__Movimento__Rosa__mediano, .boton__Movimento__Rosa__pequeño {
   padding: 17px 40px;
   background-color: #E83E8C;
   box-shadow: #000 0 0 8px;
@@ -722,13 +726,13 @@ body {
   font-family: "Ancient Text", serif;
   padding: 20px;
 }
-.boton__Movimento__Rosa:hover, .formulario__basico__2 .formulario__basico__2:hover, .formulario__basico__2 button:hover {
+.boton__Movimento__Rosa:hover, .formulario__basico__2 .formulario__basico__2:hover, .formulario__basico__2 button:hover, .crear__cuenta button[type=submit]:hover, .boton__Movimento__Rosa__extra_grande:hover, .boton__Movimento__Rosa__grande:hover, .boton__Movimento__Rosa__mediano:hover, .boton__Movimento__Rosa__pequeño:hover {
   line-height: 3px;
   background-color: #E83E8C;
   color: #F1FAEE;
   box-shadow: #46dffa 0 7px 29px 0;
 }
-.boton__Movimento__Rosa:active, .formulario__basico__2 .formulario__basico__2:active, .formulario__basico__2 button:active {
+.boton__Movimento__Rosa:active, .formulario__basico__2 .formulario__basico__2:active, .formulario__basico__2 button:active, .crear__cuenta button[type=submit]:active, .boton__Movimento__Rosa__extra_grande:active, .boton__Movimento__Rosa__grande:active, .boton__Movimento__Rosa__mediano:active, .boton__Movimento__Rosa__pequeño:active {
   line-height: 3px;
   background-color: #E83E8C;
   color: #F1FAEE;
@@ -738,7 +742,7 @@ body {
 }
 
 /*BONTON ROJO */
-.boton__Movimento__rojo {
+.boton__Movimento__rojo, .boton__Movimento__rojo__extra_grande, .boton__Movimento__rojo__grande, .boton__Movimento__rojo__mediano, .boton__Movimento__rojo__pequeño {
   padding: 17px 40px;
   background-color: #d9160f;
   box-shadow: #000 0 0 8px;
@@ -750,13 +754,13 @@ body {
   font-family: "Ancient Text", serif;
   padding: 20px;
 }
-.boton__Movimento__rojo:hover {
+.boton__Movimento__rojo:hover, .boton__Movimento__rojo__extra_grande:hover, .boton__Movimento__rojo__grande:hover, .boton__Movimento__rojo__mediano:hover, .boton__Movimento__rojo__pequeño:hover {
   line-height: 3px;
   background-color: #d9160f;
   color: #F1FAEE;
   box-shadow: #000 0 7px 29px 0;
 }
-.boton__Movimento__rojo:active {
+.boton__Movimento__rojo:active, .boton__Movimento__rojo__extra_grande:active, .boton__Movimento__rojo__grande:active, .boton__Movimento__rojo__mediano:active, .boton__Movimento__rojo__pequeño:active {
   line-height: 3px;
   background-color: #d9160f;
   color: #F1FAEE;
@@ -766,7 +770,7 @@ body {
 }
 
 /*BONTON verdeee*/
-.boton__Movimento__verde {
+.boton__Movimento__verde, .boton__Movimento__verde__extra_grande, .boton__Movimento__verde__grande, .boton__Movimento__verde__mediano, .boton__Movimento__verde__pequeño {
   padding: 17px 40px;
   background-color: #0e791a;
   box-shadow: #000 0 0 8px;
@@ -778,13 +782,13 @@ body {
   font-family: "Ancient Text", serif;
   padding: 20px;
 }
-.boton__Movimento__verde:hover {
+.boton__Movimento__verde:hover, .boton__Movimento__verde__extra_grande:hover, .boton__Movimento__verde__grande:hover, .boton__Movimento__verde__mediano:hover, .boton__Movimento__verde__pequeño:hover {
   line-height: 3px;
   background-color: #0e791a;
   color: #F1FAEE;
   box-shadow: #000 0 7px 29px 0;
 }
-.boton__Movimento__verde:active {
+.boton__Movimento__verde:active, .boton__Movimento__verde__extra_grande:active, .boton__Movimento__verde__grande:active, .boton__Movimento__verde__mediano:active, .boton__Movimento__verde__pequeño:active {
   line-height: 3px;
   background-color: #0e791a;
   color: #F1FAEE;
@@ -794,7 +798,7 @@ body {
 }
 
 /*BONTON NARAJA*/
-.boton__Movimento__naranja {
+.boton__Movimento__naranja, .boton__Movimento__naranja__extra_grande, .boton__Movimento__naranja__grande, .boton__Movimento__naranja__mediano, .boton__Movimento__naranja__pequeño {
   padding: 17px 40px;
   background-color: #f88809;
   box-shadow: #000 0 0 8px;
@@ -806,13 +810,13 @@ body {
   font-family: "Ancient Text", serif;
   padding: 20px;
 }
-.boton__Movimento__naranja:hover {
+.boton__Movimento__naranja:hover, .boton__Movimento__naranja__extra_grande:hover, .boton__Movimento__naranja__grande:hover, .boton__Movimento__naranja__mediano:hover, .boton__Movimento__naranja__pequeño:hover {
   line-height: 3px;
   background-color: #f88809;
   color: #F1FAEE;
   box-shadow: #000 0 7px 29px 0;
 }
-.boton__Movimento__naranja:active {
+.boton__Movimento__naranja:active, .boton__Movimento__naranja__extra_grande:active, .boton__Movimento__naranja__grande:active, .boton__Movimento__naranja__mediano:active, .boton__Movimento__naranja__pequeño:active {
   line-height: 3px;
   background-color: #f88809;
   color: #F1FAEE;
@@ -821,24 +825,97 @@ body {
   transition: 100ms;
 }
 
+.boton__pequeno, .boton__animacion_1_pequeno, .boton__animacion_2_pequeno, .boton__animacion_3_pequeno, .boton__animacion_4_pequeno, .boton__basico__1__pequeno, .boton__basico__2__pequeno, .boton__basico__3__pequeno, .boton__basico__4__pequeno, .boton__blanco__1_pequño, .boton__blanco__2_pequeno, .boton__blanco__3_pequeno, .boton__blanco__4_pequeno, .boton__Movimento__Rosa__pequeño, .boton__Movimento__rojo__pequeño, .boton__Movimento__verde__pequeño, .boton__Movimento__naranja__pequeño {
+  padding: 10px;
+}
+
+.boton__mediano, .boton__animacion_1_mediano, .boton__animacion_2_mediano, .boton__animacion_3_mediano, .boton__animacion_4_mediano, .boton__basico__1__mediano, .boton__basico__2__mediano, .boton__basico__3__mediano, .boton__basico__4__mediano, .boton__blanco__1_mediano, .boton__blanco__2_mediano, .boton__blanco__3_mediano, .boton__blanco__4_mediano, .boton__Movimento__Rosa__mediano, .boton__Movimento__rojo__mediano, .boton__Movimento__verde__mediano, .boton__Movimento__naranja__mediano {
+  padding: 20px;
+}
+
+.boton__grande, .boton__animacion_1_grande, .boton__animacion_2_grande, .boton__animacion_3_grande, .boton__animacion_4_grande, .boton__basico__1__grande, .boton__basico__2__grande, .boton__basico__3__grande, .boton__basico__4__grande, .boton__blanco__1_grande, .boton__blanco__2_grande, .boton__blanco__3_grande, .boton__blanco__4_grande, .boton__Movimento__Rosa__grande, .boton__Movimento__rojo__grande, .boton__Movimento__verde__grande, .boton__Movimento__naranja__grande {
+  padding: 30px;
+}
+
+.boton__extra_grande, .boton__animacion_1_extra_grande, .boton__animacion_2_extra_grande, .boton__animacion_3_extra_grande, .boton__animacion_4_extra_grande, .boton__basico__1__extra_grande, .boton__basico__2__extra_grande, .boton__basico__3__extra_grande, .boton__basico__4__extra_grande, .boton__blanco__1_extra_grande, .boton__blanco__2_extra_grande, .boton__blanco__3_extra_grande, .boton__blanco__4_extra_grande, .boton__Movimento__Rosa__extra_grande, .boton__Movimento__rojo__extra_grande, .boton__Movimento__verde__extra_grande, .boton__Movimento__naranja__extra_grande {
+  padding: 40px;
+}
+
 @media (max-width: 768px) {
-  .boton__animacion__1 .boton__animacion__2, .boton__animacion__1 .crear__cuenta button, .crear__cuenta .boton__animacion__1 button,
+  .boton__animacion__1 .boton__animacion__2, .boton__animacion_1_pequeno .boton__animacion__2, .boton__animacion_1_mediano .boton__animacion__2, .boton__animacion_1_grande .boton__animacion__2, .boton__animacion_1_extra_grande .boton__animacion__2, .boton__animacion__1 .boton__animacion_2_pequeno, .boton__animacion_1_pequeno .boton__animacion_2_pequeno, .boton__animacion_1_mediano .boton__animacion_2_pequeno, .boton__animacion_1_grande .boton__animacion_2_pequeno, .boton__animacion_1_extra_grande .boton__animacion_2_pequeno, .boton__animacion__1 .boton__animacion_2_mediano, .boton__animacion_1_pequeno .boton__animacion_2_mediano, .boton__animacion_1_mediano .boton__animacion_2_mediano, .boton__animacion_1_grande .boton__animacion_2_mediano, .boton__animacion_1_extra_grande .boton__animacion_2_mediano, .boton__animacion__1 .boton__animacion_2_grande, .boton__animacion_1_pequeno .boton__animacion_2_grande, .boton__animacion_1_mediano .boton__animacion_2_grande, .boton__animacion_1_grande .boton__animacion_2_grande, .boton__animacion_1_extra_grande .boton__animacion_2_grande, .boton__animacion__1 .boton__animacion_2_extra_grande, .boton__animacion_1_pequeno .boton__animacion_2_extra_grande, .boton__animacion_1_mediano .boton__animacion_2_extra_grande, .boton__animacion_1_grande .boton__animacion_2_extra_grande, .boton__animacion_1_extra_grande .boton__animacion_2_extra_grande,
   .boton__animacion__3,
+  .boton__animacion_3_pequeno,
+  .boton__animacion_3_mediano,
+  .boton__animacion_3_grande,
+  .boton__animacion_3_extra_grande,
   .boton__animacion__4,
+  .boton__animacion_4_pequeno,
+  .boton__animacion_4_mediano,
+  .boton__animacion_4_grande,
+  .boton__animacion_4_extra_grande,
   .boton__basico__1,
+  .boton__basico__1__pequeno,
+  .boton__basico__1__mediano,
+  .boton__basico__1__grande,
+  .boton__basico__1__extra_grande,
   .boton__basico__2,
+  .boton__basico__2__pequeno,
+  .boton__basico__2__mediano,
+  .boton__basico__2__grande,
+  .boton__basico__2__extra_grande,
   .boton__basico__3,
+  .boton__basico__3__pequeno,
+  .boton__basico__3__mediano,
+  .boton__basico__3__grande,
+  .boton__basico__3__extra_grande,
   .boton__basico__4,
+  .boton__basico__4__pequeno,
+  .boton__basico__4__mediano,
+  .boton__basico__4__grande,
+  .boton__basico__4__extra_grande,
   .boton__blanco__1,
+  .boton__blanco__1_pequño,
+  .boton__blanco__1_mediano,
+  .boton__blanco__1_grande,
+  .boton__blanco__1_extra_grande,
   .boton__blanco__2,
+  .boton__blanco__2_pequeno,
+  .boton__blanco__2_mediano,
+  .boton__blanco__2_grande,
+  .boton__blanco__2_extra_grande,
   .boton__blanco__3,
+  .boton__blanco__3_pequeno,
+  .boton__blanco__3_mediano,
+  .boton__blanco__3_grande,
+  .boton__blanco__3_extra_grande,
   .boton__blanco__4,
+  .boton__blanco__4_pequeno,
+  .boton__blanco__4_mediano,
+  .boton__blanco__4_grande,
+  .boton__blanco__4_extra_grande,
   .boton__Movimento__Rosa,
   .formulario__basico__2 .formulario__basico__2,
   .formulario__basico__2 button,
+  .crear__cuenta button[type=submit],
+  .boton__Movimento__Rosa__pequeño,
+  .boton__Movimento__Rosa__mediano,
+  .boton__Movimento__Rosa__grande,
+  .boton__Movimento__Rosa__extra_grande,
   .boton__Movimento__rojo,
+  .boton__Movimento__rojo__pequeño,
+  .boton__Movimento__rojo__mediano,
+  .boton__Movimento__rojo__grande,
+  .boton__Movimento__rojo__extra_grande,
   .boton__Movimento__verde,
-  .boton__Movimento__naranja {
+  .boton__Movimento__verde__pequeño,
+  .boton__Movimento__verde__mediano,
+  .boton__Movimento__verde__grande,
+  .boton__Movimento__verde__extra_grande,
+  .boton__Movimento__naranja,
+  .boton__Movimento__naranja__pequeño,
+  .boton__Movimento__naranja__mediano,
+  .boton__Movimento__naranja__grande,
+  .boton__Movimento__naranja__extra_grande {
     flex-direction: column;
     text-align: center;
   }
@@ -1044,7 +1121,7 @@ body {
     font-size: 30px;
   }
 }
-.grid__justyfy__content__center, .crear__cuenta, .crear__cuenta form {
+.grid__justyfy__content__center {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
@@ -1052,13 +1129,29 @@ body {
   align-items: center; /* Alineación vertical centrada */
 }
 
-.alinar__unica__fila__centrado, .crear__cuenta button {
+.alinar__unica__fila__centrado {
   display: flex;
   flex-direction: row;
   align-items: center; /* Alineación vertical centrada */
   justify-items: center; /* Alineación horizontal centrada */
   justify-content: space-between;
   gap: 16px;
+}
+
+.icono__candado {
+  background-image: url("../../Home/Iconos_img/candado.svg");
+  display: inline-block;
+  width: 24px;
+  height: 24 px;
+  background-size: contain;
+}
+
+.icono__ojo {
+  background-image: url("../../Home/Iconos_img/ojo.svg");
+  display: inline-block;
+  width: 24px;
+  height: 24 px;
+  background-size: contain;
 }
 
 .form__inicio__de__secion {
@@ -1219,51 +1312,73 @@ body {
 }
 
 .crear__cuenta {
-  max-width: 100%;
-  margin: 16px;
-  padding: 20px;
-  grid-template-columns: 1fr;
-  font-family: "Blackbeard", cursive;
-  background-color: #f88809;
-}
-.crear__cuenta body {
-  background-color: black;
-}
-.crear__cuenta img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  max-width: 500px;
   margin: 0 auto;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.crear__cuenta form {
-  font-size: larger;
-  margin: 3px;
-  width: 100%;
-  max-width: 70%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }
 .crear__cuenta label {
-  color: #000;
   display: block;
-  text-align: left;
+  margin-bottom: 10px;
 }
-.crear__cuenta input,
+.crear__cuenta img {
+  display: block;
+  margin-bottom: 10px;
+}
 .crear__cuenta input[type=text],
+.crear__cuenta input[type=" "],
+.crear__cuenta input[type=tel],
 .crear__cuenta input[type=email],
 .crear__cuenta input[type=password] {
-  margin: 5px;
-  padding: 20px;
-  background-color: #ecaacd;
-  font-family: "Blackbeard", cursive;
-  width: 100%;
-  max-width: 70%;
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-.crear__cuenta button {
-  font-family: "Blackbeard", cursive;
+.crear__cuenta button[type=submit] {
   width: 100%;
-  max-width: 80%;
+  padding: 10px;
+  margin-top: 10px;
+}
+.crear__cuenta button[type=submit]:hover {
+  background-color: #6ca500;
+}
+
+.formulario__contactos {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde del formulario */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #f9f9f9; /* Color de fondo */
+}
+
+.formulario__contactos label {
+  display: block; /* Mostrar cada etiqueta en una línea nueva */
+  margin-bottom: 8px; /* Espaciado entre etiquetas y campos de entrada */
+}
+
+.formulario__contactos input[type=text],
+.formulario__contactos input[type=email],
+.formulario__contactos input[type=tel],
+.formulario__contactos input[type=" "],
+.formulario__contactos textarea {
+  width: 100%; /* Ancho completo */
+  padding: 8px; /* Espaciado interno */
+  margin-bottom: 16px; /* Espaciado inferior */
+  box-sizing: border-box; /* Incluir el borde en el ancho total */
+}
+
+.formulario__contactos button[type=submit],
+input [type=file] {
+  padding: 10px 20px; /* Espaciado interno del botón */
+}
+
+.formulario__contactos button[type=submit]:hover {
+  background-color: #6ca500; /* Cambia el color de fondo al pasar el cursor */
 }
 
 @media (max-width: 768px) {
@@ -1276,7 +1391,6 @@ body {
     margin-right: 0;
   }
 }
-<<<<<<< HEAD
 @keyframes scrollAnimation {
   0% {
     transform: translateY(0);
@@ -1481,14 +1595,6 @@ body {
     display: block; /* Mostrar elementos uno debajo del otro en dispositivos pequeños */
     margin: 10px 0; /* Espaciado entre elementos en dispositivos pequeños */
   }
-=======
-.icono__candado {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-image: url("../../Home/Iconos_img/candado.svg");
-  background-size: cover;
->>>>>>> yoss
 }
 
 /*# sourceMappingURL=main.css.map */
