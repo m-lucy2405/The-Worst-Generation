@@ -1843,5 +1843,61 @@ main.cards section.card span {
     margin-bottom: 0;
   }
 }
+.pre {
+  border-radius: 10px;
+  background: linear-gradient(to right, #E83E8C, #8A2BE2);
+  color: #ffffff;
+  height: auto;
+}
+
+.code {
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+}
+
+.container-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.boton__basico__1 {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.boton__basico__2 {
+  background-color: #28a745;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.boton__basico__3 {
+  background-color: #ffc107;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.boton__basico__4 {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=main.css.map */

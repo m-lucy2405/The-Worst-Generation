@@ -1,0 +1,47 @@
+// Define los colores y tamaños comunes
+$badge-background-color: #007bff;
+$badge-color: #fff;
+$badge-padding: 0.25rem 0.5rem;
+$badge-border-radius: 0.25rem;
+$badge-font-size: 1rem;
+$badge-font-weight: bold;
+
+// Estilos para el primer badge (tamaño pequeño)
+.boton__basico__1 {
+  background-color: $badge-background-color;
+  color: $badge-color;
+  padding: $badge-padding;
+  border-radius: $badge-border-radius;
+  font-size: $badge-font-size;
+  font-weight: $badge-font-weight;
+}
+
+// Estilos para el segundo badge (tamaño mediano)
+.boton__basico__2 {
+  background-color: #28a745; // Cambia el color si deseas
+  color: $badge-color;
+  padding: $badge-padding;
+  border-radius: $badge-border-radius;
+  font-size: $badge-font-size * 1.2; // Tamaño un 20% más grande
+  font-weight: $badge-font-weight;
+}
+
+// Estilos para el tercer badge (tamaño grande)
+.boton__basico__3 {
+  background-color: #ffc107; // Cambia el color si deseas
+  color: $badge-color;
+  padding: $badge-padding;
+  border-radius: $badge-border-radius;
+  font-size: $badge-font-size * 1.5; // Tamaño un 50% más grande
+  font-weight: $badge-font-weight;
+}
+
+// Estilos para el cuarto badge (tamaño extra grande)
+.boton__basico__4 {
+  background-color: #dc3545; // Cambia el color si deseas
+  color: $badge-color;
+  padding: $badge-padding;
+  border-radius: $badge-border-radius;
+  font-size: $badge-font-size * 2; // Tamaño el doble de grande
+  font-weight: $badge-font-weight;
+}
