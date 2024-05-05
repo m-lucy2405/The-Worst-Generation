@@ -69,7 +69,7 @@
          <!--***************************************** -->
         <!--      FORMULARIO CREAR CUENTA             -->
         <!--****************************************** -->
-
+        <h2>Formulario crear cuenta</h2>
         <div class="container__crear__cuenta">
             <form>
                 <h2>Crear Cuenta</h2>
@@ -121,6 +121,10 @@
             </form>
         </div>
 
+          <!--***************************************** -->
+        <!--   TEX DE   FORMULARIO CREAR CUENTA             -->
+        <!--****************************************** -->
+        <h4>Codigo HTML</h4>
         <div class="container-fluid">
             <pre class="pre"><code class="code"><i rel="pre">
         &lt;div class="container__crear__cuenta"&gt;
@@ -182,6 +186,8 @@
     <!--***************************************** -->
     <!--      FORMULARIO DE CONTACTO      -->
     <!--****************************************** -->
+    <h2>Formulario de contatos</h2>
+    <p>Formulario de contactos, utizas los elemtos tipico de un formulario de este tipo</p>
     <div class="container__form__contatos">
         <form>
             <h2>Formulario de Contacto</h2>
@@ -224,6 +230,11 @@
         </form>
     </div>
 
+
+        <!--***************************************** -->
+        <!--     TEX FORMULARIO CONTACTOS             -->
+        <!--****************************************** -->
+    <h4>Codigo HTML</h4>
     <div class="container-fluid">
         <pre class="pre"><code class="code"><i rel="pre">
     &lt;div class="container__form__contatos"&gt;
@@ -276,22 +287,19 @@
        <!--***************************************** -->
         <!--      FORMULARIO BASIC 2                 -->
         <!--****************************************** -->
+        <h2>Formulario basico</h2>
+        <p>este es un fomulario basico que contiene alguno elemtos esenciales y populares, como input y botones</p>
     <div  class="formulario__basico__2">
         <form action="">
             <label class="title" for="nombre">FORMULARIO BASICO</label>
-
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
-
             <label for="correo">Correo electrónico:</label>
             <input type="email" id="correo" name="correo" required>
-
             <label for="contrasena">Contraseña:</label>
             <input type="password" id="contrasena" name="contrasena" required>
-
             <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
             <label for="opciones">Opciones:</label>
             <select id="opciones" name="opciones">
                 <option value="opcion1">Opción 1</option>
@@ -317,28 +325,87 @@
         </form>
 
     </div>
+
+    <h4>Codigo HTML</h4>
+    <div class="container-fluid">
+        <pre class="pre"><code class="code"><i rel="pre">
+    &lt;div class="formulario__basico__2"&gt;
+        &lt;form action=""&gt;
+            &lt;label class="title" for="nombre"&gt;FORMULARIO BASICO&lt;/label&gt;
+            &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+            &lt;input type="text" id="nombre" name="nombre" required&gt;
+            &lt;label for="correo"&gt;Correo electrónico:&lt;/label&gt;
+            &lt;input type="email" id="correo" name="correo" required&gt;
+            &lt;label for="contrasena"&gt;Contraseña:&lt;/label&gt;
+            &lt;input type="password" id="contrasena" name="contrasena" required&gt;
+            &lt;label for="mensaje"&gt;Mensaje:&lt;/label&gt;
+            &lt;textarea id="mensaje" name="mensaje" rows="4" required&gt;&lt;/textarea&gt;
+            &lt;label for="opciones"&gt;Opciones:&lt;/label&gt;
+            &lt;select id="opciones" name="opciones"&gt;
+                &lt;option value="opcion1"&gt;Opción 1&lt;/option&gt;
+                &lt;option value="opcion2"&gt;Opción 2&lt;/option&gt;
+                &lt;option value="opcion3"&gt;Opción 3&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;fieldset&gt;
+                &lt;legend&gt;Preferencias:&lt;/legend&gt;
+                &lt;label&gt;&lt;input type="checkbox" name="preferencia1"&gt; Preferencia 1&lt;/label&gt;&lt;br&gt;
+                &lt;label&gt;&lt;input type="checkbox" name="preferencia2"&gt; Preferencia 2&lt;/label&gt;&lt;br&gt;
+                &lt;label&gt;&lt;input type="checkbox" name="preferencia3"&gt; Preferencia 3&lt;/label&gt;&lt;br&gt;
+            &lt;/fieldset&gt;
+            &lt;fieldset&gt;
+                &lt;legend&gt;Preferencias:&lt;/legend&gt;
+                &lt;label&gt;&lt;input type="radio" name="op1"&gt; opcion1 &lt;/label&gt;
+                &lt;label&gt;&lt;input type="radio" name="op2"&gt; opcion2 &lt;/label&gt;
+            &lt;/fieldset&gt;
+            &lt;button type=""&gt;Enviar&lt;/button&gt;
+            &lt;button type=""&gt;Regresar&lt;/button&gt;
+        &lt;/form&gt;
+        &lt;/div&gt;
+        </i></code></pre>
+    </div>
+    
     
     
 </body>
 </html>
 
 <style>
-    body{
-        background-color: rgb(240, 240, 240);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        color: rgb(90, 6, 6);
+    * {
+        margin: 0;
         padding: 0;
         box-sizing: border-box;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        height: auto;
-       /* background-image: url(https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);*/
-        background-color: antiquewhite;
-        background-size: cover;
     }
+    body {
+            background-color: rgb(240, 240, 240);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column; /* Alinear elementos en columna */
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            height: auto;
+            background-color: antiquewhite;
+            background-size: cover;
+            
+        }
+
+        h1{
+            font-size: 30px;
+            font-weight: 700;
+            color: rgb(245, 71, 71);
+            text-align: center;
+        }
+        h2{
+            font-size: 25px;
+            font-weight: 700;
+            color: rgb(3, 3, 3);
+            text-align: center;
+        }
+
+
+        
+    
 </style>
