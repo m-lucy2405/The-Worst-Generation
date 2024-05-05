@@ -16,7 +16,7 @@ $pandin-contedido: 20px;
 $magen-contenido: 16px;
 
 //***********************************************************
-//           FORMULARIO 1
+//           FORMULARIO DE INICIO DE SECION
 //***********************************************************
 
 .container__inicio__secion {
@@ -108,6 +108,11 @@ $magen-contenido: 16px;
     justify-items: center;
     align-items: center;
     gap: 16px;
+    margin-bottom: 20px;
+    margin-top: 20x;
+    height: 100vh;
+    margin-top: 20px;
+
 
     form{
         @extend .sombra_inferior;
@@ -121,6 +126,7 @@ $magen-contenido: 16px;
         padding: $pandin-contedido;
         background-color: colores.$color-gris;  
         font-size: large;   
+        
     }
     label{
         color: colores.$color-negro;
@@ -310,7 +316,7 @@ $magen-contenido: 16px;
     background-size: cover;
 }
 
-.container__crear__cuenta form .form__group .input__with__icon .email-icon {
+.container__crear__cuenta form .form__group .input__with__icon .email__icon {
     background-image: url('../../Home/Iconos_img/gmail.svg');
 }
 

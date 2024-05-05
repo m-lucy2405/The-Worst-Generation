@@ -1224,6 +1224,10 @@ body {
   justify-items: center;
   align-items: center;
   gap: 16px;
+  margin-bottom: 20px;
+  margin-top: 20x;
+  height: 100vh;
+  margin-top: 20px;
 }
 .formulario__basico__2 form {
   display: grid;
@@ -1380,7 +1384,7 @@ body {
   background-size: cover;
 }
 
-.container__crear__cuenta form .form__group .input__with__icon .email-icon {
+.container__crear__cuenta form .form__group .input__with__icon .email__icon {
   background-image: url("../../Home/Iconos_img/gmail.svg");
 }
 
@@ -1862,7 +1866,7 @@ main.cards section.card span {
   align-items: center;
 }
 
-.boton__basico__1 {
+.bage__1 {
   background-color: #007bff;
   color: #fff;
   padding: 0.25rem 0.5rem;
@@ -1871,7 +1875,7 @@ main.cards section.card span {
   font-weight: bold;
 }
 
-.boton__basico__2 {
+.badge__2 {
   background-color: #28a745;
   color: #fff;
   padding: 0.25rem 0.5rem;
@@ -1880,7 +1884,7 @@ main.cards section.card span {
   font-weight: bold;
 }
 
-.boton__basico__3 {
+.badge__3 {
   background-color: #ffc107;
   color: #fff;
   padding: 0.25rem 0.5rem;
@@ -1889,7 +1893,7 @@ main.cards section.card span {
   font-weight: bold;
 }
 
-.boton__basico__4 {
+.badge__4 {
   background-color: #dc3545;
   color: #fff;
   padding: 0.25rem 0.5rem;
