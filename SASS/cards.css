@@ -1,0 +1,350 @@
+.borde__solido {
+  border: solid 10px;
+  background-color: #ecaacd;
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__dotted {
+  border: dotted 10px;
+  background-color: #ecaacd;
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__dashed {
+  border: dashed 10px;
+  background-color: #ecaacd;
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__double {
+  border: double 15px;
+  background-color: #ecaacd;
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__groove {
+  border: groove 15px;
+  background-color: #ecaacd;
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__ridge {
+  border: ridge 15px;
+  background-color: #ecaacd;
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__inset {
+  border: inset 15px;
+  background-color: #ecaacd;
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__outset {
+  border: outset 15px;
+  background-color: #ecaacd;
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__Esquinas_dedondeada {
+  border-radius: 5px 5px 5px 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.borde__none {
+  border: none;
+  border-color: #ecaacd;
+}
+
+/*------------------------------------------------*/
+/*                 BORDES REDONDEADOR             */
+/*------------------------------------------------*/
+.borde__redondeado__50px {
+  border-radius: 50px;
+  border: 0;
+}
+
+.borde__redondeado__1 {
+  border-radius: 25% 10%;
+}
+
+.borde__redondeado__2 {
+  border-radius: 25% 10%;
+}
+
+.borde__redondeado__3 {
+  border-radius: 10% 30% 50% 70%;
+}
+
+.borde__redondeado__4 {
+  border-radius: 10%/50%;
+}
+
+.borde__redondeado__5 {
+  border-radius: 10px 100px/120px;
+}
+
+.borde__redondeado__6 {
+  border-radius: 50% 20%/10% 40%;
+}
+
+/*------------------------------------------------*/
+/*          BORDES CON ESQUINA REDONDEADAS         */
+/*------------------------------------------------*/
+.borde__redondeado__7 {
+  border-end-start-radius: 80px 80px;
+}
+
+.borde__redondeado__8 {
+  border-end-start-radius: 250px 100px;
+  direction: rtl;
+}
+
+.borde__redondeado__9 {
+  border-end-start-radius: 50%;
+  writing-mode: vertical-lr;
+}
+
+.borde__redondeado__10 {
+  border-end-start-radius: 50%;
+  writing-mode: vertical-rl;
+}
+
+/*------------------------------------------------*/
+/*      BORDER CIRCULO                       */
+/*------------------------------------------------*/
+.borde__circle {
+  border-radius: 50px;
+}
+
+/*------------------------------------------------*/
+/*          BORDE REDONDEADOS                     */
+/*------------------------------------------------*/
+.borde__equna {
+  border-radius: 60px/20px;
+}
+
+.borde__redondeado__15 {
+  border-radius: 13em/3em;
+}
+
+/*------------------------------------------------*/
+/*      ESTILO DE HTML                            */
+/*------------------------------------------------*/
+.sombra_superior {
+  box-shadow: 0px -25px 20px -20px #00eeff;
+  margin: 20px;
+  background-color: #b3b2b4;
+}
+
+.sombra_derecha {
+  box-shadow: 25px 0 20px -20px #00eeff;
+  margin: 20px;
+  background-color: #b3b2b4;
+}
+
+.sombra_inferior {
+  box-shadow: 0px 25px 20px -20px #00eeff;
+  margin: 20px;
+  background-color: #b3b2b4;
+}
+
+.sombra_izquierda {
+  box-shadow: -25px 0 20px -20px #00eeff;
+  margin: 20px;
+  background-color: #b3b2b4;
+}
+
+.sombra__superior__derecha {
+  box-shadow: 0px -25px 20px -20px #00eeff, 25px 0 20px -20px #00eeff;
+  margin: 20px;
+  background-color: #b3b2b4;
+}
+
+.sombra__superior__inferior {
+  box-shadow: 0px -25px 20px -20px #00eeff, 0px 25px 20px -20px #00eeff;
+  margin: 20px;
+  background-color: #b3b2b4;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1D3557;
+}
+
+.title {
+  font-family: "Blackbeard", cursive;
+  font-size: 2.5em;
+  color: #9e0631;
+}
+
+.subtitle {
+  font-family: "Marine", sans-serif;
+  font-size: 1.8em;
+  color: #A8DADC;
+}
+
+.paragraph {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+}
+
+.quote {
+  font-family: "Devil Fruit", fantasy;
+  font-size: 1.2em;
+  color: #457B9D;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+.skull-heading {
+  font-family: "Skull and Cross", sans-serif;
+  font-size: 3em;
+  color: #A8DADC;
+}
+
+.ancient-text {
+  font-family: "Ancient Text", serif;
+  font-size: 1.2em;
+  color: #F1FAEE;
+}
+
+.treasure-map {
+  font-family: "Treasure Map", cursive;
+  font-size: 1.5em;
+  color: #FFFF00;
+}
+
+main.cards {
+  display: flex;
+  padding: 40px;
+}
+
+main.cards section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  max-height: 350px;
+  max-width: 250px;
+  margin-left: 32px;
+}
+
+main.cards section.card.Luffy {
+  background: linear-gradient(to bottom, #d9160f 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #f11f30;
+  color: #d9160f;
+}
+
+main.cards section.card.Zoro {
+  background: linear-gradient(to bottom, #0e791a 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #28A745;
+  color: #0e791a;
+}
+
+main.cards section.card.Usopp {
+  background: linear-gradient(to bottom, #FFFF00 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #FFC107;
+  color: #FFC107;
+}
+
+main.cards section.card.Sanji {
+  background: linear-gradient(to bottom, #1628c9 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #1D3557;
+  color: #1628c9;
+}
+
+main.cards section.card.Nami {
+  background: linear-gradient(to bottom, #f88809 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #FD7E14;
+  color: #FD7E14;
+}
+
+main.cards section.card.Chopper {
+  background: linear-gradient(to bottom, #d306d3 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #E83E8C;
+  color: #d306d3;
+}
+
+main.cards section.card.Robin {
+  background: linear-gradient(to bottom, #451561 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #8A2BE2;
+  color: #451561;
+}
+
+main.cards section.card.Franky {
+  background: linear-gradient(to bottom, #46dffa 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #2a5fcf;
+  color: #2a5fcf;
+}
+
+main.cards section.card.Brook {
+  background: linear-gradient(to bottom, #000 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #000;
+  color: #000;
+}
+
+main.cards section.card.Jinbe {
+  background: linear-gradient(to bottom, #9e0631 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #c7374f;
+  color: #9e0631;
+}
+
+main.cards section.card:first-child {
+  margin-left: 0;
+}
+
+main.cards section.card .foto-perfil {
+  margin-top: 40px;
+  width: 50%;
+  object-fit: scale-down;
+}
+
+main.cards section.card p {
+  font-size: 100%;
+  margin: 16px 0;
+  font-family: "Devil Fruit", fantasy;
+}
+
+main.cards section.card img {
+  margin-bottom: 10px;
+  width: 120px;
+  border-radius: 100%;
+}
+
+main.cards section.card span {
+  font-weight: 300;
+  max-width: 240px;
+  font-size: 80%;
+  margin-bottom: 16px;
+  font-family: "Skull and Cross", sans-serif;
+  color: #000;
+}
+
+@media screen and (max-width: 720px) {
+  main.cards {
+    flex-direction: column;
+  }
+  main.cards section.card {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  main.cards section.card:last-child {
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=cards.css.map */

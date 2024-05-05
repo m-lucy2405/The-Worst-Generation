@@ -23,6 +23,16 @@ $margin_btn: 16px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
 }
+.boton__cambio__color{
+    @extend .borde__Esquinas_dedondeada;
+    margin: 16px;
+    padding: 20px;
+    background-color: colores.$color-verde;
+    cursor: pointer;
+}
+.boton__cambio__color:hover{
+    background-color: colores.$color-zoro;
+}
 
 //CREANDO BTN CON AMIMACION 1
 .boton__animacion__1{
@@ -34,6 +44,9 @@ $margin_btn: 16px;
     margin: 16px;
     padding: 20px;
     justify-content: center;
+        cursor: pointer;
+    cursor: pointer;
+
 
 
 }
@@ -60,6 +73,9 @@ $margin_btn: 16px;
     margin: 16px;
     padding: 20px;
     justify-content: center;
+        cursor: pointer;
+    cursor: pointer;
+
 
    
 }
@@ -84,6 +100,9 @@ $margin_btn: 16px;
     margin: 16px;
     padding: 20px;
     justify-content: center;
+        cursor: pointer;
+    cursor: pointer;
+
 
    
 
@@ -131,6 +150,8 @@ $margin_btn: 16px;
     margin: 16px;
     padding: 20px;
     background-color: colores.$color-gris;
+    cursor: pointer;
+
 
 
 }
@@ -140,6 +161,7 @@ $margin_btn: 16px;
     margin: 16px;
     padding: 20px;
     background-color: colores.$color-amarillo;
+    cursor: pointer;
     
 }
 
@@ -151,6 +173,8 @@ $margin_btn: 16px;
     margin: 16px;
     padding: 20px;
     background-color: colores.$color-verde;
+    cursor: pointer;
+
 
 
 }
@@ -160,6 +184,8 @@ $margin_btn: 16px;
     margin: 16px;
     padding: 20px;
     background-color: colores.$color-luffy;
+    cursor: pointer;
+
 
 }
 
@@ -174,6 +200,7 @@ $margin_btn: 16px;
     border-color: colores.$color-verde;
     cursor: pointer;
     @extend .quote;
+
 }
 
 //FONDO BALCOLO 2

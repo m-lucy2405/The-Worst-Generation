@@ -79,7 +79,13 @@
 //BORDE rectagilo esqunas dedondeada 
 .borde__Esquinas_dedondeada {
     border-radius: 5px 5px 5px 5px;
-    background-color:  colores.$color-hana;
+    padding: 20px;
+    margin: 20px;
+    
+}
+
+.borde__Esquinas_dedondeada__3px{
+    border-radius: 3px 3px 3px 3px;
     padding: 20px;
     margin: 20px;
     
@@ -87,7 +93,7 @@
 
 //BORDE NONE
 .borde__none {
-    
+
     border: none;
     border-color:  colores.$color-hana;
     
@@ -103,6 +109,7 @@
 .borde__redondeado__50px {
     border-radius: 50px;
     border: 0;
+    border-color: colores.$color-negro;
 }
 
 //BORDE RENDEADIADO Modelo 100px

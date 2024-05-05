@@ -1,0 +1,18 @@
+.grid__justyfy__content__center{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-items: center; /* Alineación horizontal centrada */
+    align-items: center; /* Alineación vertical centrada */
+
+
+}
+
+.alinar__unica__fila__centrado{
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alineación vertical centrada */
+    justify-items: center; /* Alineación horizontal centrada */
+    justify-content: space-between;
+    gap: 16px;
+}

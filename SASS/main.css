@@ -1202,7 +1202,9 @@ body {
   background-color: #ecaacd;
   max-width: 90%;
   width: 100%;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   font-size: 16px;
 }
 .formulario__basico__2 option {
@@ -1320,44 +1322,25 @@ body {
   animation: fadeInUp 1s ease forwards;
 }
 
-.animated2 {
+.animated2, .sidebar {
   opacity: 0;
   animation: fadeInUpX 1s ease forwards;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  transition: margin-left 0.3s ease, margin-top 0.3s ease; /* Ajuste adicional */
-}
-
-header {
-  background-color: #14213D;
-  color: #fff;
-  padding: 10px;
-}
-
 /* Estilos para la barra de navegación superior */
 .navbar-top {
-  position: fixed;
-  display: flex;
-  top: 0;
-  left: 0;
-  width: 100%;
   background-color: #14213D; /* Color de fondo */
   color: #fff; /* Color del texto */
   padding: 10px; /* Espaciado interno */
-  z-index: 1000;
-  transition: margin-left 0.3s ease; /* Ajuste adicional */
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: space-evenly;
   text-align: center; /* Centrar el texto */
 }
 
 .navbar-top .nav-item {
-  align-items: center;
-  padding: auto; /* Espaciado entre elementos */
+  margin-right: 15px; /* Espaciado entre elementos */
   font-weight: bold; /* Negrita */
 }
 .navbar-top .nav-item--active {
@@ -1367,7 +1350,6 @@ header {
   color: #FFFF00;
 }
 
-/* Estilos para la barra Dropdown */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -1393,7 +1375,7 @@ header {
   display: block;
 }
 
-/* Estilos para la barra de navegación corta en el Main*/
+/* Estilos para la barra de navegación corta*/
 .navbar-side {
   background: linear-gradient(to right, #ff0000, #0000ff); /* Color de fondo */
   color: #fff; /* Color del texto */
@@ -1419,29 +1401,21 @@ header {
   color: inherit; /* Heredar color del texto */
 }
 
-/* Estilo para la Barra Lateral */
+/* Estilo para la barra lateral */
 .sidebar {
-  position: fixed;
   font-family: "Blackbeard", cursive;
-  margin-top: 50px;
   padding: 20px;
-  top: 0;
-  left: -300px;
-  width: 250px;
+  position: fixed;
+  top: 85px;
+  left: 0;
   height: 100%;
+  width: 150px;
   background-color: #14213D;
-  transition: left 0.3s ease;
-  z-index: 999;
   color: #fff;
   overflow-y: auto; /* Permite desplazamiento vertical */
-  /*@extend .animated2;*/
 }
 
-.sidebar.open {
-  left: 0;
-}
-
-/* Estilos para los enlaces del Menú Lateral */
+/* Estilos para los enlaces del menú lateral */
 .sidebar-link {
   display: block;
   padding: 10px 0;
@@ -1486,21 +1460,6 @@ header {
   background: #FFFF00;
 }
 
-main {
-  margin-left: 0; /* Ajuste adicional */
-  margin-top: 50px; /* Ajuste adicional */
-  padding: 20px;
-  transition: margin-left 0.3s ease; /* Ajuste adicional */
-}
-
-main.sidebar-open {
-  margin-left: 250px; /* Ajuste adicional */
-}
-
-main.sidebar-open .navbar-top {
-  margin-left: 250px; /* Ajuste adicional */
-}
-
 /* Media query para ajustes responsivos */
 @media (max-width: 1005px) {
   .navbar-top {
@@ -1520,6 +1479,4 @@ main.sidebar-open .navbar-top {
     display: block; /* Mostrar elementos uno debajo del otro en dispositivos pequeños */
     margin: 10px 0; /* Espaciado entre elementos en dispositivos pequeños */
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
