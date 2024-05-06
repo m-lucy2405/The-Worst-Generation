@@ -1,4 +1,18 @@
 @charset "UTF-8";
+.color-box {
+  width: 200px;
+  height: 150px;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .borde__solido {
   border: solid 10px;
   background-color: #ecaacd;
@@ -363,6 +377,22 @@ body {
 }
 
 /* Variables de colores para alertas */
+.icono__candado {
+  background-image: url("../../Home/Iconos_img/candado.svg");
+  display: inline-block;
+  width: 24px;
+  height: 24 px;
+  background-size: contain;
+}
+
+.icono__ojo {
+  background-image: url("../../Home/Iconos_img/ojo.svg");
+  display: inline-block;
+  width: 24px;
+  height: 24 px;
+  background-size: contain;
+}
+
 .alert {
   padding: 10px 30px;
   margin: 25px auto; /* Márgenes automáticos para centrar */
@@ -436,6 +466,20 @@ body {
     max-height: 50px; /* Altura máxima del icono en pantallas pequeñas */
   }
 }
+.color-box {
+  width: 200px;
+  height: 150px;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .sombra_superior, .btn, .scroll-btn {
   box-shadow: 0px -25px 20px -20px #00eeff;
   margin: 20px;
@@ -1128,22 +1172,6 @@ body {
   justify-items: center; /* Alineación horizontal centrada */
   justify-content: space-between;
   gap: 16px;
-}
-
-.icono__candado {
-  background-image: url("../../Home/Iconos_img/candado.svg");
-  display: inline-block;
-  width: 24px;
-  height: 24 px;
-  background-size: contain;
-}
-
-.icono__ojo {
-  background-image: url("../../Home/Iconos_img/ojo.svg");
-  display: inline-block;
-  width: 24px;
-  height: 24 px;
-  background-size: contain;
 }
 
 .container__inicio__secion {

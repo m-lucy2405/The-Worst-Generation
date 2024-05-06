@@ -3,6 +3,7 @@
 @use '../UTILIDADES/tipografia-tex';
 @use '../UTILIDADES/sombras';
 @use '../UTILIDADES/bordes';
+@use '../UTILIDADES/iconos';
 
 // Estilos base para alertas
 .alert {
@@ -12,10 +13,12 @@
   display: flex;
   align-items: center;
   text-align: center;
+  
 }
 
 // Estilos específicos para cada tipo de alerta
 .alert-success {
+  
   background:  colores.$color-zoro;
  font-family: tipografia-tex.$font-devil-fruit;
  text-align: center;
