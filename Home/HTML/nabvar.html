@@ -8,7 +8,26 @@
   <link rel="stylesheet" href="../main.css">
   <title>alertas y navbar</title>
 </head>
-
+<style>
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('../HTML/image.png'); /* Cambia 'ruta/de/la/imagen.jpg' por la ruta de tu imagen */
+      background-size: cover;
+      background-position: center;
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); /* Ajusta el valor de la opacidad según tus necesidades */
+  }
+  h2 {
+      text-align: center;
+      color: white; /* Cambia el color del texto si es necesario */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega una sombra al texto */
+  }
+  .alert {
+      color: white; /* Cambia el color del texto de las alertas si es necesario */
+  }
+  /* Añade estilos adicionales si es necesario */
+</style>
 <body>
 
   <!-- SCRIPT PARA ANIMACION DE BARRIDO / NAVBAR -->
@@ -76,6 +95,40 @@
   <!-- Contenido principal -->  
 
   <main>
+    <div style="margin-left: 270px; padding: 20px;"> <!-- Ajusta el margen izquierdo para dejar espacio para la barra lateral -->
+      <h1 style="color: white;  font-size: 30px">Navbarsuperior abarca toda la panatalla</h1>
+      <p style="color: white;">Para una navegacion  con el navbar estatico</p>
+    </div>
+    <div class="container-code" style="background: transparent;">
+      <pre class="pre" style="background: transparent;   border: solid 10px; color: white;"><code class="code">
+        &lt;nav class="navbar-top"&gt;
+        &lt;button class="toggleTopMenu" style="background-color: transparent;"&gt;
+          &lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"&gt;
+            &lt;path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 
+            .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/&gt;
+          &lt;/svg&gt;
+        &lt;/button&gt;
+    
+        &lt;a href="/Home/index.html" class="nav-item"&gt;
+          &lt;img src="/SASS/IMGs/OnePiece.png" alt="Descripción de la imagen" style="width: 180px; margin-bottom: 0px;"&gt;
+        &lt;/a&gt;
+        &lt;a href="#" class="nav-item"&gt;Documentacion&lt;/a&gt;
+        &lt;a href="#" class="nav-item"&gt;Acerca de One Piece&lt;/a&gt;
+        &lt;a href="https://onepiece.fandom.com/es/wiki/One_Piece_Wiki" class="nav-item"&gt;Mas Informacion&lt;/a&gt;
+          
+        <!-- Dropdown link -->
+        &lt;div class="dropdown"&gt;
+          &lt;a href="#" class="nav-item"&gt;Más opciones&lt;/a&gt;
+          &lt;div class="dropdown-content"&gt;
+            &lt;a href="#"&gt;Opción 1&lt;/a&gt;
+            &lt;a href="#"&gt;Opción 2&lt;/a&gt;
+            &lt;a href="#"&gt;Opción 3&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+    
+    </div>
+    <br>
 
     <nav class="navbar-side">
       <a href="#" class="nav-item">Inicio</a>
@@ -84,19 +137,18 @@
     </nav>
 
     <div style="margin-left: 270px; padding: 20px;"> <!-- Ajusta el margen izquierdo para dejar espacio para la barra lateral -->
-      <h1>Contenido Principal</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat tincidunt odio, et consectetur felis rhoncus id.</p>
+      <h1 style="color: white;">NavbarPequeño degradoa</h1>
+      <p style="color: white;">Para una navegacion sin que el navabar abarque todo el contenido</p>
     </div>
-
-  <!-- Contenido de las alertas -->
-
-   
-    </div>
-
-
     <div class="container-code">
       <pre class="pre"><code class="code">
-
+        &lt;nav class="navbar-side"&gt; &lt;/nav&gt;
+          &lt;a href="#" class="nav-item"&gt;Inicio&lt;/a&gt;
+          &lt;a href="#" class="nav-item"&gt;Acerca de&lt;/a&gt;
+          &lt;a href="#" class="nav-item"&gt;Contacto&lt;/a&gt;
+          &lt;/nav&gt;
+    </div>
+  
         <div class="sidebar">
 
           <button class="closeSidebar">Cerrar Barra Lateral</button>

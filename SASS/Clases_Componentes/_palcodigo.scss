@@ -1,30 +1,18 @@
 @use '../UTILIDADES/colores';
 
 .pre {
-    background: colores.$degradado-rosa-morado ; 
-    color: colores.$color-negro; 
+    border-radius: 10px;
+    background: colores.$degradado-rosa-morado;
+    color: colores.$color-brook;
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    margin: 0px;
-    padding: 3px;
- 
-
-    
-    &.code {
-        width: 100%;
-        
-        height: auto;
-        font-size: 15px;
-        font-weight: bold;
-    }
+    text-align: justify;
+    margin-left: 80px;
+    margin-left: 20px;
 }
 
-@media screen and (max-width: 600px) {
-    .pre {
-        padding: 5px; 
-        font-size: 12px; 
-    }
+.code {
+    width: 400px;
+    height: auto;
+    font-size: 15px;
 }
+

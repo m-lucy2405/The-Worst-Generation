@@ -5,19 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../Home/main.css">
     <title>Alertas</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('../HTML/imagess.png'); /* Cambia 'ruta/de/la/imagen.jpg' por la ruta de tu imagen */
+            background-size: cover;
+            background-position: center;
+            box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); /* Ajusta el valor de la opacidad según tus necesidades */
+        }
+        h2 {
+            text-align: center;
+            color: white; /* Cambia el color del texto si es necesario */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega una sombra al texto */
+        }
+        .alert {
+            color: white; /* Cambia el color del texto de las alertas si es necesario */
+        }
+       
+    </style>
 </head>
+
 <body>
 
-     <!-- SCRIPT PARA ANIMACION DE BARRIDO / NAVBAR -->
+    <!-- SCRIPT PARA ANIMACION DE BARRIDO / NAVBAR -->
   <script src="/Home/script_navbar.js"></script>
 
   <!-- Barra de Navegación Superior -->
-
-<header>
-  <button class="toggleSidebar">Abrir Barra Lateral</button> 
-</header>
-
-<nav class="navbar-top">
+  
+  <header>
+    <button class="toggleSidebar">Abrir Barra Lateral</button> 
+  </header>
+  
+  <nav class="navbar-top">
 
     <button class="toggleTopMenu" style="background-color: transparent;">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -43,9 +65,9 @@
     </div>
 </nav>
 
-<!-- Barra de Navegación Lateral -->
-
-<div class="sidebar">
+  <!-- Barra de Navegación Lateral -->
+    
+  <div class="sidebar">
     <button class="closeSidebar">Cerrar Barra Lateral</button>
       <a  class="sidebar-superior">Introducion</a>
       <a href="/Home/HTML/Documentacion.html" class="sidebar-link">Documentacion</a>
@@ -69,38 +91,30 @@
       <a href="#" class="sidebar-link"></a>
       <a href="#" class="sidebar-link"></a>
   </div>
-
-
-  <!-- Contenido principal --> 
+    
+  <!-- Contenido principal -->
 
   <main>
-    <h2 style="  text-align: center;">Alertas</h2>
-    <div class="alert alert-success">¡Éxito! La operación se completó correctamente.</div>
-    <div class="alert alert-info">¡Información: Esta es una nota importante que debes tener en cuenta! <a href="#" class="alert-link"> ejemplo link</a></div>
-    <div class="alert alert-warning">¡Advertencia: Esta acción puede tener consecuencias no deseadas.</div>
-    <div class="alert alert-danger">¡Error: No se pudo completar la operación debido a un error inesperado.</div>
-    <h2 style="  text-align: center;">Alertas</h2>
-    <div class="alert alert-success">¡Éxito! La operación se completó correctamente.</div>
-    <div class="alert alert-info">¡Información: Esta es una nota importante que debes tener en cuenta! <a href="#" class="alert-link"> ejemplo link</a></div>
-    <div class="alert alert-warning">¡Advertencia: Esta acción puede tener consecuencias no deseadas.</div>
-    <div class="alert alert-danger">¡Error: No se pudo completar la operación debido a un error inesperado.</div>
-    <h2 style="  text-align: center;">Alertas</h2>
+
+    <h2>Alertas</h2>
     <div class="alert alert-success">¡Éxito! La operación se completó correctamente.</div>
     <div class="alert alert-info">¡Información: Esta es una nota importante que debes tener en cuenta! <a href="#" class="alert-link"> ejemplo link</a></div>
     <div class="alert alert-warning">¡Advertencia: Esta acción puede tener consecuencias no deseadas.</div>
     <div class="alert alert-danger">¡Error: No se pudo completar la operación debido a un error inesperado.</div>
       
-    <div class="container-fluid">
+    <div class="container-code">
       <pre class="pre"><code class="code"> &lt;i rel="pre"&gt;
         &lt;div class="alert alert-success"&gt;¡Éxito! La operación se completó correctamente.&lt;/div&gt;
-        &lt;div class="alert alert-info"&gt;¡Información: Esta es una nota importante que debes tener en cuenta! &lt;a href="#" class="alert-link"&gt;ejemplo link&lt;/a&gt;&lt;/div&gt;
+        &lt;div class="alert alert-info"&gt;¡Información: Esta es una nota importante que debes tener en cuenta! &lt;a href="#" 
+        class="alert-link"&gt;ejemplo 
+        link&lt;/a&gt;&lt;/div&gt;
         &lt;div class="alert alert-warning"&gt;¡Advertencia: Esta acción puede tener consecuencias no deseadas.&lt;/div&gt;
         &lt;div class="alert alert-danger"&gt;¡Error: No se pudo completar la operación debido a un error inesperado.&lt;/div&gt;                                    
     &lt;i rel="pre"&gt;&lt;/code&gt;&lt;/pre&gt;
+    </div>
 
   </main>
 
-    
     
 </body>
 </html>
