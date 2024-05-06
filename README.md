@@ -22,7 +22,7 @@ One Piece The Worst Generation es una librería que ayuda a la creación de una 
 One Piece - The Worst Generation
 
 ### Indicaciones Generales
-* En primer lurgar debes descargar la libreria.
+* En primer lugar debes descargar la libreria.
 * Aparecera una carpeta que debes descomprimir.
 * Dentro de la carpeta se mostraran otras, de las cuales, algunas de ellas no debes modificar
 Primeramente la carpeta SASS no la modifiques ni la elimines, contiene archivos extensión .scss ya que ahí se encuentran la mayoria de elementos, si en un futuro desea agregar un elemnto nuevo y esta carpeta no se encuentra sera imposible agregar algo nuevo, igualmente dentro de la carpeta Home encontrarás archivos con extensión .css, que son los que otorgan el estilo a la página, estos son el resultado de la compilación de los archivos .scss, algunos de los css si los puedes modificar o eliminar pues tienes el scss que lo respalda.
