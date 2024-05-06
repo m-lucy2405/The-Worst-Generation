@@ -1,0 +1,32 @@
+@use '../UTILIDADES/colores';
+@use '../UTILIDADES/sombras';
+@use '../UTILIDADES/tipografia-tex';
+
+footer {
+    background-color: colores.$color-borde-iluminado;
+    color: colores.$color-fondo;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    
+    .container {
+        width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .footer-content {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    p {
+      margin: 10px 20px;
+    }
+  }
+  
