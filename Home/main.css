@@ -1879,18 +1879,14 @@ main.cards section.card span {
   background: linear-gradient(to right, #E83E8C, #8A2BE2);
   color: #ffffff;
   height: auto;
+  text-align: justify;
+  margin-left: 80px;
 }
 
 .code {
-  width: 100%;
+  width: 400px;
   height: auto;
   font-size: 15px;
-}
-
-.container-code {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .bage__1 {
@@ -1927,6 +1923,38 @@ main.cards section.card span {
   border-radius: 0.25rem;
   font-size: 2rem;
   font-weight: bold;
+}
+
+.badge-primary {
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.badge-secondary {
+  background-color: #6c757d;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.badge-success {
+  background-color: #28a745;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.badge-danger {
+  background-color: #dc3545;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=main.css.map */

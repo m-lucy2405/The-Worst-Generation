@@ -45,3 +45,34 @@ $badge-font-weight: bold;
   font-size: $badge-font-size * 2; // Tamaño el doble de grande
   font-weight: $badge-font-weight;
 }
+// Estilos de los badges
+$badge-color-primary: #007bff;
+$badge-color-secondary: #6c757d;
+$badge-color-success: #28a745;
+$badge-color-danger: #dc3545;
+
+// Mixin para estilos de los badges
+@mixin badge-style($color) {
+  background-color: $color;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+// Estilo de los badges
+.badge-primary {
+  @include badge-style($badge-color-primary);
+}
+
+.badge-secondary {
+  @include badge-style($badge-color-secondary);
+}
+
+.badge-success {
+  @include badge-style($badge-color-success);
+}
+
+.badge-danger {
+  @include badge-style($badge-color-danger);
+}

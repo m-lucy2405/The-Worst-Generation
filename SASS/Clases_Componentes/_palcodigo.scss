@@ -1,19 +1,17 @@
 @use '../UTILIDADES/colores';
 
-.pre{
+.pre {
     border-radius: 10px;
     background: colores.$degradado-rosa-morado;
     color: colores.$color-brook;
     height: auto;
+    text-align: justify;
+    margin-left: 80px;
 }
-.code{
-    width: 100%;
+
+.code {
+    width: 400px;
     height: auto;
     font-size: 15px;
 }
-.container-code{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
+
