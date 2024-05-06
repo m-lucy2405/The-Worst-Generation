@@ -8,19 +8,15 @@
 ## Tabla de contenido 
 - [Descripcion General](#descripcion-general)
   * [Nombre de la libreria](#nombre-de-la-libreria)
-  * [Objetivo](#objetivo)
   * [Indicaciones Generales](#indicaciones-generales)
   * [Versión](#version)
  
   
 ## Descripcion General
-One Piece The Worst Generation es una página web dedicada a todos los fanáticos de One Piece, la popular serie de manga y anime creada por Eiichiro Oda. La página ofrece una variedad de contenido relacionado con el mundo de One Piece, incluyendo información sobre los personajes, la historia, los arcos de la trama, noticias y actualizaciones sobre el manga y el anime.
+One Piece The Worst Generation es una librería que ayuda a la creación de una página web dedicada a todos los fanáticos de One Piece, la popular serie de manga y anime creada por Eiichiro Oda. La página ofrece una variedad de contenido relacionado con el mundo de One Piece, incluyendo información sobre los personajes, la historia, los arcos de la trama, noticias y actualizaciones sobre el manga y el anime.
 
-### Nombre de la Libreria
+### Nombre de la Librería
 One Piece - The Worst Generation
-
-### Objetivo
-Crear una plataforma en línea integral y de referencia para los fanáticos de One Piece, proporcionando un espacio centralizado donde los seguidores de la serie puedan acceder a una amplia gama de contenido relacionado, incluyendo información detallada sobre la trama, personajes, lugares, arte conceptual, productos de merchandising, noticias y actualizaciones, así como un foro de discusión activo para intercambiar teorías, opiniones y experiencias con otros fans.
 
 ### Indicaciones Generales
 * En primer lurgar debes descargar la libreria en este link.
