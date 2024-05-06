@@ -1918,15 +1918,9 @@ main.cards section.card span {
   font-size: 15px;
 }
 
-<<<<<<< HEAD
 .badge__1 {
   background-color: #8136e2;
   color: #000;
-=======
-.bage__1 {
-  background-color: #007bff;
-  color: #fff;
->>>>>>> 66c5f701e35e01eb12048e637d3e4bb4aad320f6
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   font-size: 1rem;
@@ -1958,38 +1952,6 @@ main.cards section.card span {
   border-radius: 0.25rem;
   font-size: 2rem;
   font-family: "Devil Fruit", fantasy;
-}
-
-.badge-primary {
-  background-color: #007bff;
-  color: white;
-  border-radius: 8px;
-  padding: 4px 8px;
-  font-size: 14px;
-}
-
-.badge-secondary {
-  background-color: #6c757d;
-  color: white;
-  border-radius: 8px;
-  padding: 4px 8px;
-  font-size: 14px;
-}
-
-.badge-success {
-  background-color: #28a745;
-  color: white;
-  border-radius: 8px;
-  padding: 4px 8px;
-  font-size: 14px;
-}
-
-.badge-danger {
-  background-color: #dc3545;
-  color: white;
-  border-radius: 8px;
-  padding: 4px 8px;
-  font-size: 14px;
 }
 
 /*# sourceMappingURL=main.css.map */
