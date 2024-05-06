@@ -9,10 +9,12 @@
 - [Descripcion General](#descripcion-general)
   * [Nombre de la libreria](#nombre-de-la-libreria)
   * [Indicaciones Generales](#indicaciones-generales)
+  * [Pre-Requisitos](#pre-requisitos)
   * [Versión](#version)
 - [Procesos](#procesos)
    * [Construido con](#construido-con)
    * [Herramientas Utilizadas](#herramientas-utilizadas)
+- [Desarrolladores](#desarrolladores)
  
   
 ## Descripcion General
@@ -32,7 +34,7 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 5- Estando en la carpeta, abrir la consola con Crtl + ñ y agregar el siguiente comando "git clone + lin
 6-Le damos aceptar y ya tendriamos el repositorio en nuestro ordenador
 
-###Pre-Requisitos 
+### Pre-Requisitos 
 
 Necesitas tener instalado en tu maquina los siguientes componentes:
 
