@@ -22,11 +22,11 @@ One Piece The Worst Generation es una librería que ayuda a la creación de una 
 One Piece - The Worst Generation
 
 ### Indicaciones Generales
-* En primer lurgar debes descargar la libreria en este link.
+* En primer lurgar debes descargar la libreria.
 * Aparecera una carpeta que debes descomprimir.
 * Dentro de la carpeta se mostraran otras, de las cuales, algunas de ellas no debes modificar
 Primeramente la carpeta SASS no la modifiques ni la elimines, contiene archivos extensión .scss ya que ahí se encuentran la mayoria de elementos, si en un futuro desea agregar un elemnto nuevo y esta carpeta no se encuentra sera imposible agregar algo nuevo, igualmente dentro de la carpeta Home encontrarás archivos con extensión .css, que son los que otorgan el estilo a la página, estos son el resultado de la compilación de los archivos .scss, algunos de los css si los puedes modificar o eliminar pues tienes el scss que lo respalda.
-* Dentro de la carpeta home encontrarás el archivo index.html el cual puedes trabajar, este lo puedes editar o eliminar, ya que es la estructura de la página principal y si gustas puedes personalizarla. Te compartimos el código con el cual puedes iniciar.
+* Dentro de la carpeta home encontrarás el archivo index.html el cual puedes trabajar, este lo puedes editar o eliminar, ya que es la estructura de la página principal y si gustas puedes personalizarla.
 
 ### Versión 
 * Versión O.1
@@ -49,14 +49,8 @@ Primeramente la carpeta SASS no la modifiques ni la elimines, contiene archivos 
 - [GitHub](https://github.com/)
   
 ## Desarrolladores
-                          
 
-PALETA DE COLORES: 
-
-Para la paleta de colores 
-Rojo oscuro: Representa la pasión, el coraje y la intensidad de las batallas en "One Piece". También puede simbolizar la determinación de los personajes principales, como Luffy.
-Azul marino: Evoca la vastedad del mar y la aventura en alta mar. Es el color del océano que rodea el mundo de "One Piece" y puede simbolizar la libertad y la exploración.
-Amarillo dorado: Refleja la búsqueda del tesoro y la ambición de los piratas por alcanzar sus sueños. También puede representar la riqueza y la recompensa de las aventuras.
-Verde esmeralda: Simboliza la naturaleza exuberante de las islas en el mundo de "One Piece". Puede representar la esperanza y el renacimiento, así como la vida y la energía.
-Negro: Representa el misterio, la intriga y la oscuridad, que son elementos recurrentes en la serie, especialmente en torno a personajes como los Yonkou o los Cipher Pol.
-Blanco: Evoca la pureza y la inocencia, pero también puede simbolizar la justicia y la verdad que los personajes principales persiguen en su viaje. xd
+- Marvin Josué Batres Rivas BR20028 - [Marvin Batres](https://github.com/AlexanderPortillo)
+- Yoselin Aracely Joya Ortez JO21003 - [Yoselin Joya](https://github.com/MedranoGerardo)
+- Miguel Alfredo Ayala Rodríguez MP20049 - [Miguel Alfredo](https://github.com/Jesse-Miranda)
+- Vilma María Gutiérrez Juárez GJ20005- [Vilma Gutiérrez](https://github.com/Jesse-Miranda)
