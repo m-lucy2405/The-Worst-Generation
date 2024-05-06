@@ -100,7 +100,6 @@ $magen-contenido: 16px;
 //***********************************************************
 .formulario__basico__2{ //clase general
     max-width: 100%;
-    font-family: tipografia-tex.$font-marine;
     padding: $pandin-contedido;
     margin: $magen-contenido;
     display: grid;
@@ -112,6 +111,8 @@ $magen-contenido: 16px;
     margin-top: 20x;
     height: 110vh;
     margin-top: 20px;
+    font-family: tipografia-tex.$font-devil-fruit;
+
 
 
     form{
@@ -124,7 +125,7 @@ $magen-contenido: 16px;
         max-width: 80%;
         margin: 20px auto; // Agregar margen superior e inferior
         padding: $pandin-contedido;
-        background-color: colores.$color-gris;  
+        background-color: colores.$color-urarara;  
         font-size: large;   
         
     }
@@ -136,6 +137,7 @@ $magen-contenido: 16px;
         text-align: left;
         max-width: 90%;
         width: 100%;//OCUP EN ANCHO DISPONIBLE DE UN CONTENEDOR 
+        margin-bottom: 5px;
     }
   
   // Estilos para los campos de entrada
@@ -216,6 +218,8 @@ $magen-contenido: 16px;
     .formulario__basico__2, button {
         @extend .boton__Movimento__Rosa;
         grid-template-rows: 2;
+        font-family: tipografia-tex.$font-devil-fruit;
+
     }
  
     select {

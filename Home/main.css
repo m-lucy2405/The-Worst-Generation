@@ -1216,7 +1216,6 @@ body {
 
 .formulario__basico__2 {
   max-width: 100%;
-  font-family: "Marine", sans-serif;
   padding: 20px;
   margin: 16px;
   display: grid;
@@ -1228,6 +1227,7 @@ body {
   margin-top: 20x;
   height: 110vh;
   margin-top: 20px;
+  font-family: "Devil Fruit", fantasy;
 }
 .formulario__basico__2 form {
   display: grid;
@@ -1238,7 +1238,7 @@ body {
   max-width: 80%;
   margin: 20px auto;
   padding: 20px;
-  background-color: #6C757D;
+  background-color: #b3b2b4;
   font-size: large;
 }
 .formulario__basico__2 label {
@@ -1249,6 +1249,7 @@ body {
   text-align: left;
   max-width: 90%;
   width: 100%;
+  margin-bottom: 5px;
 }
 .formulario__basico__2 input {
   background-color: #ecaacd;
@@ -1306,6 +1307,7 @@ body {
 }
 .formulario__basico__2 .formulario__basico__2, .formulario__basico__2 button {
   grid-template-rows: 2;
+  font-family: "Devil Fruit", fantasy;
 }
 .formulario__basico__2 select {
   background-color: #ecaacd;
