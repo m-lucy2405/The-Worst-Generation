@@ -24,6 +24,26 @@ One Piece - The Worst Generation
 * Dentro de la carpeta se mostraran otras, de las cuales, algunas de ellas no debes modificar
 Primeramente la carpeta SASS no la modifiques ni la elimines, contiene archivos extensión .scss ya que ahí se encuentran la mayoria de elementos, si en un futuro desea agregar un elemnto nuevo y esta carpeta no se encuentra sera imposible agregar algo nuevo, igualmente dentro de la carpeta Home encontrarás archivos con extensión .css, que son los que otorgan el estilo a la página, estos son el resultado de la compilación de los archivos .scss, algunos de los css si los puedes modificar o eliminar pues tienes el scss que lo respalda.
 * Dentro de la carpeta home encontrarás el archivo index.html el cual puedes trabajar, este lo puedes editar o eliminar, ya que es la estructura de la página principal y si gustas puedes personalizarla. Te compartimos el código con el cual puedes iniciar.
+  ```Html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./Css/main.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <title>One Piece Fans</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+```
+
 
 ### Versión 
 * Versión O.1
