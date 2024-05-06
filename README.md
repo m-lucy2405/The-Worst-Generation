@@ -50,7 +50,7 @@ Primeramente la carpeta SASS no la modifiques ni la elimines, contiene archivos 
   
 ## Desarrolladores
 
-- Marvin Josué Batres Rivas BR20028 - [Marvin Batres](https://github.com/AlexanderPortillo)
-- Yoselin Aracely Joya Ortez JO21003 - [Yoselin Joya](https://github.com/MedranoGerardo)
-- Miguel Alfredo Ayala Rodríguez MP20049 - [Miguel Alfredo](https://github.com/Jesse-Miranda)
-- Vilma María Gutiérrez Juárez GJ20005- [Vilma Gutiérrez](https://github.com/Jesse-Miranda)
+- Marvin Josué Batres Rivas BR20028 - [Marvin Batres](https://github.com/BatresRv)
+- Yoselin Aracely Joya Ortez JO21003 - [Yoselin Joya](https://github.com/yoselinuesfom)
+- Miguel Alfredo Ayala Rodríguez MP20049 - [Miguel Alfredo](https://github.com/m-lucy2405)
+- Vilma María Gutiérrez Juárez GJ20005- [Vilma Gutiérrez](https://github.com/VilmaGutierrez22)
