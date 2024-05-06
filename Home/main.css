@@ -1226,7 +1226,7 @@ body {
   gap: 16px;
   margin-bottom: 20px;
   margin-top: 20x;
-  height: 100vh;
+  height: 110vh;
   margin-top: 20px;
 }
 .formulario__basico__2 form {
@@ -1654,7 +1654,7 @@ header {
   padding: 20px;
   top: 0;
   left: -300px;
-  width: 250px;
+  width: 200px;
   height: 100%;
   background-color: #14213D;
   transition: left 0.3s ease;
