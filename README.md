@@ -22,11 +22,23 @@ One Piece The Worst Generation es una librería que ayuda a la creación de una 
 One Piece - The Worst Generation
 
 ### Indicaciones Generales
-* En primer lugar debes descargar la libreria.
-* Aparecera una carpeta que debes descomprimir.
-* Dentro de la carpeta se mostraran otras, de las cuales, algunas de ellas no debes modificar
-Primeramente la carpeta SASS no la modifiques ni la elimines, contiene archivos extensión .scss ya que ahí se encuentran la mayoria de elementos, si en un futuro desea agregar un elemnto nuevo y esta carpeta no se encuentra sera imposible agregar algo nuevo, igualmente dentro de la carpeta Home encontrarás archivos con extensión .css, que son los que otorgan el estilo a la página, estos son el resultado de la compilación de los archivos .scss, algunos de los css si los puedes modificar o eliminar pues tienes el scss que lo respalda.
-* Dentro de la carpeta home encontrarás el archivo index.html el cual puedes trabajar, este lo puedes editar o eliminar, ya que es la estructura de la página principal y si gustas puedes personalizarla.
+
+Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
+
+1-Acceder a la direccion del github teniendo los permisos como colaborador para acceder a los archivos.
+2-Dirigirse al apartado de CODE(en color verde) y copiar el link del repositorio.
+3-Dirigirse al entorno de desarrollo en este caso (VISUAL STUDIO).
+4-Crear una carpeta de manera local en el directorio de tu computadora.
+5- Estando en la carpeta, abrir la consola con Crtl + ñ y agregar el siguiente comando "git clone + lin
+6-Le damos aceptar y ya tendriamos el repositorio en nuestro ordenador
+
+###Pre-Requisitos 
+
+Necesitas tener instalado en tu maquina los siguientes componentes:
+
+* Un editor de texto
+* Node.js para compilar codigo en SASS.
+* Instalacion previa de SASS.
 
 ### Versión 
 * Versión O.1
