@@ -1,0 +1,21 @@
+// Estilos para un contenedor con fondo oscuro y texto claro
+.dark-container {
+    background-color: #333; // Fondo oscuro
+    color: #fff; // Texto claro
+}
+
+// Estilos para un contenedor con borde redondeado
+.rounded-container {
+    border-radius: 20px; // Borde redondeado
+}
+
+// Estilos para un contenedor con sombra elevada
+.elevated-container {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); // Sombra elevada
+}
+
+// Estilos para un contenedor con margen superior e inferior
+.spaced-container {
+    margin-top: 20px; // Margen superior
+    margin-bottom: 20px; // Margen inferior
+}

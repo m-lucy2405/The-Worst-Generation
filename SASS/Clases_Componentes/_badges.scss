@@ -1,6 +1,8 @@
 @use '../UTILIDADES/colores';
 @use '../UTILIDADES/tipografia-tex';
 
+$badge-background-color: #007bff;
+$badge-color: #fff;
 $badge-padding: 0.25rem 0.5rem;
 $badge-border-radius: 0.25rem;
 $badge-font-size: 1rem;
