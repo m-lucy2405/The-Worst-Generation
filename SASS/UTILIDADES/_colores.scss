@@ -44,7 +44,7 @@ $color-morado: #6F42C1; // Morado
 $color-gris: #6C757D; // Gris
 $color-naranja: #FD7E14; // Naranja
 $color-rosa: #E83E8C; // Rosa
-$color-violeta: #8A2BE2; // Violeta
+$color-violeta: #2e0555; // Violeta
 
 // Colores de las frutas del diablo
 $color-gomugomu: #8136e2; // Gomu Gomu no Mi (Luffy)
@@ -70,3 +70,17 @@ $Dorado: #FFD700;
 $Verde-esmeralda: #50C878;
 $Rojo-carmesí: #DC143C;
 $Blanco: #FFFFFF;
+
+.color-box {
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

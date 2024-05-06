@@ -1,55 +1,55 @@
-// Define los colores y tamaños comunes
+@use '../UTILIDADES/colores';
+@use '../UTILIDADES/tipografia-tex';
+
+<<<<<<< HEAD
+=======
 $badge-background-color: #007bff;
 $badge-color: #fff;
+>>>>>>> 66c5f701e35e01eb12048e637d3e4bb4aad320f6
 $badge-padding: 0.25rem 0.5rem;
 $badge-border-radius: 0.25rem;
 $badge-font-size: 1rem;
-$badge-font-weight: bold;
 
 // Estilos para el primer badge (tamaño pequeño)
-.bage__1 {
-  background-color: $badge-background-color;
-  color: $badge-color;
+.badge__1 {
+  background-color: colores.$color-gomugomu;
+  color: colores.$color-negro;
   padding: $badge-padding;
   border-radius: $badge-border-radius;
   font-size: $badge-font-size;
-  font-weight: $badge-font-weight;
+  font-family: tipografia-tex.$font-devil-fruit
 }
 
 // Estilos para el segundo badge (tamaño mediano)
 .badge__2 {
-  background-color: #28a745; // Cambia el color si deseas
-  color: $badge-color;
+  background-color: colores.$color-hana; // Cambia el color si deseas
+  color: colores.$color-negro;
   padding: $badge-padding;
   border-radius: $badge-border-radius;
   font-size: $badge-font-size * 1.2; // Tamaño un 20% más grande
-  font-weight: $badge-font-weight;
+  font-family: tipografia-tex.$font-devil-fruit
 }
 
 // Estilos para el tercer badge (tamaño grande)
 .badge__3 {
-  background-color: #ffc107; // Cambia el color si deseas
-  color: $badge-color;
+  background-color: colores.$color-violeta; // Cambia el color si deseas
+  color: colores.$color-brook;
   padding: $badge-padding;
   border-radius: $badge-border-radius;
   font-size: $badge-font-size * 1.5; // Tamaño un 50% más grande
-  font-weight: $badge-font-weight;
+  font-family: tipografia-tex.$font-devil-fruit
 }
 
 // Estilos para el cuarto badge (tamaño extra grande)
 .badge__4 {
-  background-color: #dc3545; // Cambia el color si deseas
-  color: $badge-color;
+  background-color: colores.$color-jinbe; // Cambia el color si deseas
+  color: colores.$color-brook;
   padding: $badge-padding;
   border-radius: $badge-border-radius;
   font-size: $badge-font-size * 2; // Tamaño el doble de grande
-  font-weight: $badge-font-weight;
+  font-family: tipografia-tex.$font-devil-fruit
 }
-// Estilos de los badges
-$badge-color-primary: #007bff;
-$badge-color-secondary: #6c757d;
-$badge-color-success: #28a745;
-$badge-color-danger: #dc3545;
+
 
 // Mixin para estilos de los badges
 @mixin badge-style($color) {
@@ -60,19 +60,3 @@ $badge-color-danger: #dc3545;
   font-size: 14px;
 }
 
-// Estilo de los badges
-.badge-primary {
-  @include badge-style($badge-color-primary);
-}
-
-.badge-secondary {
-  @include badge-style($badge-color-secondary);
-}
-
-.badge-success {
-  @include badge-style($badge-color-success);
-}
-
-.badge-danger {
-  @include badge-style($badge-color-danger);
-}

@@ -1,4 +1,18 @@
 @charset "UTF-8";
+.color-box {
+  width: 200px;
+  height: 150px;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .borde__solido {
   border: solid 10px;
   background-color: #ecaacd;
@@ -218,7 +232,7 @@
 }
 
 .sombra__superior__izquierda {
-  box-shadow: 0px -25px 20px -20px #4a4f53, -25px 0 20px -20px #8A2BE2;
+  box-shadow: 0px -25px 20px -20px #4a4f53, -25px 0 20px -20px #2e0555;
 }
 
 .sombra__inferior__derecha {
@@ -363,6 +377,22 @@ body {
 }
 
 /* Variables de colores para alertas */
+.icono__candado {
+  background-image: url("../../Home/Iconos_img/candado.svg");
+  display: inline-block;
+  width: 24px;
+  height: 24 px;
+  background-size: contain;
+}
+
+.icono__ojo {
+  background-image: url("../../Home/Iconos_img/ojo.svg");
+  display: inline-block;
+  width: 24px;
+  height: 24 px;
+  background-size: contain;
+}
+
 .alert {
   padding: 10px 30px;
   margin: 25px auto; /* Márgenes automáticos para centrar */
@@ -436,6 +466,20 @@ body {
     max-height: 50px; /* Altura máxima del icono en pantallas pequeñas */
   }
 }
+.color-box {
+  width: 200px;
+  height: 150px;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .sombra_superior, .btn, .scroll-btn {
   box-shadow: 0px -25px 20px -20px #00eeff;
   margin: 20px;
@@ -473,7 +517,7 @@ body {
 }
 
 .sombra__superior__izquierda {
-  box-shadow: 0px -25px 20px -20px #4a4f53, -25px 0 20px -20px #8A2BE2;
+  box-shadow: 0px -25px 20px -20px #4a4f53, -25px 0 20px -20px #2e0555;
 }
 
 .sombra__inferior__derecha {
@@ -1128,22 +1172,6 @@ body {
   justify-items: center; /* Alineación horizontal centrada */
   justify-content: space-between;
   gap: 16px;
-}
-
-.icono__candado {
-  background-image: url("../../Home/Iconos_img/candado.svg");
-  display: inline-block;
-  width: 24px;
-  height: 24 px;
-  background-size: contain;
-}
-
-.icono__ojo {
-  background-image: url("../../Home/Iconos_img/ojo.svg");
-  display: inline-block;
-  width: 24px;
-  height: 24 px;
-  background-size: contain;
 }
 
 .container__inicio__secion {
@@ -1808,9 +1836,9 @@ main.cards section.card.Chopper {
 }
 
 main.cards section.card.Robin {
-  background: linear-gradient(to bottom, #14213D 50%, #ffffff 50%);
-  box-shadow: 0px 0px 10px #8A2BE2;
-  color: #14213D;
+  background: linear-gradient(to bottom, #2e0555 50%, #ffffff 50%);
+  box-shadow: 0px 0px 10px #8136e2;
+  color: #2e0555;
 }
 
 main.cards section.card.Franky {
@@ -1875,63 +1903,93 @@ main.cards section.card span {
   }
 }
 .pre {
+  border-radius: 10px;
   background: linear-gradient(to right, #E83E8C, #8A2BE2);
-  color: #000;
+  color: #ffffff;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  margin: 0px;
-  padding: 3px;
-}
-.pre.code {
-  width: 100%;
-  height: auto;
-  font-size: 15px;
-  font-weight: bold;
+  text-align: justify;
+  margin-left: 80px;
+  margin-left: 20px;
 }
 
-@media screen and (max-width: 600px) {
-  .pre {
-    padding: 5px;
-    font-size: 12px;
-  }
+.code {
+  width: 400px;
+  height: auto;
+  font-size: 15px;
 }
+
+<<<<<<< HEAD
+.badge__1 {
+  background-color: #8136e2;
+  color: #000;
+=======
 .bage__1 {
   background-color: #007bff;
   color: #fff;
+>>>>>>> 66c5f701e35e01eb12048e637d3e4bb4aad320f6
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   font-size: 1rem;
-  font-weight: bold;
+  font-family: "Devil Fruit", fantasy;
 }
 
 .badge__2 {
-  background-color: #28a745;
-  color: #fff;
+  background-color: #ecaacd;
+  color: #000;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-family: "Devil Fruit", fantasy;
 }
 
 .badge__3 {
-  background-color: #ffc107;
-  color: #fff;
+  background-color: #2e0555;
+  color: #ffffff;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-family: "Devil Fruit", fantasy;
 }
 
 .badge__4 {
-  background-color: #dc3545;
-  color: #fff;
+  background-color: #9e0631;
+  color: #ffffff;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   font-size: 2rem;
-  font-weight: bold;
+  font-family: "Devil Fruit", fantasy;
+}
+
+.badge-primary {
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.badge-secondary {
+  background-color: #6c757d;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.badge-success {
+  background-color: #28a745;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.badge-danger {
+  background-color: #dc3545;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=main.css.map */

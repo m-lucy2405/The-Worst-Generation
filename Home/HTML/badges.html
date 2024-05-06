@@ -6,18 +6,54 @@
   <title>Badges</title>
   <link rel="stylesheet" href="../main.css">
 </head>
+<style>
+  .badges{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 250px;
+      
+       
+    }
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('../HTML/fondo1.jpg'); /* Cambia 'ruta/de/la/imagen.jpg' por la ruta de tu imagen */
+      background-size: cover;
+      background-position: center;
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); /* Ajusta el valor de la opacidad según tus necesidades */
+  }
+  h2 {
+      text-align: center;
+      color: white; /* Cambia el color del texto si es necesario */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega una sombra al texto */
+  }
+  .alert {
+      color: white; /* Cambia el color del texto de las alertas si es necesario */
+  }
+  /* Añade estilos adicionales si es necesario */
+</style>
 <body>
-  <button class="boton__basico__1">Boton Basico 1</button>
-  <button class="boton__basico__2">Boton Basico 2</button>
-  <button class="boton__basico__3">Boton Basico 3</button>
-  <button class="boton__basico__4">Boton Basico 4</button>
-
 
   <div class="badges">
-    <span class="badge badge-primary">Primary</span>
-    <span class="badge badge-secondary">Secondary</span>
-    <span class="badge badge-success">Success</span>
-    <span class="badge badge-danger">Danger</span>
+    <span class="badge__1">Éxito</span>
+    <span class="badge__2">Información</span>
+    <span class="badge__3">Advertencia</span>
+    <span class="badge__4">Peligro</span>
   </div>
+
+  <!--CODIGO A TEXTO-->
+  <div class="container-fluid">
+    <pre class="pre"><code class="code"><i rel="pre">
+        &lt;span class="badge__1"&gt;Éxito&lt;/span&gt;
+        &lt;span class="badge__2"&gt;Información&lt;/span&gt;
+        &lt;span class="badge__3"&gt;Advertencia&lt;/span&gt;
+        &lt;span class="badge__4"&gt;Peligro&lt;/span&gt; 
+        &nbsp;                                                 
+    <i rel="pre"></i></code></pre>
+</div>
 </body>
 </html>
