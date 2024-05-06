@@ -27,12 +27,12 @@ One Piece - The Worst Generation
 
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
-1 Acceder a la direccion del github teniendo los permisos como colaborador para acceder a los archivos.
-2 Dirigirse al apartado de CODE(en color verde) y copiar el link del repositorio.
-3 Dirigirse al entorno de desarrollo en este caso (VISUAL STUDIO).
-4 Crear una carpeta de manera local en el directorio de tu computadora.
-5 Estando en la carpeta, abrir la consola con Crtl + ñ y agregar el siguiente comando "git clone + lin
-6 Le damos aceptar y ya tendriamos el repositorio en nuestro ordenador
+* Acceder a la direccion del github teniendo los permisos como colaborador para acceder a los archivos.
+* Dirigirse al apartado de CODE(en color verde) y copiar el link del repositorio.
+* Dirigirse al entorno de desarrollo en este caso (VISUAL STUDIO).
+* Crear una carpeta de manera local en el directorio de tu computadora.
+* Estando en la carpeta, abrir la consola con Crtl + ñ y agregar el siguiente comando "git clone + lin
+* Le damos aceptar y ya tendriamos el repositorio en nuestro ordenador
 
 ### Pre-Requisitos 
 
