@@ -1875,29 +1875,21 @@ main.cards section.card span {
   }
 }
 .pre {
+  border-radius: 10px;
   background: linear-gradient(to right, #E83E8C, #8A2BE2);
-  color: #000;
+  color: #ffffff;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  margin: 0px;
-  padding: 3px;
-}
-.pre.code {
-  width: 100%;
-  height: auto;
-  font-size: 15px;
-  font-weight: bold;
+  text-align: justify;
+  margin-left: 80px;
+  margin-left: 20px;
 }
 
-@media screen and (max-width: 600px) {
-  .pre {
-    padding: 5px;
-    font-size: 12px;
-  }
+.code {
+  width: 400px;
+  height: auto;
+  font-size: 15px;
 }
+
 .bage__1 {
   background-color: #007bff;
   color: #fff;
@@ -1932,6 +1924,38 @@ main.cards section.card span {
   border-radius: 0.25rem;
   font-size: 2rem;
   font-weight: bold;
+}
+
+.badge-primary {
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.badge-secondary {
+  background-color: #6c757d;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.badge-success {
+  background-color: #28a745;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.badge-danger {
+  background-color: #dc3545;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=main.css.map */
