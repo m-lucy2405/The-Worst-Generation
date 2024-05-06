@@ -6,15 +6,23 @@
     <link rel="stylesheet" href="../../Home/main.css">
     <title>formulario</title>
 </head>
-<body>
+<body >
+
+    <div class="sombra_inferior">
+        <h1 class="title">DISEÑO DE FORMULARIOS</h1>
+
+    </div>
+  
     <!--***************************************** -->
     <!--      FORMULARIO DE INICIO DE SECION       -->
     <!--****************************************** -->
 
-    <h2>Iniciar Sesión</h2>
-    <p>Este formulario  para iniciar sesión. Tiene un diseño centrado con un
-         fondo de degradado rosa-morado y campos de entrada con iconos para 
-         correo electrónico y contraseña.</p>
+    <div class="contenido-">
+        <h2 class="title">FORMULARIO DE INICIO DE SESIÓN</h2>
+        <p>Este formulario  para iniciar sesión. Tiene un diseño centrado con un
+             fondo de degradado rosa-morado y campos de entrada con iconos para 
+             correo electrónico y contraseña.</p>
+    </div>
     <div class="container__inicio__secion">
         <form class="form__inicio__de__secion">
           <div class="form__group">
@@ -69,7 +77,13 @@
          <!--***************************************** -->
         <!--      FORMULARIO CREAR CUENTA             -->
         <!--****************************************** -->
-        <h2>Formulario crear cuenta</h2>
+        <div class="contenido-">
+            <h2 class="title">FORMULARIO CREAR CUENTA</h2>
+            <p>Este formulario  para crear una cuenta. Tiene un diseño centrado con un
+                 fondo de degradado rosa-morado y campos de entrada con iconos para 
+                 correo electrónico y contraseña.</p>
+        </div>
+          
         <div class="container__crear__cuenta">
             <form>
                 <h2>Crear Cuenta</h2>
@@ -116,7 +130,7 @@
                     </div>
                 </div>
                 <label for="">mostrar contraseña<input type="checkbox"></label>
-                <button type="submit">Crear Cuenta</button><br>
+                <button type="submit">Crear Cuenta</button><br><br>
                 <a href="">iniciar secion</a>
             </form>
         </div>
@@ -124,7 +138,8 @@
           <!--***************************************** -->
         <!--   TEX DE   FORMULARIO CREAR CUENTA             -->
         <!--****************************************** -->
-        <h4>Codigo HTML</h4>
+        
+        <h4 >Codigo HTML</h4>
         <div class="container-fluid">
             <pre class="pre"><code class="code"><i rel="pre">
         &lt;div class="container__crear__cuenta"&gt;
@@ -186,11 +201,12 @@
     <!--***************************************** -->
     <!--      FORMULARIO DE CONTACTO      -->
     <!--****************************************** -->
-    <h2>Formulario de contatos</h2>
-    <p>Formulario de contactos, utizas los elemtos tipico de un formulario de este tipo</p>
+    <div class="contenido-">
+        <h2 class="title">FORMULARIO DE CONTACTO</h2>
+        <p>Formulario de contactos, utizas los elemtos tipico de un formulario de este tipo</p><br>
+    </div>
     <div class="container__form__contatos">
         <form>
-            <h2>Formulario de Contacto</h2>
             
             <div class="form__group">
                 <label for="nombre">Nombre:</label>
@@ -287,9 +303,12 @@
        <!--***************************************** -->
         <!--      FORMULARIO BASIC 2                 -->
         <!--****************************************** -->
-        <h2>Formulario basico</h2>
-        <p>este es un fomulario basico que contiene alguno elemtos esenciales y populares, como input y botones</p>
-    <div  class="formulario__basico__2">
+        <div class="contenido-">
+            <h2 class="title">FORMULARIO BASICO</h2>
+            <p>este es un fomulario basico que contiene alguno elemtos esenciales
+                 y populares, como input y botones</p>
+        </div>
+        <div  class="formulario__basico__2">
         <form action="">
             <label class="title" for="nombre">FORMULARIO BASICO</label>
             <label for="nombre">Nombre:</label>
@@ -323,7 +342,6 @@
             <button type="">Enviar</button>
             <button type="">Regresar</button>
         </form>
-
     </div>
 
     <h4>Codigo HTML</h4>
@@ -363,6 +381,7 @@
         &lt;/div&gt;
         </i></code></pre>
     </div>
+
     
     
     
@@ -370,42 +389,103 @@
 </html>
 
 <style>
+    /* Estilos generales */
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
     body {
-            background-color: rgb(240, 240, 240);
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column; /* Alinear elementos en columna */
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            height: auto;
-            background-color: antiquewhite;
-            background-size: cover;
-            
-        }
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        width: 100%;
 
-        h1{
-            font-size: 30px;
-            font-weight: 700;
-            color: rgb(245, 71, 71);
-            text-align: center;
-        }
-        h2{
-            font-size: 25px;
-            font-weight: 700;
-            color: rgb(3, 3, 3);
-            text-align: center;
-        }
+    }
+    .container__inicio__secion{
+        height: 60vh; 
+        overflow: auto; 
+        margin-bottom: 0px; /* Espacio entre los formularios */
+        background-color: rgb(233, 218, 208);
+        padding: 0;
+        margin-top: 0;
+    }
 
+.container__form__contatos
+{
+    height: 130vh; 
+    overflow: auto; 
+    margin-bottom: 20px; /* Espacio entre los formularios */
+    background-color: rgb(204, 195, 188);
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
-        
+.container__crear__cuenta{
+    height: 130vh; 
+    overflow: auto; 
+    margin-bottom: 2px; /* Espacio entre los formularios */
+    background-color: rgb(233, 218, 208);
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.formulario__basico__2{
+    height: 370vh; 
+    overflow: auto; 
+    background-color: rgb(236, 203, 203);
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+h1{
+    font-size: 100px;
+    text-align: center;
+    color: rgb(110, 17, 17);
+    font-family:monospace;
+    margin: 0%;
+}
+h2{
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(40, 6, 163);
+    font-family:monospace;
+    margin: 0%;
     
+}
+h4{
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family:monospace;
+    background-color: antiquewhite;
+}
+p{
+    font-size: 20px;
+    text-align: center;
+    font-family:cursive;
+    margin-bottom: 20px;
+    color: black;
+}
+.contenido-{
+    font-size: 20px;
+    text-align: center;
+    font-family:cursive;
+    color: black;
+    background-color: antiquewhite;
+    margin-top: 0%;
+    padding-bottom: 0%;
+    padding: 20px;
+}
+
+.container-fluid{
+    margin: 0;
+    margin-bottom: 20px;
+}
+    
+
 </style>

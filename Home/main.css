@@ -1875,24 +1875,29 @@ main.cards section.card span {
   }
 }
 .pre {
-  border-radius: 10px;
   background: linear-gradient(to right, #E83E8C, #8A2BE2);
-  color: #ffffff;
+  color: #000;
   height: auto;
-}
-
-.code {
-  width: 100%;
-  height: auto;
-  font-size: 15px;
-}
-
-.container-code {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-items: center;
+  margin: 0px;
+  padding: 3px;
+}
+.pre.code {
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  font-weight: bold;
 }
 
+@media screen and (max-width: 600px) {
+  .pre {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
 .bage__1 {
   background-color: #007bff;
   color: #fff;
