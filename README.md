@@ -10,6 +10,9 @@
   * [Nombre de la libreria](#nombre-de-la-libreria)
   * [Indicaciones Generales](#indicaciones-generales)
   * [Versión](#version)
+- [Procesos](#procesos)
+   * [Construido con](#construido-con)
+   * [Herramientas Utilizadas](#herramientas-utilizadas)
  
   
 ## Descripcion General
@@ -28,6 +31,23 @@ Primeramente la carpeta SASS no la modifiques ni la elimines, contiene archivos 
 ### Versión 
 * Versión O.1
 ## Procesos
+### Construido con
+
+- Marcado semántico HTML5
+- Propiedades personalizadas de CSS
+- Flex box
+- Css Grid
+- Diseño responsivo
+- Sass
+- Git
+
+### Herramientas utilizadas
+
+- [VSCode](https://code.visualstudio.com/)
+- [Sass](https://sass-lang.com/)
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+  
 ## Desarrolladores
                           
 
