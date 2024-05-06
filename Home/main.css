@@ -1979,4 +1979,13 @@ footer p {
   margin: 10px 20px;
 }
 
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 40px 0;
+  }
+  p {
+    margin: 10px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
