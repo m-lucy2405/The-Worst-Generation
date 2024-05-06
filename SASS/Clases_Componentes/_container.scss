@@ -1,21 +1,87 @@
 // Estilos para un contenedor con fondo oscuro y texto claro
+@use '../UTILIDADES/bordes';
+@use '../UTILIDADES/sombras';
+@use '../UTILIDADES/tipografia-tex';
+@use '../UTILIDADES/colores';
+
 .dark-container {
-    background-color: #333; // Fondo oscuro
-    color: #fff; // Texto claro
+    @extend .borde__solido;
+    @extend .sombra_superior;
+    background-color: colores;
+
+
 }
 
 // Estilos para un contenedor con borde redondeado
 .rounded-container {
     border-radius: 20px; // Borde redondeado
+    @extend .borde__solido;
+    @extend .sombra_derecha;
+    background-color: black;
+
+
+
 }
 
 // Estilos para un contenedor con sombra elevada
 .elevated-container {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); // Sombra elevada
+    @extend .borde__solido;
+
+    @extend .sombra_derecha;
+    background-color: colores.$Rojo-carmesí;
 }
 
 // Estilos para un contenedor con margen superior e inferior
 .spaced-container {
     margin-top: 20px; // Margen superior
     margin-bottom: 20px; // Margen inferior
+    @extend .borde__solido;
+    @extend .sombra_izquierda;
 }
+
+/* Pequeño */
+.pequeno {
+    width: 20px;
+    height: 20px;
+    @extend  .Diseño__materiales__4;
+    @extend .borde__solido;
+    background-color: colores.$Rojo-carmesí;
+
+
+
+   
+  }
+  
+  /* Mediano */
+  .mediano {
+    width: 50px;
+    height: 50px;
+    @extend  .Diseño__materiales__4;
+    @extend .borde__solido;
+    background-color: colores.$Rojo-carmesí;
+
+    
+  }
+  
+  /* Grande */
+  .grande {
+    width: 100px;
+    height: 100px;
+    @extend  .Diseño__materiales__4;
+    @extend .borde__solido;
+    background-color: colores.$Rojo-carmesí;
+    
+  }
+  
+  /* Extra Grande */
+  .extra-grande {
+    width: 200px;
+    height: 200px;
+    @extend  .Diseño__materiales__4;
+    @extend .borde__solido;
+    background-color: colores.$Rojo-carmesí;
+    
+    
+  }
+  
