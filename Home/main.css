@@ -1988,12 +1988,12 @@ footer p {
   }
 }
 .dark-container {
-  background-color: #DC143C;
+  background-color: colores;
 }
 
 .rounded-container {
   border-radius: 20px;
-  background-color: #DC143C;
+  background-color: black;
 }
 
 .elevated-container {
@@ -2022,9 +2022,9 @@ footer p {
 
 /* Grande */
 .grande {
-  width: 100px;
-  height: 100px;
-  background-color: #DC143C;
+  width: 100%;
+  height: 50%;
+  background-color: #ffffff;
 }
 
 /* Extra Grande */
